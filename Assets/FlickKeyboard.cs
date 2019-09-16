@@ -25,7 +25,10 @@ public class FlickKeyboard : MonoBehaviour
     public GameObject keyDelete;
     public GameObject keySpace;
     public GameObject keyReturn;
+    public AudioClip buttonPress;
+    public AudioClip buttonUnpress;
 
+    private AudioSource audioSource;
     private GameObject pressedKey;
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
@@ -74,6 +77,7 @@ public class FlickKeyboard : MonoBehaviour
         InteractionManager.InteractionSourceLost += SourceLost;
         InteractionManager.InteractionSourcePressed += SourcePressed;
         InteractionManager.InteractionSourceReleased += SourceReleased;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs)
@@ -106,6 +110,7 @@ public class FlickKeyboard : MonoBehaviour
         Debug.Log($"SourcePressed {CoreServices.InputSystem.GazeProvider.GazeTarget}");
         pressedKey = CoreServices.InputSystem.GazeProvider.GazeTarget;
         eventArgs.state.sourcePose.TryGetPosition(out pressedPosition3);
+        audioSource.PlayOneShot(buttonPress, 0.7F);
     }
 
     void SourceReleased(InteractionSourceReleasedEventArgs eventArgs)
@@ -269,5 +274,6 @@ public class FlickKeyboard : MonoBehaviour
         }
         pressedKey.GetComponentInChildren<TMP_Text>().text = GetNextChar(-1);
         pressedKey = null;
+        audioSource.PlayOneShot(buttonUnpress, 0.7F);
     }
 }

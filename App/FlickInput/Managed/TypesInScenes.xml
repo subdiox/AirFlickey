@@ -25,6 +25,7 @@
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
@@ -75,9 +76,6 @@
 		<type fullname="Microsoft.MixedReality.Toolkit.UI.States" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.UI.Theme" preserve="nothing"/>
 	</assembly>
-	<assembly fullname="Microsoft.MixedReality.Toolkit.Services.InputAnimation">
-		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInputRecordingProfile" preserve="nothing"/>
-	</assembly>
 	<assembly fullname="Microsoft.MixedReality.Toolkit.Services.InputSimulation">
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile" preserve="nothing"/>
 	</assembly>
@@ -92,7 +90,6 @@
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.BaseHandVisualizer" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerMappingProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerVisualizationProfile" preserve="nothing"/>
-		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityEyeTrackingProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityGesturesProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityHandTrackingProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Input.MixedRealityInputActionRulesProfile" preserve="nothing"/>
@@ -105,7 +102,6 @@
 		<type fullname="Microsoft.MixedReality.Toolkit.MixedRealityToolkit" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.MixedRealityToolkitConfigurationProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Physics.DistorterGravity" preserve="nothing"/>
-		<type fullname="Microsoft.MixedReality.Toolkit.SceneSystem.MixedRealitySceneSystemProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystemProfile" preserve="nothing"/>
 		<type fullname="Microsoft.MixedReality.Toolkit.Utilities.BezierDataProvider" preserve="nothing"/>
@@ -127,7 +123,6 @@
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
-		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>
 		<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="nothing"/>
 	</assembly>
 </linker>

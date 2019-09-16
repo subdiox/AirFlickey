@@ -34286,36 +34286,42 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___keySpace_18;
 	// UnityEngine.GameObject FlickKeyboard::keyReturn
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___keyReturn_19;
+	// UnityEngine.AudioClip FlickKeyboard::buttonPress
+	AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * ___buttonPress_20;
+	// UnityEngine.AudioClip FlickKeyboard::buttonUnpress
+	AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * ___buttonUnpress_21;
+	// UnityEngine.AudioSource FlickKeyboard::audioSource
+	AudioSource_t5196F862B4E60F404613361C90D87FBDD041E93C * ___audioSource_22;
 	// UnityEngine.GameObject FlickKeyboard::pressedKey
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___pressedKey_20;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___pressedKey_23;
 	// UnityEngine.Vector3 FlickKeyboard::pressedPosition3
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___pressedPosition3_21;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___pressedPosition3_24;
 	// UnityEngine.Vector3 FlickKeyboard::releasedPosition3
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___releasedPosition3_22;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___releasedPosition3_25;
 	// System.String[] FlickKeyboard::charListA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListA_23;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListA_26;
 	// System.String[] FlickKeyboard::charListKA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListKA_24;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListKA_27;
 	// System.String[] FlickKeyboard::charListSA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListSA_25;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListSA_28;
 	// System.String[] FlickKeyboard::charListTA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListTA_26;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListTA_29;
 	// System.String[] FlickKeyboard::charListNA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListNA_27;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListNA_30;
 	// System.String[] FlickKeyboard::charListHA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListHA_28;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListHA_31;
 	// System.String[] FlickKeyboard::charListMA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListMA_29;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListMA_32;
 	// System.String[] FlickKeyboard::charListYA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListYA_30;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListYA_33;
 	// System.String[] FlickKeyboard::charListRA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListRA_31;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListRA_34;
 	// System.String[] FlickKeyboard::charListWA
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListWA_32;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListWA_35;
 	// System.String[] FlickKeyboard::charListMark
-	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListMark_33;
+	StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___charListMark_36;
 	// System.String[][] FlickKeyboard::charListFunc
-	StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* ___charListFunc_34;
+	StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* ___charListFunc_37;
 
 public:
 	inline static int32_t get_offset_of_textField_4() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___textField_4)); }
@@ -34462,137 +34468,164 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___keyReturn_19), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_pressedKey_20() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___pressedKey_20)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_pressedKey_20() const { return ___pressedKey_20; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_pressedKey_20() { return &___pressedKey_20; }
-	inline void set_pressedKey_20(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_buttonPress_20() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___buttonPress_20)); }
+	inline AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * get_buttonPress_20() const { return ___buttonPress_20; }
+	inline AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 ** get_address_of_buttonPress_20() { return &___buttonPress_20; }
+	inline void set_buttonPress_20(AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * value)
 	{
-		___pressedKey_20 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___pressedKey_20), (void*)value);
+		___buttonPress_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___buttonPress_20), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_pressedPosition3_21() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___pressedPosition3_21)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_pressedPosition3_21() const { return ___pressedPosition3_21; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_pressedPosition3_21() { return &___pressedPosition3_21; }
-	inline void set_pressedPosition3_21(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_buttonUnpress_21() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___buttonUnpress_21)); }
+	inline AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * get_buttonUnpress_21() const { return ___buttonUnpress_21; }
+	inline AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 ** get_address_of_buttonUnpress_21() { return &___buttonUnpress_21; }
+	inline void set_buttonUnpress_21(AudioClip_tCC3C35F579203CE2601243585AB3D6953C3BA051 * value)
 	{
-		___pressedPosition3_21 = value;
+		___buttonUnpress_21 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___buttonUnpress_21), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_releasedPosition3_22() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___releasedPosition3_22)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_releasedPosition3_22() const { return ___releasedPosition3_22; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_releasedPosition3_22() { return &___releasedPosition3_22; }
-	inline void set_releasedPosition3_22(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_audioSource_22() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___audioSource_22)); }
+	inline AudioSource_t5196F862B4E60F404613361C90D87FBDD041E93C * get_audioSource_22() const { return ___audioSource_22; }
+	inline AudioSource_t5196F862B4E60F404613361C90D87FBDD041E93C ** get_address_of_audioSource_22() { return &___audioSource_22; }
+	inline void set_audioSource_22(AudioSource_t5196F862B4E60F404613361C90D87FBDD041E93C * value)
 	{
-		___releasedPosition3_22 = value;
+		___audioSource_22 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___audioSource_22), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListA_23() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListA_23)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListA_23() const { return ___charListA_23; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListA_23() { return &___charListA_23; }
-	inline void set_charListA_23(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_pressedKey_23() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___pressedKey_23)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_pressedKey_23() const { return ___pressedKey_23; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_pressedKey_23() { return &___pressedKey_23; }
+	inline void set_pressedKey_23(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___charListA_23 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListA_23), (void*)value);
+		___pressedKey_23 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___pressedKey_23), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListKA_24() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListKA_24)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListKA_24() const { return ___charListKA_24; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListKA_24() { return &___charListKA_24; }
-	inline void set_charListKA_24(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_pressedPosition3_24() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___pressedPosition3_24)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_pressedPosition3_24() const { return ___pressedPosition3_24; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_pressedPosition3_24() { return &___pressedPosition3_24; }
+	inline void set_pressedPosition3_24(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___charListKA_24 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListKA_24), (void*)value);
+		___pressedPosition3_24 = value;
 	}
 
-	inline static int32_t get_offset_of_charListSA_25() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListSA_25)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListSA_25() const { return ___charListSA_25; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListSA_25() { return &___charListSA_25; }
-	inline void set_charListSA_25(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_releasedPosition3_25() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___releasedPosition3_25)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_releasedPosition3_25() const { return ___releasedPosition3_25; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_releasedPosition3_25() { return &___releasedPosition3_25; }
+	inline void set_releasedPosition3_25(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___charListSA_25 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListSA_25), (void*)value);
+		___releasedPosition3_25 = value;
 	}
 
-	inline static int32_t get_offset_of_charListTA_26() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListTA_26)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListTA_26() const { return ___charListTA_26; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListTA_26() { return &___charListTA_26; }
-	inline void set_charListTA_26(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListA_26() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListA_26)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListA_26() const { return ___charListA_26; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListA_26() { return &___charListA_26; }
+	inline void set_charListA_26(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListTA_26 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListTA_26), (void*)value);
+		___charListA_26 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListA_26), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListNA_27() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListNA_27)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListNA_27() const { return ___charListNA_27; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListNA_27() { return &___charListNA_27; }
-	inline void set_charListNA_27(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListKA_27() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListKA_27)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListKA_27() const { return ___charListKA_27; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListKA_27() { return &___charListKA_27; }
+	inline void set_charListKA_27(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListNA_27 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListNA_27), (void*)value);
+		___charListKA_27 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListKA_27), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListHA_28() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListHA_28)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListHA_28() const { return ___charListHA_28; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListHA_28() { return &___charListHA_28; }
-	inline void set_charListHA_28(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListSA_28() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListSA_28)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListSA_28() const { return ___charListSA_28; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListSA_28() { return &___charListSA_28; }
+	inline void set_charListSA_28(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListHA_28 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListHA_28), (void*)value);
+		___charListSA_28 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListSA_28), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListMA_29() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListMA_29)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListMA_29() const { return ___charListMA_29; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListMA_29() { return &___charListMA_29; }
-	inline void set_charListMA_29(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListTA_29() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListTA_29)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListTA_29() const { return ___charListTA_29; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListTA_29() { return &___charListTA_29; }
+	inline void set_charListTA_29(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListMA_29 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListMA_29), (void*)value);
+		___charListTA_29 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListTA_29), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListYA_30() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListYA_30)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListYA_30() const { return ___charListYA_30; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListYA_30() { return &___charListYA_30; }
-	inline void set_charListYA_30(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListNA_30() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListNA_30)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListNA_30() const { return ___charListNA_30; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListNA_30() { return &___charListNA_30; }
+	inline void set_charListNA_30(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListYA_30 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListYA_30), (void*)value);
+		___charListNA_30 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListNA_30), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListRA_31() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListRA_31)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListRA_31() const { return ___charListRA_31; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListRA_31() { return &___charListRA_31; }
-	inline void set_charListRA_31(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListHA_31() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListHA_31)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListHA_31() const { return ___charListHA_31; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListHA_31() { return &___charListHA_31; }
+	inline void set_charListHA_31(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListRA_31 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListRA_31), (void*)value);
+		___charListHA_31 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListHA_31), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListWA_32() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListWA_32)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListWA_32() const { return ___charListWA_32; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListWA_32() { return &___charListWA_32; }
-	inline void set_charListWA_32(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListMA_32() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListMA_32)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListMA_32() const { return ___charListMA_32; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListMA_32() { return &___charListMA_32; }
+	inline void set_charListMA_32(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListWA_32 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListWA_32), (void*)value);
+		___charListMA_32 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListMA_32), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListMark_33() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListMark_33)); }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListMark_33() const { return ___charListMark_33; }
-	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListMark_33() { return &___charListMark_33; }
-	inline void set_charListMark_33(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	inline static int32_t get_offset_of_charListYA_33() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListYA_33)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListYA_33() const { return ___charListYA_33; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListYA_33() { return &___charListYA_33; }
+	inline void set_charListYA_33(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListMark_33 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListMark_33), (void*)value);
+		___charListYA_33 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListYA_33), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_charListFunc_34() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListFunc_34)); }
-	inline StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* get_charListFunc_34() const { return ___charListFunc_34; }
-	inline StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F** get_address_of_charListFunc_34() { return &___charListFunc_34; }
-	inline void set_charListFunc_34(StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* value)
+	inline static int32_t get_offset_of_charListRA_34() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListRA_34)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListRA_34() const { return ___charListRA_34; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListRA_34() { return &___charListRA_34; }
+	inline void set_charListRA_34(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
 	{
-		___charListFunc_34 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___charListFunc_34), (void*)value);
+		___charListRA_34 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListRA_34), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_charListWA_35() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListWA_35)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListWA_35() const { return ___charListWA_35; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListWA_35() { return &___charListWA_35; }
+	inline void set_charListWA_35(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	{
+		___charListWA_35 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListWA_35), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_charListMark_36() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListMark_36)); }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* get_charListMark_36() const { return ___charListMark_36; }
+	inline StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E** get_address_of_charListMark_36() { return &___charListMark_36; }
+	inline void set_charListMark_36(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* value)
+	{
+		___charListMark_36 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListMark_36), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_charListFunc_37() { return static_cast<int32_t>(offsetof(FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094, ___charListFunc_37)); }
+	inline StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* get_charListFunc_37() const { return ___charListFunc_37; }
+	inline StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F** get_address_of_charListFunc_37() { return &___charListFunc_37; }
+	inline void set_charListFunc_37(StringU5BU5DU5BU5D_tBC6637326598C4B41F2E9C3BF641A92808935A5F* value)
+	{
+		___charListFunc_37 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___charListFunc_37), (void*)value);
 	}
 };
 
@@ -61416,7 +61449,7 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4755;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4755 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4756;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4756 = { sizeof (FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4756[31] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4756[34] = 
 {
 	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_textField_4(),
 	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_keyA_5(),
@@ -61434,21 +61467,24 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4756[31] =
 	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_keyDelete_17(),
 	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_keySpace_18(),
 	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_keyReturn_19(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_pressedKey_20(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_pressedPosition3_21(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_releasedPosition3_22(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListA_23(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListKA_24(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListSA_25(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListTA_26(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListNA_27(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListHA_28(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListMA_29(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListYA_30(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListRA_31(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListWA_32(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListMark_33(),
-	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListFunc_34(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_buttonPress_20(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_buttonUnpress_21(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_audioSource_22(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_pressedKey_23(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_pressedPosition3_24(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_releasedPosition3_25(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListA_26(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListKA_27(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListSA_28(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListTA_29(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListNA_30(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListHA_31(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListMA_32(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListYA_33(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListRA_34(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListWA_35(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListMark_36(),
+	FlickKeyboard_t4C9FA48A93C162452B29DC9105A7CAA56C092094::get_offset_of_charListFunc_37(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4757;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4757 = { 0, -1, 0, 0 };
