@@ -25,13 +25,16 @@ public class FlickKeyboard : MonoBehaviour
     public GameObject keyDelete;
     public GameObject keySpace;
     public GameObject keyReturn;
+    public GameObject keyOverlay;
     public AudioClip buttonPress;
     public AudioClip buttonUnpress;
 
     private AudioSource audioSource;
-    private GameObject pressedKey;
+    private GameObject keyPressed;
+    private int previousDirection;
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
+    private GameObject[] flickableKeys;
     private string[] charListA = new string[] { "あ", "あ", "い", "う", "え", "お" };
     private string[] charListKA = new string[] { "か", "か", "き", "く", "け", "こ" };
     private string[] charListSA = new string[] { "さ", "さ", "し", "す", "せ", "そ" };
@@ -68,16 +71,19 @@ public class FlickKeyboard : MonoBehaviour
         new string[] { "ゆ", "ゅ", null },
         new string[] { "よ", "ょ", null }
     };
+    private Color pressedColor = new Color(17.0f / 255.0f, 17.0f / 255.0f, 17.0f / 255.0f, 0.0f);
+    private Color unpressedColor = new Color(51.0f / 255.0f, 51.0f / 255.0f, 51.0f / 255.0f, 0.0f);
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        flickableKeys = new GameObject[] { keyA, keyKA, keySA, keyTA, keyNA, keyHA, keyMA, keyYA, keyRA, keyWA, keyMark };
         InteractionManager.InteractionSourceDetected += SourceDetected;
         InteractionManager.InteractionSourceUpdated += SourceUpdated;
         InteractionManager.InteractionSourceLost += SourceLost;
         InteractionManager.InteractionSourcePressed += SourcePressed;
         InteractionManager.InteractionSourceReleased += SourceReleased;
-        audioSource = GetComponent<AudioSource>();
     }
 
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs)
@@ -85,20 +91,60 @@ public class FlickKeyboard : MonoBehaviour
         Debug.Log("SourceDetected");
     }
 
+    bool isFlickable(GameObject key)
+    {
+        foreach (GameObject flickableKey in flickableKeys)
+        {
+            if (key == flickableKey)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     void SourceUpdated(InteractionSourceUpdatedEventArgs eventArgs)
     {
         Debug.Log("SourceUpdated");
-        if (pressedKey != null)
+        eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+        int direction = GetCurrentDirection();
+        if (direction == -1)
         {
-            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-            pressedKey.GetComponentInChildren<TMP_Text>().text = GetNextChar(GetCurrentDirection());
+            restoreKeys();
+        }
+        else if (direction == 0)
+        {
+            restoreKeys(false);
+            keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+        }
+        else if (isFlickable(keyPressed))
+        {
+            keyPressed.GetComponentInChildren<TMP_Text>().text = null;
+            keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+            if (direction == 1)
+            {
+                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
+            }
+            else if (direction == 2)
+            {
+                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
+            }
+            else if (direction == 3)
+            {
+                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
+            }
+            else if (direction == 4)
+            {
+                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+            }
+            keyOverlay.SetActive(true);
         }
     }
 
     void SourceLost(InteractionSourceLostEventArgs eventArgs)
     {
         Debug.Log("SourceLost");
-        if (pressedKey != null)
+        if (keyPressed != null)
         {
             eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
             ProcessInput(GetCurrentDirection());
@@ -108,14 +154,18 @@ public class FlickKeyboard : MonoBehaviour
     void SourcePressed(InteractionSourcePressedEventArgs eventArgs)
     {
         Debug.Log($"SourcePressed {CoreServices.InputSystem.GazeProvider.GazeTarget}");
-        pressedKey = CoreServices.InputSystem.GazeProvider.GazeTarget;
         eventArgs.state.sourcePose.TryGetPosition(out pressedPosition3);
-        audioSource.PlayOneShot(buttonPress, 0.7F);
+        keyPressed = CoreServices.InputSystem.GazeProvider.GazeTarget;
+        if (keyPressed != null)
+        {
+            audioSource.PlayOneShot(buttonPress, 1.0f);
+            keyPressed.GetComponentInChildren<MeshRenderer>().material.color = pressedColor;
+        }
     }
 
     void SourceReleased(InteractionSourceReleasedEventArgs eventArgs)
     {
-        Debug.Log($"SourceReleased {pressedKey.name}");
+        Debug.Log($"SourceReleased {keyPressed.name}");
         eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
         ProcessInput(GetCurrentDirection());
     }
@@ -132,7 +182,7 @@ public class FlickKeyboard : MonoBehaviour
     int GetCurrentDirection()
     {
         int direction = -1;
-        if (pressedKey != null && pressedPosition3 != null && releasedPosition3 != null)
+        if (keyPressed != null)
         {
             Vector2 relativePosition2 = releasedPosition3 - pressedPosition3;
             float angle = Vector2.Angle(Vector2.right, relativePosition2);
@@ -179,72 +229,73 @@ public class FlickKeyboard : MonoBehaviour
     {
         if (direction >= -1 && direction <= 4)
         {
-            if (pressedKey == keyA)
+            if (keyPressed == keyA)
             {
                 return charListA[direction + 1];
             }
-            else if (pressedKey == keyKA)
+            else if (keyPressed == keyKA)
             {
                 return charListKA[direction + 1];
             }
-            else if (pressedKey == keySA)
+            else if (keyPressed == keySA)
             {
                 return charListSA[direction + 1];
             }
-            else if (pressedKey == keyTA)
+            else if (keyPressed == keyTA)
             {
                 return charListTA[direction + 1];
             }
-            else if (pressedKey == keyNA)
+            else if (keyPressed == keyNA)
             {
                 return charListNA[direction + 1];
             }
-            else if (pressedKey == keyHA)
+            else if (keyPressed == keyHA)
             {
                 return charListHA[direction + 1];
             }
-            else if (pressedKey == keyMA)
+            else if (keyPressed == keyMA)
             {
                 return charListMA[direction + 1];
             }
-            else if (pressedKey == keyYA)
+            else if (keyPressed == keyYA)
             {
                 return charListYA[direction + 1];
             }
-            else if (pressedKey == keyRA)
+            else if (keyPressed == keyRA)
             {
                 return charListRA[direction + 1];
             }
-            else if (pressedKey == keyWA)
+            else if (keyPressed == keyWA)
             {
                 return charListWA[direction + 1];
             }
-            else if (pressedKey == keyMark)
+            else if (keyPressed == keyMark)
             {
                 return charListMark[direction + 1];
             }
         }
-        return pressedKey.GetComponentInChildren<TMP_Text>().text;
+        return keyPressed.GetComponentInChildren<TMP_Text>().text;
     }
 
     void ProcessInput(int direction)
     {
-        if (pressedKey == keySpace)
+        audioSource.PlayOneShot(buttonUnpress, 1.0f);
+        if (keyPressed == keySpace)
         {
             textField.text += " ";
         }
-        else if (pressedKey == keyDelete)
+        else if (keyPressed == keyDelete)
         {
             if (!string.IsNullOrEmpty(textField.text))
             {
                 textField.text = textField.text.Substring(0, textField.text.Length - 1);
             }
         }
-        else if (pressedKey == keyReturn)
+        else if (keyPressed == keyReturn)
         {
             textField.text += "\n";
         }
-        else if (pressedKey == keyFunc)
+        else if (keyPressed == keyFunc)
         {
             string targetChar = textField.text.Substring(textField.text.Length - 1, 1);
             for (int i = 0; i < charListFunc.Length; i ++)
@@ -259,6 +310,7 @@ public class FlickKeyboard : MonoBehaviour
                             k = (k + 1) % 3;
                         }
                         textField.text = textField.text.Substring(0, textField.text.Length - 1) + charListFunc[i][k];
+                        restoreKeys();
                         return;
                     }
                 }
@@ -272,8 +324,27 @@ public class FlickKeyboard : MonoBehaviour
                 textField.text += nextChar;
             }
         }
-        pressedKey.GetComponentInChildren<TMP_Text>().text = GetNextChar(-1);
-        pressedKey = null;
-        audioSource.PlayOneShot(buttonUnpress, 0.7F);
+        restoreKeys();
+    }
+
+    void restoreKeys(bool isDefault = true)
+    {
+        if (keyOverlay != null)
+        {
+            keyOverlay.SetActive(false);
+        }
+        if (keyPressed != null)
+        {
+            if (isDefault)
+            {
+                keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(-1);
+                keyPressed.GetComponentInChildren<MeshRenderer>().material.color = unpressedColor;
+                keyPressed = null;
+            }
+            else
+            {
+                keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(0);
+            }
+        }
     }
 }

@@ -942,6 +942,13 @@
         {
             "managedAssemblyName": "com.unity.multiplayer-hlapi.Runtime.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Networking.NetworkCallbacks",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "com.unity.multiplayer-hlapi.Runtime.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Networking.NetworkIdentity",
             "moduleName": "",
             "usedInScenes": []

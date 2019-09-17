@@ -123,6 +123,7 @@
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
+		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>
 		<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="nothing"/>
 	</assembly>
 </linker>

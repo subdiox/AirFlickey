@@ -3084,14 +3084,13 @@ static const Il2CppTokenRangePair s_rgctxIndices[6] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[15] = 
 {
-	{ (Il2CppRGCTXDataType)3, 45773 },
-	{ (Il2CppRGCTXDataType)2, 42282 },
 	{ (Il2CppRGCTXDataType)3, 45774 },
-	{ (Il2CppRGCTXDataType)2, 42283 },
+	{ (Il2CppRGCTXDataType)2, 42282 },
 	{ (Il2CppRGCTXDataType)3, 45775 },
+	{ (Il2CppRGCTXDataType)2, 42283 },
+	{ (Il2CppRGCTXDataType)3, 45776 },
 	{ (Il2CppRGCTXDataType)2, 41164 },
 	{ (Il2CppRGCTXDataType)2, 42284 },
-	{ (Il2CppRGCTXDataType)3, 45776 },
 	{ (Il2CppRGCTXDataType)3, 45777 },
 	{ (Il2CppRGCTXDataType)3, 45778 },
 	{ (Il2CppRGCTXDataType)3, 45779 },
@@ -3099,6 +3098,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[15] =
 	{ (Il2CppRGCTXDataType)3, 45781 },
 	{ (Il2CppRGCTXDataType)3, 45782 },
 	{ (Il2CppRGCTXDataType)3, 45783 },
+	{ (Il2CppRGCTXDataType)3, 45784 },
 };
 extern const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_ExamplesCodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_ExamplesCodeGenModule = 
