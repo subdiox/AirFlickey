@@ -47,6 +47,11 @@ public class FlickKeyboard : MonoBehaviour
     private string[] charListWA = new string[] { "わ", "わ", "を", "ん", "ー", "わ" };
     private string[] charListMark = new string[] { "記号", "、", "。", "？", "！", "、" };
     private string[][] charListFunc = new string[][] {
+        new string[] { "あ", "ぁ", null },
+        new string[] { "い", "ぃ", null },
+        new string[] { "う", "ぅ", "ゔ" },
+        new string[] { "え", "ぇ", null },
+        new string[] { "お", "ぉ", null },
         new string[] { "か", "が", null },
         new string[] { "き", "ぎ", null },
         new string[] { "く", "ぐ", null },
@@ -69,7 +74,8 @@ public class FlickKeyboard : MonoBehaviour
         new string[] { "ほ", "ぼ", "ぽ" },
         new string[] { "や", "ゃ", null },
         new string[] { "ゆ", "ゅ", null },
-        new string[] { "よ", "ょ", null }
+        new string[] { "よ", "ょ", null },
+        new string[] { "わ", "ゎ", null }
     };
     private Color pressedColor = new Color(17.0f / 255.0f, 17.0f / 255.0f, 17.0f / 255.0f, 0.0f);
     private Color unpressedColor = new Color(51.0f / 255.0f, 51.0f / 255.0f, 51.0f / 255.0f, 0.0f);

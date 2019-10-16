@@ -4,7 +4,7 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-Assets/Fonts*
+Assets/*.asset
 
 # Visual Studio cache directory
 .vs/
