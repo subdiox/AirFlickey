@@ -97,7 +97,7 @@ public class FlickKeyboard : MonoBehaviour
         Debug.Log("SourceDetected");
     }
 
-    bool isFlickable(GameObject key)
+    bool IsFlickable(GameObject key)
     {
         foreach (GameObject flickableKey in flickableKeys)
         {
@@ -116,14 +116,14 @@ public class FlickKeyboard : MonoBehaviour
         int direction = GetCurrentDirection();
         if (direction == -1)
         {
-            restoreKeys();
+            RestoreKeys();
         }
         else if (direction == 0)
         {
-            restoreKeys(false);
+            RestoreKeys(false);
             keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
         }
-        else if (isFlickable(keyPressed))
+        else if (IsFlickable(keyPressed))
         {
             keyPressed.GetComponentInChildren<TMP_Text>().text = null;
             keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
@@ -316,7 +316,7 @@ public class FlickKeyboard : MonoBehaviour
                             k = (k + 1) % 3;
                         }
                         textField.text = textField.text.Substring(0, textField.text.Length - 1) + charListFunc[i][k];
-                        restoreKeys();
+                        RestoreKeys();
                         return;
                     }
                 }
@@ -330,10 +330,10 @@ public class FlickKeyboard : MonoBehaviour
                 textField.text += nextChar;
             }
         }
-        restoreKeys();
+        RestoreKeys();
     }
 
-    void restoreKeys(bool isDefault = true)
+    void RestoreKeys(bool isDefault = true)
     {
         if (keyOverlay != null)
         {
