@@ -8243,13 +8243,13 @@ public:
 struct NetworkBroadcastResult_t599AC2C31A6DA16DA91A5FF3F6B5E9AC11B39BD6_marshaled_pinvoke
 {
 	char* ___serverAddress_0;
-	Il2CppSafeArray/*I1*/* ___broadcastData_1;
+	Il2CppSafeArray/*NONE*/* ___broadcastData_1;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.NetworkBroadcastResult
 struct NetworkBroadcastResult_t599AC2C31A6DA16DA91A5FF3F6B5E9AC11B39BD6_marshaled_com
 {
 	Il2CppChar* ___serverAddress_0;
-	Il2CppSafeArray/*I1*/* ___broadcastData_1;
+	Il2CppSafeArray/*NONE*/* ___broadcastData_1;
 };
 
 // UnityEngine.Networking.NetworkHash128

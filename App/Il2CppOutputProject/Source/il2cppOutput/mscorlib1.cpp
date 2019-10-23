@@ -1958,8 +1958,8 @@ struct AppDomainSetup_t80DF2915BB100D4BD515920B49C959E9FA451306_marshaled_pinvok
 	Il2CppIUnknown* ___application_trust_17;
 	char** ___domain_initializer_args_18;
 	int32_t ___disallow_appbase_probe_19;
-	Il2CppSafeArray/*I1*/* ___configuration_bytes_20;
-	Il2CppSafeArray/*I1*/* ___serialized_non_primitives_21;
+	Il2CppSafeArray/*NONE*/* ___configuration_bytes_20;
+	Il2CppSafeArray/*NONE*/* ___serialized_non_primitives_21;
 	char* ___U3CTargetFrameworkNameU3Ek__BackingField_22;
 };
 // Native definition for COM marshalling of System.AppDomainSetup
@@ -1985,8 +1985,8 @@ struct AppDomainSetup_t80DF2915BB100D4BD515920B49C959E9FA451306_marshaled_com
 	Il2CppIUnknown* ___application_trust_17;
 	Il2CppChar** ___domain_initializer_args_18;
 	int32_t ___disallow_appbase_probe_19;
-	Il2CppSafeArray/*I1*/* ___configuration_bytes_20;
-	Il2CppSafeArray/*I1*/* ___serialized_non_primitives_21;
+	Il2CppSafeArray/*NONE*/* ___configuration_bytes_20;
+	Il2CppSafeArray/*NONE*/* ___serialized_non_primitives_21;
 	Il2CppChar* ___U3CTargetFrameworkNameU3Ek__BackingField_22;
 };
 struct Il2CppArrayBounds;
@@ -3399,7 +3399,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -3430,7 +3430,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -8343,7 +8343,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -8362,7 +8362,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.ExceptionArgument
@@ -10374,8 +10374,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_pinvoke
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -10394,8 +10394,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_com
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -32802,7 +32802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashHelpers_IsPrime_mB435CA4898F891CCFE7
 		int32_t L_1 = ___candidate0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		double L_2 = sqrt((((double)((double)L_1))));
-		V_0 = (((int32_t)((int32_t)L_2)));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_2)));
 		V_1 = 3;
 		goto IL_001d;
 	}
@@ -33121,7 +33121,7 @@ IL_006c:
 		__this->set_loadFactor_14(((float)il2cpp_codegen_multiply((float)(0.72f), (float)L_14)));
 		int32_t L_15 = ___capacity0;
 		float L_16 = __this->get_loadFactor_14();
-		V_0 = (((double)((double)((float)((float)(((float)((float)L_15)))/(float)L_16)))));
+		V_0 = (((double)((double)(double)((float)((float)(((float)((float)L_15)))/(float)L_16)))));
 		double L_17 = V_0;
 		if ((!(((double)L_17) > ((double)(2147483647.0)))))
 		{
@@ -33152,7 +33152,7 @@ IL_00af:
 	{
 		double L_21 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(HashHelpers_tEB19004A9D7DD7679EA1882AE9B96E117FDF0179_il2cpp_TypeInfo_var);
-		int32_t L_22 = HashHelpers_GetPrime_m743D7006C2BCBADC1DC8CACF7C5B78C9F6B38297((((int32_t)((int32_t)L_21))), /*hidden argument*/NULL);
+		int32_t L_22 = HashHelpers_GetPrime_m743D7006C2BCBADC1DC8CACF7C5B78C9F6B38297((((int32_t)((int32_t)(int32_t)L_21))), /*hidden argument*/NULL);
 		G_B10_0 = L_22;
 	}
 
@@ -33164,7 +33164,7 @@ IL_00b6:
 		__this->set_buckets_10(L_24);
 		float L_25 = __this->get_loadFactor_14();
 		int32_t L_26 = V_1;
-		__this->set_loadsize_13((((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_25, (float)(((float)((float)L_26)))))))));
+		__this->set_loadsize_13((((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_25, (float)(((float)((float)L_26)))))))));
 		il2cpp_codegen_memory_barrier();
 		__this->set_isWriterInProgress_16(0);
 		return;
@@ -34190,7 +34190,7 @@ IL_006b:
 		__this->set_buckets_10(L_26);
 		float L_27 = __this->get_loadFactor_14();
 		int32_t L_28 = ___newsize0;
-		__this->set_loadsize_13((((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_27, (float)(((float)((float)L_28)))))))));
+		__this->set_loadsize_13((((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_27, (float)(((float)((float)L_28)))))))));
 		Hashtable_UpdateVersion_mE135F25D64318350FC3897F8F85DE799CBE982D7(__this, /*hidden argument*/NULL);
 		il2cpp_codegen_memory_barrier();
 		__this->set_isWriterInProgress_16(0);
@@ -35581,7 +35581,7 @@ IL_0213:
 	{
 		float L_60 = __this->get_loadFactor_14();
 		int32_t L_61 = V_1;
-		__this->set_loadsize_13((((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_60, (float)(((float)((float)L_61)))))))));
+		__this->set_loadsize_13((((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_60, (float)(((float)((float)L_61)))))))));
 		RuntimeObject* L_62 = __this->get__keycomparer_19();
 		if (L_62)
 		{

@@ -6870,7 +6870,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6889,7 +6889,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.NumberStyles
@@ -7098,6 +7098,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -7181,6 +7183,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -7196,6 +7206,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -7210,6 +7221,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.KeyCode
@@ -17465,7 +17477,7 @@ IL_0191:
 		float L_80 = V_2;
 		float L_81 = V_0;
 		float L_82 = V_0;
-		(&V_9)->set_x_0(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)(((float)((float)L_79))), (float)((float)il2cpp_codegen_subtract((float)L_80, (float)L_81)))), (float)L_82)));
+		(&V_9)->set_x_0(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(float)L_79))), (float)((float)il2cpp_codegen_subtract((float)L_80, (float)L_81)))), (float)L_82)));
 		// candidatePoint.y = ((float)random.NextDouble() * (maxY - minY)) + minY;
 		Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F * L_83 = V_7;
 		NullCheck(L_83);
@@ -17473,7 +17485,7 @@ IL_0191:
 		float L_85 = V_3;
 		float L_86 = V_1;
 		float L_87 = V_1;
-		(&V_9)->set_y_1(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)(((float)((float)L_84))), (float)((float)il2cpp_codegen_subtract((float)L_85, (float)L_86)))), (float)L_87)));
+		(&V_9)->set_y_1(((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(float)L_84))), (float)((float)il2cpp_codegen_subtract((float)L_85, (float)L_86)))), (float)L_87)));
 		// while (!EdgeUtilities.IsInsideBoundary(geometryEdges, candidatePoint));
 		EdgeU5BU5D_t19037A2C3D0D958505390A48D16951C95E2A1E73* L_88 = ___geometryEdges0;
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_89 = V_9;
@@ -17529,7 +17541,7 @@ IL_01ee:
 		NullCheck(L_97);
 		int32_t L_99 = L_98;
 		float L_100 = (L_97)->GetAt(static_cast<il2cpp_array_size_t>(L_99));
-		float L_101 = MathUtilities_DegreesToRadians_mBB46C07AF6C3EE8EB0AB29880A500C88636CB500((((double)((double)L_100))), /*hidden argument*/NULL);
+		float L_101 = MathUtilities_DegreesToRadians_mBB46C07AF6C3EE8EB0AB29880A500C88636CB500((((double)((double)(double)L_100))), /*hidden argument*/NULL);
 		V_16 = L_101;
 		// FindSurroundingCollisionPoints(
 		//     geometryEdges,
@@ -18208,7 +18220,7 @@ IL_0013:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_5 = ___point0;
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_6 = Vector2_get_zero_mFE0C3213BB698130D6C5247AB4B887A59074D0A8(/*hidden argument*/NULL);
 		float L_7 = InscribedRectangle_get_Angle_m7BC2F288965CD2B5ABBE714DEE7BC6FC89B5DFDF_inline(__this, /*hidden argument*/NULL);
-		float L_8 = MathUtilities_DegreesToRadians_mBB46C07AF6C3EE8EB0AB29880A500C88636CB500((((double)((double)((-L_7))))), /*hidden argument*/NULL);
+		float L_8 = MathUtilities_DegreesToRadians_mBB46C07AF6C3EE8EB0AB29880A500C88636CB500((((double)((double)(double)((-L_7))))), /*hidden argument*/NULL);
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_9 = InscribedRectangle_RotatePoint_mBFDE5ACD27E9773947608A8268C9307E6D0E6EB6(__this, L_5, L_6, L_8, /*hidden argument*/NULL);
 		___point0 = L_9;
 		// bool inWidth = Mathf.Abs(point.x) <= (Width * 0.5f);

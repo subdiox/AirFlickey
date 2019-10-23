@@ -5160,7 +5160,7 @@ struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke
 	char** ___saShortTimes_4;
 	int32_t ___iFirstDayOfWeek_5;
 	int32_t ___iFirstWeekOfYear_6;
-	Il2CppSafeArray/*I4*/* ___waCalendars_7;
+	Il2CppSafeArray/*NONE*/* ___waCalendars_7;
 	CalendarData_t1D4C55E2ECDDE4EB7B69C75D0E28AA0AF9952B3E_marshaled_pinvoke** ___calendars_8;
 	char* ___sISO639Language_9;
 	char* ___sRealName_10;
@@ -5184,7 +5184,7 @@ struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com
 	Il2CppChar** ___saShortTimes_4;
 	int32_t ___iFirstDayOfWeek_5;
 	int32_t ___iFirstWeekOfYear_6;
-	Il2CppSafeArray/*I4*/* ___waCalendars_7;
+	Il2CppSafeArray/*NONE*/* ___waCalendars_7;
 	CalendarData_t1D4C55E2ECDDE4EB7B69C75D0E28AA0AF9952B3E_marshaled_com** ___calendars_8;
 	Il2CppChar* ___sISO639Language_9;
 	Il2CppChar* ___sRealName_10;
@@ -5612,7 +5612,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -5643,7 +5643,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -8077,7 +8077,7 @@ struct DataCollector_t9621325BA9AAB82824DE3F54E894A817443B1660_marshaled_pinvoke
 	uint8_t* ___scratch_5;
 	EventData_tA4F2B7D36DF2FDCB4074D2088BF766EBEC2A9B04 * ___datas_6;
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * ___pins_7;
-	Il2CppSafeArray/*I1*/* ___buffer_8;
+	Il2CppSafeArray/*NONE*/* ___buffer_8;
 	int32_t ___bufferPos_9;
 	int32_t ___bufferNesting_10;
 	int32_t ___writingScalars_11;
@@ -8092,7 +8092,7 @@ struct DataCollector_t9621325BA9AAB82824DE3F54E894A817443B1660_marshaled_com
 	uint8_t* ___scratch_5;
 	EventData_tA4F2B7D36DF2FDCB4074D2088BF766EBEC2A9B04 * ___datas_6;
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * ___pins_7;
-	Il2CppSafeArray/*I1*/* ___buffer_8;
+	Il2CppSafeArray/*NONE*/* ___buffer_8;
 	int32_t ___bufferPos_9;
 	int32_t ___bufferNesting_10;
 	int32_t ___writingScalars_11;
@@ -8360,14 +8360,14 @@ public:
 struct Sha1ForNonSecretPurposes_t5BC53EA67CBDDA90838254263C37A8AA7F401C17_marshaled_pinvoke
 {
 	int64_t ___length_0;
-	Il2CppSafeArray/*UI4*/* ___w_1;
+	Il2CppSafeArray/*NONE*/* ___w_1;
 	int32_t ___pos_2;
 };
 // Native definition for COM marshalling of System.Diagnostics.Tracing.EventSource/Sha1ForNonSecretPurposes
 struct Sha1ForNonSecretPurposes_t5BC53EA67CBDDA90838254263C37A8AA7F401C17_marshaled_com
 {
 	int64_t ___length_0;
-	Il2CppSafeArray/*UI4*/* ___w_1;
+	Il2CppSafeArray/*NONE*/* ___w_1;
 	int32_t ___pos_2;
 };
 
@@ -11329,7 +11329,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -11348,7 +11348,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Exception_ExceptionMessageKind
@@ -14540,7 +14540,7 @@ public:
 struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_pinvoke
 {
 	char* ___source_0;
-	Il2CppSafeArray/*I1*/* ___key_1;
+	Il2CppSafeArray/*NONE*/* ___key_1;
 	int32_t ___options_2;
 	int32_t ___lcid_3;
 };
@@ -14548,7 +14548,7 @@ struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_pinvoke
 struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_com
 {
 	Il2CppChar* ___source_0;
-	Il2CppSafeArray/*I1*/* ___key_1;
+	Il2CppSafeArray/*NONE*/* ___key_1;
 	int32_t ___options_2;
 	int32_t ___lcid_3;
 };
@@ -14809,8 +14809,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_pinvoke
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -14829,8 +14829,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_com
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;

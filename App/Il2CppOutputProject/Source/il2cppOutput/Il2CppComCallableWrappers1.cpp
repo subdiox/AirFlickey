@@ -4070,14 +4070,14 @@ public:
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_pinvoke
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.ChannelPacket
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_com
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 
@@ -10082,7 +10082,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_pinvoke
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 // Native definition for COM marshalling of TMPro.TMP_MeshInfo
 struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
@@ -10095,7 +10095,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 
 // UnityEngine.Networking.NetworkConnection

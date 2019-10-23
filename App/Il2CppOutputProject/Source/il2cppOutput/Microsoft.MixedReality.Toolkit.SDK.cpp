@@ -6201,7 +6201,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6220,7 +6220,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Int32Enum
@@ -6783,6 +6783,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -6866,6 +6868,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -6881,6 +6891,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -6895,6 +6906,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.Gradient
@@ -16656,7 +16668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioInfluencerController_Update_mB8C326
 		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_4 = DateTime_op_Subtraction_m8005DCC8F0F183AC1335F87A82FDF92926CC5021(L_2, L_3, /*hidden argument*/NULL);
 		V_1 = L_4;
 		double L_5 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_1), /*hidden argument*/NULL);
-		if ((!(((double)(((double)((double)((float)il2cpp_codegen_multiply((float)L_1, (float)(1000.0f))))))) <= ((double)L_5))))
+		if ((!(((double)(((double)((double)(double)((float)il2cpp_codegen_multiply((float)L_1, (float)(1000.0f))))))) <= ((double)L_5))))
 		{
 			goto IL_00f0;
 		}
@@ -26888,7 +26900,7 @@ IL_004e:
 		V_0 = L_8;
 		double L_9 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_10 = __this->get_timeToTriggerDwellInSec_6();
-		if ((!(((double)L_9) > ((double)(((double)((double)L_10)))))))
+		if ((!(((double)L_9) > ((double)(((double)((double)(double)L_10)))))))
 		{
 			goto IL_008a;
 		}
@@ -32389,7 +32401,7 @@ IL_0136:
 		V_5 = L_42;
 		double L_43 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_5), /*hidden argument*/NULL);
 		float L_44 = __this->get_EyeTrackingTimeoutInMilliseconds_18();
-		if ((!(((double)L_43) > ((double)(((double)((double)L_44)))))))
+		if ((!(((double)L_43) > ((double)(((double)((double)(double)L_44)))))))
 		{
 			goto IL_0163;
 		}
@@ -32463,7 +32475,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EyeTrackingTarget_OnEyeFocusStay_mB7DACD
 		V_0 = L_4;
 		double L_5 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_6 = __this->get_dwellTimeInSec_8();
-		if ((!(((double)L_5) > ((double)(((double)((double)L_6)))))))
+		if ((!(((double)L_5) > ((double)(((double)((double)(double)L_6)))))))
 		{
 			goto IL_003a;
 		}
@@ -38140,7 +38152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityControllerInfo_AnimateSelect
 	}
 	{
 		double L_6 = __this->get_lastSelectPressedAmount_42();
-		bool L_7 = Single_Equals_mCDFA927E712FBA83D076864E16C77E39A6E66FE7((float*)(&___newSelectPressedAmount0), (((float)((float)L_6))), /*hidden argument*/NULL);
+		bool L_7 = Single_Equals_mCDFA927E712FBA83D076864E16C77E39A6E66FE7((float*)(&___newSelectPressedAmount0), (((float)((float)(float)L_6))), /*hidden argument*/NULL);
 		if (L_7)
 		{
 			goto IL_009d;
@@ -38179,7 +38191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityControllerInfo_AnimateSelect
 		Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A(L_17, L_23, /*hidden argument*/NULL);
 		// lastSelectPressedAmount = newSelectPressedAmount;
 		float L_24 = ___newSelectPressedAmount0;
-		__this->set_lastSelectPressedAmount_42((((double)((double)L_24))));
+		__this->set_lastSelectPressedAmount_42((((double)((double)(double)L_24))));
 	}
 
 IL_009d:

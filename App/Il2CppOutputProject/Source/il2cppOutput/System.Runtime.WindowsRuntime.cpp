@@ -2538,7 +2538,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -2557,7 +2557,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.NumberStyles
@@ -11525,7 +11525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Point_get_X_m7B3855A972F9BE4EFC665018A
 {
 	{
 		float L_0 = __this->get__x_0();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Point_get_X_m7B3855A972F9BE4EFC665018A0FFCDE7653F5279_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -11538,7 +11538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Point_get_Y_m7C07355EC984C2A5DCDED2D04
 {
 	{
 		float L_0 = __this->get__y_1();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Point_get_Y_m7C07355EC984C2A5DCDED2D04D6FF242300F607A_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -11718,7 +11718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Rect_get_X_m35D247CE131BD7E88E8F37477A
 {
 	{
 		float L_0 = __this->get__x_0();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Rect_get_X_m35D247CE131BD7E88E8F37477AF8B97514B2EB18_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -11731,7 +11731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Rect_get_Y_m50133BDDAB0AA130D87E2C679F
 {
 	{
 		float L_0 = __this->get__y_1();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Rect_get_Y_m50133BDDAB0AA130D87E2C679FA9DD3F20B2EE16_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -11744,7 +11744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Rect_get_Width_mB3768453F8598F1255098E
 {
 	{
 		float L_0 = __this->get__width_2();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Rect_get_Width_mB3768453F8598F1255098EA9454A03A3B0C2C682_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -11757,7 +11757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Rect_get_Height_m02E5221D781AADCD2F72A
 {
 	{
 		float L_0 = __this->get__height_3();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Rect_get_Height_m02E5221D781AADCD2F72A09FEA6EC37DF5EA9B1C_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -12029,7 +12029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Size_get_Width_m82026F4BBE98C2740685F2
 {
 	{
 		float L_0 = __this->get__width_0();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Size_get_Width_m82026F4BBE98C2740685F27ADF96699DD099B0B9_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
@@ -12042,7 +12042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Size_get_Height_mA4D91514E5FC4462B4352
 {
 	{
 		float L_0 = __this->get__height_1();
-		return (((double)((double)L_0)));
+		return (((double)((double)(double)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  double Size_get_Height_mA4D91514E5FC4462B43529168335A1862E412EEA_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)

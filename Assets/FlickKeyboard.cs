@@ -9,6 +9,7 @@ using TMPro;
 
 public class FlickKeyboard : MonoBehaviour
 {
+    public GameObject keyboard;
     public TMP_Text textField;
     public GameObject keyA;
     public GameObject keyKA;
@@ -35,6 +36,7 @@ public class FlickKeyboard : MonoBehaviour
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
     private GameObject[] flickableKeys;
+    private List<uint> handIds = new List<uint>();
     private string[] charListA = new string[] { "あ", "あ", "い", "う", "え", "お" };
     private string[] charListKA = new string[] { "か", "か", "き", "く", "け", "こ" };
     private string[] charListSA = new string[] { "さ", "さ", "し", "す", "せ", "そ" };
@@ -95,61 +97,58 @@ public class FlickKeyboard : MonoBehaviour
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs)
     {
         Debug.Log("SourceDetected");
-    }
-
-    bool IsFlickable(GameObject key)
-    {
-        foreach (GameObject flickableKey in flickableKeys)
-        {
-            if (key == flickableKey)
-            {
-                return true;
-            }
-        }
-        return false;
+        handIds.Add(eventArgs.state.source.id);
     }
 
     void SourceUpdated(InteractionSourceUpdatedEventArgs eventArgs)
     {
         Debug.Log("SourceUpdated");
-        eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-        int direction = GetCurrentDirection();
-        if (direction == -1)
-        {
-            RestoreKeys();
-        }
-        else if (direction == 0)
-        {
-            RestoreKeys(false);
-            keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-        }
-        else if (IsFlickable(keyPressed))
-        {
-            keyPressed.GetComponentInChildren<TMP_Text>().text = null;
-            keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-            if (direction == 1)
+        if (eventArgs.state.source.id == handIds[0]) {
+            Vector3 currentPosition;
+            eventArgs.state.sourcePose.TryGetPosition(out currentPosition);
+            Debug.Log("Current Position: " + currentPosition);
+            keyboard.transform.position = currentPosition + new Vector3(-0.36f, -1.4f, 1.208f);
+        } else {
+            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+            int direction = GetCurrentDirection();
+            if (direction == -1)
             {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
+                RestoreKeys();
             }
-            else if (direction == 2)
+            else if (direction == 0)
             {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
+                RestoreKeys(false);
+                keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
             }
-            else if (direction == 3)
+            else if (IsFlickable(keyPressed))
             {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
+                keyPressed.GetComponentInChildren<TMP_Text>().text = null;
+                keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+                if (direction == 1)
+                {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
+                }
+                else if (direction == 2)
+                {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
+                }
+                else if (direction == 3)
+                {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
+                }
+                else if (direction == 4)
+                {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+                }
+                keyOverlay.SetActive(true);
             }
-            else if (direction == 4)
-            {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
-            }
-            keyOverlay.SetActive(true);
         }
     }
 
     void SourceLost(InteractionSourceLostEventArgs eventArgs)
     {
         Debug.Log("SourceLost");
+        handIds.Remove(eventArgs.state.source.id);
         if (keyPressed != null)
         {
             eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
@@ -174,6 +173,18 @@ public class FlickKeyboard : MonoBehaviour
         Debug.Log($"SourceReleased {keyPressed.name}");
         eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
         ProcessInput(GetCurrentDirection());
+    }
+
+    bool IsFlickable(GameObject key)
+    {
+        foreach (GameObject flickableKey in flickableKeys)
+        {
+            if (key == flickableKey)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     /*

@@ -8390,7 +8390,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -8409,7 +8409,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Int32Enum
@@ -8582,6 +8582,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -8665,6 +8667,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -8680,6 +8690,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -8694,6 +8705,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.FogMode
@@ -15270,7 +15282,7 @@ IL_003c:
 		___extents1 = L_10;
 		// int halfRaysPerEdge = (int)((raysPerEdge - 1) * 0.5f);
 		int32_t L_11 = ___raysPerEdge6;
-		V_0 = (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)(((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_11, (int32_t)1))))), (float)(0.5f))))));
+		V_0 = (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)(((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_11, (int32_t)1))))), (float)(0.5f))))));
 		// int numRays = raysPerEdge * raysPerEdge;
 		int32_t L_12 = ___raysPerEdge6;
 		int32_t L_13 = ___raysPerEdge6;
@@ -32515,7 +32527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FastSimplexNoise_FastFloor_m438DFEABD
 	{
 		// var xi = (int)x;
 		double L_0 = ___x0;
-		V_0 = (((int32_t)((int32_t)L_0)));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_0)));
 		// return x < xi ? xi - 1 : xi;
 		double L_1 = ___x0;
 		int32_t L_2 = V_0;
@@ -32811,7 +32823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double FastSimplexNoise_Evaluate_mCE21A7A6715
 		double L_27 = V_8;
 		double L_28 = V_9;
 		double L_29 = V_7;
-		V_10 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_23, (double)L_24)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)L_25)))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_26, (double)L_27)))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_28, (double)L_29)))))<<(int32_t)4))));
+		V_10 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_23, (double)L_24)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)L_25)))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_26, (double)L_27)))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_28, (double)L_29)))))<<(int32_t)4))));
 		// var c = Lookup2D[hash];
 		Contribution2U5BU5D_t9EFC8D660C1F15EAE925857317A03408839A87AD* L_30 = ((FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_StaticFields*)il2cpp_codegen_static_fields_for(FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_il2cpp_TypeInfo_var))->get_Lookup2D_27();
 		int32_t L_31 = V_10;
@@ -33049,7 +33061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double FastSimplexNoise_Evaluate_mEF016A48A62
 		double L_45 = V_11;
 		double L_46 = V_13;
 		double L_47 = V_10;
-		V_14 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_35, (double)L_36)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_37, (double)L_38)), (double)(1.0))))))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_39, (double)L_40)), (double)(1.0))))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)L_41)))<<(int32_t)3))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_42, (double)L_43)))))<<(int32_t)5))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_44, (double)L_45)))))<<(int32_t)7))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_46, (double)L_47)))))<<(int32_t)((int32_t)9)))));
+		V_14 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_35, (double)L_36)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_37, (double)L_38)), (double)(1.0))))))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_39, (double)L_40)), (double)(1.0))))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)L_41)))<<(int32_t)3))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_42, (double)L_43)))))<<(int32_t)5))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_44, (double)L_45)))))<<(int32_t)7))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_46, (double)L_47)))))<<(int32_t)((int32_t)9)))));
 		// var c = Lookup3D[hash];
 		Contribution3U5BU5D_t4BC6831B6412AA25F767C8779244F751E850DD2A* L_48 = ((FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_StaticFields*)il2cpp_codegen_static_fields_for(FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_il2cpp_TypeInfo_var))->get_Lookup3D_28();
 		int32_t L_49 = V_14;
@@ -33350,7 +33362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double FastSimplexNoise_Evaluate_m02EE1DFEF63
 		double L_65 = V_14;
 		double L_66 = V_17;
 		double L_67 = V_13;
-		V_18 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_47, (double)L_48)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_49, (double)L_50)), (double)(1.0))))))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_51, (double)L_52)), (double)(1.0))))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_53, (double)L_54)), (double)(1.0))))))<<(int32_t)3))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_55, (double)L_56)), (double)(1.0))))))<<(int32_t)4))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_57, (double)L_58)), (double)(1.0))))))<<(int32_t)5))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)L_59)))<<(int32_t)6))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_60, (double)L_61)))))<<(int32_t)8))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_62, (double)L_63)))))<<(int32_t)((int32_t)11)))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_64, (double)L_65)))))<<(int32_t)((int32_t)14)))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_add((double)L_66, (double)L_67)))))<<(int32_t)((int32_t)17)))));
+		V_18 = ((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_47, (double)L_48)), (double)(1.0))))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_49, (double)L_50)), (double)(1.0))))))<<(int32_t)1))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_51, (double)L_52)), (double)(1.0))))))<<(int32_t)2))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_53, (double)L_54)), (double)(1.0))))))<<(int32_t)3))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_55, (double)L_56)), (double)(1.0))))))<<(int32_t)4))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)((double)il2cpp_codegen_subtract((double)L_57, (double)L_58)), (double)(1.0))))))<<(int32_t)5))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)L_59)))<<(int32_t)6))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_60, (double)L_61)))))<<(int32_t)8))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_62, (double)L_63)))))<<(int32_t)((int32_t)11)))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_64, (double)L_65)))))<<(int32_t)((int32_t)14)))))|(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_add((double)L_66, (double)L_67)))))<<(int32_t)((int32_t)17)))));
 		// var c = Lookup4D[hash];
 		Contribution4U5BU5D_t9F5066CA9F588AC584B115ABF9AA789C6EC3B8A5* L_68 = ((FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_StaticFields*)il2cpp_codegen_static_fields_for(FastSimplexNoise_t3D3FABA50B1ABE67661C71BF8D74C66BD35F106E_il2cpp_TypeInfo_var))->get_Lookup4D_29();
 		int32_t L_69 = V_18;

@@ -13891,7 +13891,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_pinvoke
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 // Native definition for COM marshalling of TMPro.TMP_MeshInfo
 struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
@@ -13904,7 +13904,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 
 // System.Collections.Generic.Dictionary`2_Enumerator<Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint,Microsoft.MixedReality.Toolkit.Input.InputAnimation_PoseCurves>

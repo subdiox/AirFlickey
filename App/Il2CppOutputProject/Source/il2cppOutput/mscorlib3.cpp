@@ -4099,7 +4099,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -4130,7 +4130,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -4309,7 +4309,7 @@ struct MethodBody_t900C79A470F33FA739168B232092420240DC11F2_marshaled_pinvoke
 {
 	ExceptionHandlingClause_t112046BB7ECF503629487282AC37B55A6C2FEDC8_marshaled_pinvoke** ___clauses_0;
 	LocalVariableInfo_t9DBEDBE3F55EEEA102C20A450433E3ECB255858C_marshaled_pinvoke** ___locals_1;
-	Il2CppSafeArray/*I1*/* ___il_2;
+	Il2CppSafeArray/*NONE*/* ___il_2;
 	int32_t ___init_locals_3;
 	int32_t ___sig_token_4;
 	int32_t ___max_stack_5;
@@ -4319,7 +4319,7 @@ struct MethodBody_t900C79A470F33FA739168B232092420240DC11F2_marshaled_com
 {
 	ExceptionHandlingClause_t112046BB7ECF503629487282AC37B55A6C2FEDC8_marshaled_com** ___clauses_0;
 	LocalVariableInfo_t9DBEDBE3F55EEEA102C20A450433E3ECB255858C_marshaled_com** ___locals_1;
-	Il2CppSafeArray/*I1*/* ___il_2;
+	Il2CppSafeArray/*NONE*/* ___il_2;
 	int32_t ___init_locals_3;
 	int32_t ___sig_token_4;
 	int32_t ___max_stack_5;
@@ -6851,7 +6851,7 @@ struct DataCollector_t9621325BA9AAB82824DE3F54E894A817443B1660_marshaled_pinvoke
 	uint8_t* ___scratch_5;
 	EventData_tA4F2B7D36DF2FDCB4074D2088BF766EBEC2A9B04 * ___datas_6;
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * ___pins_7;
-	Il2CppSafeArray/*I1*/* ___buffer_8;
+	Il2CppSafeArray/*NONE*/* ___buffer_8;
 	int32_t ___bufferPos_9;
 	int32_t ___bufferNesting_10;
 	int32_t ___writingScalars_11;
@@ -6866,7 +6866,7 @@ struct DataCollector_t9621325BA9AAB82824DE3F54E894A817443B1660_marshaled_com
 	uint8_t* ___scratch_5;
 	EventData_tA4F2B7D36DF2FDCB4074D2088BF766EBEC2A9B04 * ___datas_6;
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * ___pins_7;
-	Il2CppSafeArray/*I1*/* ___buffer_8;
+	Il2CppSafeArray/*NONE*/* ___buffer_8;
 	int32_t ___bufferPos_9;
 	int32_t ___bufferNesting_10;
 	int32_t ___writingScalars_11;
@@ -7234,14 +7234,14 @@ public:
 struct Sha1ForNonSecretPurposes_t5BC53EA67CBDDA90838254263C37A8AA7F401C17_marshaled_pinvoke
 {
 	int64_t ___length_0;
-	Il2CppSafeArray/*UI4*/* ___w_1;
+	Il2CppSafeArray/*NONE*/* ___w_1;
 	int32_t ___pos_2;
 };
 // Native definition for COM marshalling of System.Diagnostics.Tracing.EventSource/Sha1ForNonSecretPurposes
 struct Sha1ForNonSecretPurposes_t5BC53EA67CBDDA90838254263C37A8AA7F401C17_marshaled_com
 {
 	int64_t ___length_0;
-	Il2CppSafeArray/*UI4*/* ___w_1;
+	Il2CppSafeArray/*NONE*/* ___w_1;
 	int32_t ___pos_2;
 };
 
@@ -10711,7 +10711,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -10730,7 +10730,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.NumberStyles
@@ -35429,7 +35429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DecimalTypeInfo_WriteData_m0B7A8C4A3B2D4
 		IL2CPP_RUNTIME_CLASS_INIT(Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8_il2cpp_TypeInfo_var);
 		double L_3 = Decimal_op_Explicit_mB7F34E3B2DFB6211CA5ACB5497DA6CDCB09FC6CE(L_2, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		TraceLoggingDataCollector_AddScalar_m075915BEBFC9E59FB99C82B93B172439A96494D6(L_0, (((double)((double)L_3))), /*hidden argument*/NULL);
+		TraceLoggingDataCollector_AddScalar_m075915BEBFC9E59FB99C82B93B172439A96494D6(L_0, (((double)((double)(double)L_3))), /*hidden argument*/NULL);
 		return;
 	}
 }

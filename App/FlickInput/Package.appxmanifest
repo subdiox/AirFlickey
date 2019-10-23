@@ -27,4 +27,7 @@
       </uap:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <uap2:Capability Name="spatialPerception" />
+  </Capabilities>
 </Package>

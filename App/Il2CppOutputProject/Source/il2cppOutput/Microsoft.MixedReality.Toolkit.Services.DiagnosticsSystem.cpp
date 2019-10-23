@@ -6564,7 +6564,7 @@ IL_00ae:
 		// int cpuFrameRate = (int)(1.0f / (elapsedSeconds / frameCount));
 		float L_34 = V_1;
 		int32_t L_35 = __this->get_frameCount_49();
-		V_3 = (((int32_t)((int32_t)((float)((float)(1.0f)/(float)((float)((float)L_34/(float)(((float)((float)L_35))))))))));
+		V_3 = (((int32_t)((int32_t)(int32_t)((float)((float)(1.0f)/(float)((float)((float)L_34/(float)(((float)((float)L_35))))))))));
 		// int gpuFrameRate = 0;
 		V_4 = 0;
 		// uint frameTimingsCount = FrameTimingManager.GetLatestTimings((uint)Mathf.Min(frameCount, maxFrameTimings), frameTimings);
@@ -6592,11 +6592,11 @@ IL_00ae:
 		// cpuFrameRate = (int)(1.0f / (cpuFrameTime / frameCount));
 		float L_44 = V_6;
 		int32_t L_45 = __this->get_frameCount_49();
-		V_3 = (((int32_t)((int32_t)((float)((float)(1.0f)/(float)((float)((float)L_44/(float)(((float)((float)L_45))))))))));
+		V_3 = (((int32_t)((int32_t)(int32_t)((float)((float)(1.0f)/(float)((float)((float)L_44/(float)(((float)((float)L_45))))))))));
 		// gpuFrameRate = (int)(1.0f / (gpuFrameTime / frameCount));
 		float L_46 = V_7;
 		int32_t L_47 = __this->get_frameCount_49();
-		V_4 = (((int32_t)((int32_t)((float)((float)(1.0f)/(float)((float)((float)L_46/(float)(((float)((float)L_47))))))))));
+		V_4 = (((int32_t)((int32_t)(int32_t)((float)((float)(1.0f)/(float)((float)((float)L_46/(float)(((float)((float)L_47))))))))));
 	}
 
 IL_014b:
@@ -6906,7 +6906,7 @@ IL_035e:
 		float L_143 = L_142.get_z_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_144;
 		memset((&L_144), 0, sizeof(L_144));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_144), ((float)((float)(((float)((float)(((double)((uint64_t)L_136))))))/(float)(((float)((float)(((double)((uint64_t)L_137)))))))), L_140, L_143, /*hidden argument*/NULL);
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_144), ((float)((float)(((float)((float)(float)(((double)((uint64_t)L_136))))))/(float)(((float)((float)(float)(((double)((uint64_t)L_137)))))))), L_140, L_143, /*hidden argument*/NULL);
 		NullCheck(L_135);
 		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_135, L_144, /*hidden argument*/NULL);
 		// if (WillDisplayedMemoryUsageDiffer(memoryUsage, usage, displayedDecimalDigits))
@@ -6963,7 +6963,7 @@ IL_03e7:
 		float L_165 = L_164.get_z_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_166;
 		memset((&L_166), 0, sizeof(L_166));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_166), ((float)((float)(((float)((float)(((double)((uint64_t)L_158))))))/(float)(((float)((float)(((double)((uint64_t)L_159)))))))), L_162, L_165, /*hidden argument*/NULL);
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_166), ((float)((float)(((float)((float)(float)(((double)((uint64_t)L_158))))))/(float)(((float)((float)(float)(((double)((uint64_t)L_159)))))))), L_162, L_165, /*hidden argument*/NULL);
 		NullCheck(L_157);
 		Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556(L_157, L_166, /*hidden argument*/NULL);
 		// if (WillDisplayedMemoryUsageDiffer(peakMemoryUsage, memoryUsage, displayedDecimalDigits))
@@ -7763,7 +7763,7 @@ IL_01db:
 		int32_t L_65 = V_2;
 		IL2CPP_RUNTIME_CLASS_INIT(MixedRealityToolkitVisualProfiler_t8BAC8F408C0574F9283CBA3BB8B355BD9E1853EA_il2cpp_TypeInfo_var);
 		float L_66 = MixedRealityToolkitVisualProfiler_get_AppTargetFrameRate_m71A0A4EE652EE0446543129027CDE5F652AC65D1(/*hidden argument*/NULL);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_67 = MixedRealityToolkitVisualProfiler_CalculateFrameColor_m014A800AC4F6AD4EF426D13AD5CF7255C9B5B0F1(__this, (((int32_t)((int32_t)L_66))), /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_67 = MixedRealityToolkitVisualProfiler_CalculateFrameColor_m014A800AC4F6AD4EF426D13AD5CF7255C9B5B0F1(__this, (((int32_t)((int32_t)(int32_t)L_66))), /*hidden argument*/NULL);
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_68 = Color_op_Implicit_m653C1CE2391B0A04114B9132C37E41AC92B33AFE(L_67, /*hidden argument*/NULL);
 		NullCheck(L_64);
 		(L_64)->SetAt(static_cast<il2cpp_array_size_t>(L_65), (Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E )L_68);
@@ -8357,13 +8357,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityToolkitVisualProfiler_Memory
 		float L_1 = MixedRealityToolkitVisualProfiler_ConvertBytesToMegabytes_m928709B3945B5BA4DA2341C34FADA7E3324241EF(L_0, /*hidden argument*/NULL);
 		// int memoryUsageIntegerDigits = (int)memoryUsageMB;
 		float L_2 = L_1;
-		V_0 = (((int32_t)((int32_t)L_2)));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_2)));
 		// int memoryUsageFractionalDigits = (int)((memoryUsageMB - memoryUsageIntegerDigits) * Mathf.Pow(10.0f, displayedDecimalDigits));
 		int32_t L_3 = V_0;
 		int32_t L_4 = ___displayedDecimalDigits1;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
 		float L_5 = powf((10.0f), (((float)((float)L_4))));
-		V_1 = (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_2, (float)(((float)((float)L_3))))), (float)L_5)))));
+		V_1 = (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_2, (float)(((float)((float)L_3))))), (float)L_5)))));
 		// int bufferIndex = 0;
 		V_2 = 0;
 		// for (int i = 0; i < prefixString.Length; ++i)
@@ -8604,7 +8604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MixedRealityToolkitVisualProfiler_get_A
 		V_0 = L_0;
 		// return ((int)refreshRate == 0) ? 60.0f : refreshRate;
 		float L_1 = V_0;
-		if (!(((int32_t)((int32_t)L_1))))
+		if (!(((int32_t)((int32_t)(int32_t)L_1))))
 		{
 			goto IL_000c;
 		}
@@ -8670,19 +8670,19 @@ IL_003a:
 		// cpuTime /= frameTimingsCount;
 		double L_11 = V_0;
 		uint32_t L_12 = ___frameTimingsCount1;
-		V_0 = ((double)((double)L_11/(double)(((double)((double)(((double)((uint32_t)L_12))))))));
+		V_0 = ((double)((double)L_11/(double)(((double)((double)(double)(((double)((uint32_t)L_12))))))));
 		// gpuTime /= frameTimingsCount;
 		double L_13 = V_1;
 		uint32_t L_14 = ___frameTimingsCount1;
-		V_1 = ((double)((double)L_13/(double)(((double)((double)(((double)((uint32_t)L_14))))))));
+		V_1 = ((double)((double)L_13/(double)(((double)((double)(double)(((double)((uint32_t)L_14))))))));
 		// cpuFrameTime = (float)(cpuTime * 0.001);
 		float* L_15 = ___cpuFrameTime2;
 		double L_16 = V_0;
-		*((float*)L_15) = (float)(((float)((float)((double)il2cpp_codegen_multiply((double)L_16, (double)(0.001))))));
+		*((float*)L_15) = (float)(((float)((float)(float)((double)il2cpp_codegen_multiply((double)L_16, (double)(0.001))))));
 		// gpuFrameTime = (float)(gpuTime * 0.001);
 		float* L_17 = ___gpuFrameTime3;
 		double L_18 = V_1;
-		*((float*)L_17) = (float)(((float)((float)((double)il2cpp_codegen_multiply((double)L_18, (double)(0.001))))));
+		*((float*)L_17) = (float)(((float)((float)(float)((double)il2cpp_codegen_multiply((double)L_18, (double)(0.001))))));
 		// }
 		return;
 	}
@@ -8734,7 +8734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MixedRealityToolkitVisualProfiler_WillDi
 		float L_6 = V_1;
 		float L_7 = V_0;
 		float L_8 = V_1;
-		return (bool)((((int32_t)((((int32_t)(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_1, (float)L_6)))))) == ((int32_t)(((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_7, (float)L_8)))))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_1, (float)L_6)))))) == ((int32_t)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_7, (float)L_8)))))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 // System.UInt64 Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityToolkitVisualProfiler::ConvertMegabytesToBytes(System.Int32)
@@ -8752,7 +8752,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MixedRealityToolkitVisualProfiler_Conve
 	{
 		// return (bytes / 1024.0f) / 1024.0f;
 		uint64_t L_0 = ___bytes0;
-		return ((float)((float)((float)((float)(((float)((float)(((double)((uint64_t)L_0))))))/(float)(1024.0f)))/(float)(1024.0f)));
+		return ((float)((float)((float)((float)(((float)((float)(float)(((double)((uint64_t)L_0))))))/(float)(1024.0f)))/(float)(1024.0f)));
 	}
 }
 // System.Void Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityToolkitVisualProfiler::.ctor()

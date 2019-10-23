@@ -117,13 +117,13 @@
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
+		<type fullname="TMPro.TMP_SubMesh" preserve="nothing"/>
 		<type fullname="TMPro.TextMeshPro" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
-		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>
 		<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="nothing"/>
 	</assembly>
 </linker>

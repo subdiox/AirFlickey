@@ -2337,7 +2337,7 @@ IL_00b8:
 	}
 	{
 		float L_33 = (&V_8)->get_z_4();
-		V_9 = (((int32_t)((int32_t)L_33)));
+		V_9 = (((int32_t)((int32_t)(int32_t)L_33)));
 		int32_t L_34 = V_9;
 		int32_t L_35 = V_7;
 		if ((((int32_t)L_34) == ((int32_t)L_35)))

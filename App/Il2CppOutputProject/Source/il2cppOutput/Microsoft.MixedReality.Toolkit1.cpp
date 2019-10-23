@@ -3514,7 +3514,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -3545,7 +3545,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -7002,7 +7002,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -7021,7 +7021,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Reflection.BindingFlags
@@ -7222,6 +7222,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -7305,6 +7307,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -7320,6 +7330,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -7334,6 +7345,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.KeyCode
@@ -32226,12 +32238,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_12 = __this->get_address_of_axisSpeed_11();
 		float L_13 = L_12->get_x_2();
 		NullCheck(L_8);
-		double L_14 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_8, (((double)((double)L_10))), (((double)((double)((float)il2cpp_codegen_multiply((float)L_11, (float)L_13))))), /*hidden argument*/NULL);
+		double L_14 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_8, (((double)((double)(double)L_10))), (((double)((double)(double)((float)il2cpp_codegen_multiply((float)L_11, (float)L_13))))), /*hidden argument*/NULL);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_15 = __this->get_address_of_axisStrength_10();
 		float L_16 = L_15->get_x_2();
 		float L_17 = __this->get_strengthMultiplier_9();
 		float L_18 = ___strength1;
-		*((float*)L_6) = (float)((float)il2cpp_codegen_add((float)L_7, (float)(((float)((float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_14, (double)(((double)((double)L_16))))), (double)(((double)((double)L_17))))), (double)(((double)((double)L_18))))))))));
+		*((float*)L_6) = (float)((float)il2cpp_codegen_add((float)L_7, (float)(((float)((float)(float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_14, (double)(((double)((double)(double)L_16))))), (double)(((double)((double)(double)L_17))))), (double)(((double)((double)(double)L_18))))))))));
 		// point.y += (float)((noise.Evaluate(scaledPoint.x + scaledPoint.y, Time.unscaledTime * axisSpeed.y)) * axisStrength.y * strengthMultiplier * strength);
 		float* L_19 = (&___point0)->get_address_of_y_3();
 		float* L_20 = L_19;
@@ -32245,12 +32257,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_28 = __this->get_address_of_axisSpeed_11();
 		float L_29 = L_28->get_y_3();
 		NullCheck(L_22);
-		double L_30 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_22, (((double)((double)((float)il2cpp_codegen_add((float)L_24, (float)L_26))))), (((double)((double)((float)il2cpp_codegen_multiply((float)L_27, (float)L_29))))), /*hidden argument*/NULL);
+		double L_30 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_22, (((double)((double)(double)((float)il2cpp_codegen_add((float)L_24, (float)L_26))))), (((double)((double)(double)((float)il2cpp_codegen_multiply((float)L_27, (float)L_29))))), /*hidden argument*/NULL);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_31 = __this->get_address_of_axisStrength_10();
 		float L_32 = L_31->get_y_3();
 		float L_33 = __this->get_strengthMultiplier_9();
 		float L_34 = ___strength1;
-		*((float*)L_20) = (float)((float)il2cpp_codegen_add((float)L_21, (float)(((float)((float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_30, (double)(((double)((double)L_32))))), (double)(((double)((double)L_33))))), (double)(((double)((double)L_34))))))))));
+		*((float*)L_20) = (float)((float)il2cpp_codegen_add((float)L_21, (float)(((float)((float)(float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_30, (double)(((double)((double)(double)L_32))))), (double)(((double)((double)(double)L_33))))), (double)(((double)((double)(double)L_34))))))))));
 		// point.z += (float)((noise.Evaluate(scaledPoint.x + scaledPoint.y + scaledPoint.z, Time.unscaledTime * axisSpeed.z)) * axisStrength.z * strengthMultiplier * strength);
 		float* L_35 = (&___point0)->get_address_of_z_4();
 		float* L_36 = L_35;
@@ -32266,12 +32278,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_46 = __this->get_address_of_axisSpeed_11();
 		float L_47 = L_46->get_z_4();
 		NullCheck(L_38);
-		double L_48 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_38, (((double)((double)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)L_40, (float)L_42)), (float)L_44))))), (((double)((double)((float)il2cpp_codegen_multiply((float)L_45, (float)L_47))))), /*hidden argument*/NULL);
+		double L_48 = FastSimplexNoise_Evaluate_mCE21A7A67159DE4EF8FA33941C08249C31A2660F(L_38, (((double)((double)(double)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)L_40, (float)L_42)), (float)L_44))))), (((double)((double)(double)((float)il2cpp_codegen_multiply((float)L_45, (float)L_47))))), /*hidden argument*/NULL);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_49 = __this->get_address_of_axisStrength_10();
 		float L_50 = L_49->get_z_4();
 		float L_51 = __this->get_strengthMultiplier_9();
 		float L_52 = ___strength1;
-		*((float*)L_36) = (float)((float)il2cpp_codegen_add((float)L_37, (float)(((float)((float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_48, (double)(((double)((double)L_50))))), (double)(((double)((double)L_51))))), (double)(((double)((double)L_52))))))))));
+		*((float*)L_36) = (float)((float)il2cpp_codegen_add((float)L_37, (float)(((float)((float)(float)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)((double)il2cpp_codegen_multiply((double)L_48, (double)(((double)((double)(double)L_50))))), (double)(((double)((double)(double)L_51))))), (double)(((double)((double)(double)L_52))))))))));
 		// return point;
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_53 = ___point0;
 		return L_53;
@@ -32306,8 +32318,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		float L_7 = L_6.get_z_4();
 		float L_8 = Time_get_unscaledTime_m57F78B855097C5BA632CF9BE60667A9DEBCAA472(/*hidden argument*/NULL);
 		NullCheck(L_1);
-		double L_9 = FastSimplexNoise_Evaluate_m02EE1DFEF63426CE5017C1D74037B8511FFF33A3(L_1, (((double)((double)L_3))), (((double)((double)L_5))), (((double)((double)L_7))), (((double)((double)L_8))), /*hidden argument*/NULL);
-		V_0 = (((float)((float)L_9)));
+		double L_9 = FastSimplexNoise_Evaluate_m02EE1DFEF63426CE5017C1D74037B8511FFF33A3(L_1, (((double)((double)(double)L_3))), (((double)((double)(double)L_5))), (((double)((double)(double)L_7))), (((double)((double)(double)L_8))), /*hidden argument*/NULL);
+		V_0 = (((float)((float)(float)L_9)));
 		// return Vector3.one + (Vector3.one * (scale * scaleDistort));
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_10 = Vector3_get_one_mA11B83037CB269C6076CBCF754E24C8F3ACEC2AB(/*hidden argument*/NULL);

@@ -2190,7 +2190,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2221,7 +2221,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -5982,7 +5982,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6001,7 +6001,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Exception_ExceptionMessageKind
@@ -7893,8 +7893,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_pinvoke
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -7913,8 +7913,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_com
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -18204,7 +18204,7 @@ IL_0089:
 IL_00a9:
 	{
 		double L_29 = V_2;
-		float L_30 = (((float)((float)L_29)));
+		float L_30 = (((float)((float)(float)L_29)));
 		bool L_31 = Single_IsInfinity_m811B198540AB538C4FE145F7C0303C4AD772988B(L_30, /*hidden argument*/NULL);
 		G_B13_0 = L_30;
 		if (!L_31)
@@ -18698,7 +18698,7 @@ IL_0031:
 IL_0043:
 	{
 		double L_10 = V_2;
-		V_3 = (((float)((float)L_10)));
+		V_3 = (((float)((float)(float)L_10)));
 		float L_11 = V_3;
 		bool L_12 = Single_IsInfinity_m811B198540AB538C4FE145F7C0303C4AD772988B(L_11, /*hidden argument*/NULL);
 		if (!L_12)
@@ -21582,7 +21582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NumberFormatter_NumberToString_m2BC
 		String_t* L_3 = ___format0;
 		float L_4 = ___value1;
 		NullCheck(L_2);
-		NumberFormatter_Init_mD235F6B64FD6B6A4FD970449FD0BF75EC0D621C2(L_2, L_3, (((double)((double)L_4))), 7, /*hidden argument*/NULL);
+		NumberFormatter_Init_mD235F6B64FD6B6A4FD970449FD0BF75EC0D621C2(L_2, L_3, (((double)((double)(double)L_4))), 7, /*hidden argument*/NULL);
 		NumberFormatter_t73E68FC7EA017E5EEB4AB92AF2FD959466D1A4BC * L_5 = V_0;
 		RuntimeObject* L_6 = ___fp2;
 		NullCheck(L_5);
@@ -33517,7 +33517,7 @@ IL_002f:
 		double L_10 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
 		int64_t L_11 = V_0;
 		int32_t L_12 = ___minValue0;
-		return ((int32_t)il2cpp_codegen_add((int32_t)(((int32_t)((int32_t)((double)il2cpp_codegen_multiply((double)L_10, (double)(((double)((double)L_11)))))))), (int32_t)L_12));
+		return ((int32_t)il2cpp_codegen_add((int32_t)(((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_multiply((double)L_10, (double)(((double)((double)L_11)))))))), (int32_t)L_12));
 	}
 
 IL_004b:
@@ -33525,7 +33525,7 @@ IL_004b:
 		double L_13 = Random_GetSampleForLargeRange_mEA06A2F9F25D901B7D58BC802642450FFC893F60(__this, /*hidden argument*/NULL);
 		int64_t L_14 = V_0;
 		int32_t L_15 = ___minValue0;
-		return (((int32_t)((int32_t)((int64_t)il2cpp_codegen_add((int64_t)(((int64_t)((int64_t)((double)il2cpp_codegen_multiply((double)L_13, (double)(((double)((double)L_14)))))))), (int64_t)(((int64_t)((int64_t)L_15))))))));
+		return (((int32_t)((int32_t)((int64_t)il2cpp_codegen_add((int64_t)(((int64_t)((int64_t)(int64_t)((double)il2cpp_codegen_multiply((double)L_13, (double)(((double)((double)L_14)))))))), (int64_t)(((int64_t)((int64_t)L_15))))))));
 	}
 }
 // System.Int32 System.Random::Next(System.Int32)
@@ -33560,7 +33560,7 @@ IL_0027:
 	{
 		double L_5 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
 		int32_t L_6 = ___maxValue0;
-		return (((int32_t)((int32_t)((double)il2cpp_codegen_multiply((double)L_5, (double)(((double)((double)L_6))))))));
+		return (((int32_t)((int32_t)(int32_t)((double)il2cpp_codegen_multiply((double)L_5, (double)(((double)((double)L_6))))))));
 	}
 }
 // System.Double System.Random::NextDouble()

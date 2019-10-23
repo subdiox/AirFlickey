@@ -1643,7 +1643,7 @@ struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke
 	char** ___saShortTimes_4;
 	int32_t ___iFirstDayOfWeek_5;
 	int32_t ___iFirstWeekOfYear_6;
-	Il2CppSafeArray/*I4*/* ___waCalendars_7;
+	Il2CppSafeArray/*NONE*/* ___waCalendars_7;
 	CalendarData_t1D4C55E2ECDDE4EB7B69C75D0E28AA0AF9952B3E_marshaled_pinvoke** ___calendars_8;
 	char* ___sISO639Language_9;
 	char* ___sRealName_10;
@@ -1667,7 +1667,7 @@ struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com
 	Il2CppChar** ___saShortTimes_4;
 	int32_t ___iFirstDayOfWeek_5;
 	int32_t ___iFirstWeekOfYear_6;
-	Il2CppSafeArray/*I4*/* ___waCalendars_7;
+	Il2CppSafeArray/*NONE*/* ___waCalendars_7;
 	CalendarData_t1D4C55E2ECDDE4EB7B69C75D0E28AA0AF9952B3E_marshaled_com** ___calendars_8;
 	Il2CppChar* ___sISO639Language_9;
 	Il2CppChar* ___sRealName_10;
@@ -2095,7 +2095,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2126,7 +2126,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -7595,7 +7595,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -7614,7 +7614,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.CompareOptions
@@ -10884,7 +10884,7 @@ public:
 struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_pinvoke
 {
 	char* ___source_0;
-	Il2CppSafeArray/*I1*/* ___key_1;
+	Il2CppSafeArray/*NONE*/* ___key_1;
 	int32_t ___options_2;
 	int32_t ___lcid_3;
 };
@@ -10892,7 +10892,7 @@ struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_pinvoke
 struct SortKey_tD5C96B638D8C6D0C4C2F49F27387D51202D78FD9_marshaled_com
 {
 	Il2CppChar* ___source_0;
-	Il2CppSafeArray/*I1*/* ___key_1;
+	Il2CppSafeArray/*NONE*/* ___key_1;
 	int32_t ___options_2;
 	int32_t ___lcid_3;
 };
@@ -20025,7 +20025,7 @@ IL_00a8:
 		int32_t L_23 = L_22.get_ff_5();
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		double L_24 = pow((10.0), (((double)((double)((int32_t)il2cpp_codegen_subtract((int32_t)7, (int32_t)L_23))))));
-		V_6 = (((int32_t)((int32_t)((int64_t)((int64_t)(((int64_t)((int64_t)L_21)))/(int64_t)(((int64_t)((int64_t)L_24))))))));
+		V_6 = (((int32_t)((int32_t)((int64_t)((int64_t)(((int64_t)((int64_t)L_21)))/(int64_t)(((int64_t)((int64_t)(int64_t)L_24))))))));
 	}
 
 IL_00cc:
@@ -20512,7 +20512,7 @@ IL_01ba:
 		int32_t L_66 = V_8;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		double L_67 = pow((10.0), (((double)((double)((int32_t)il2cpp_codegen_subtract((int32_t)7, (int32_t)L_66))))));
-		V_6 = ((int64_t)((int64_t)L_65/(int64_t)(((int64_t)((int64_t)L_67)))));
+		V_6 = ((int64_t)((int64_t)L_65/(int64_t)(((int64_t)((int64_t)(int64_t)L_67)))));
 		StringBuilder_t * L_68 = V_9;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTimeFormat_t3C1DB338DFB9FCD0D11332F29E5FD9DD79FEE6C8_il2cpp_TypeInfo_var);
 		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_69 = ((DateTimeFormat_t3C1DB338DFB9FCD0D11332F29E5FD9DD79FEE6C8_StaticFields*)il2cpp_codegen_static_fields_for(DateTimeFormat_t3C1DB338DFB9FCD0D11332F29E5FD9DD79FEE6C8_il2cpp_TypeInfo_var))->get_fixedNumberFormats_2();
@@ -20557,7 +20557,7 @@ IL_021c:
 		int32_t L_84 = V_8;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		double L_85 = pow((10.0), (((double)((double)((int32_t)il2cpp_codegen_subtract((int32_t)7, (int32_t)L_84))))));
-		V_6 = ((int64_t)((int64_t)L_83/(int64_t)(((int64_t)((int64_t)L_85)))));
+		V_6 = ((int64_t)((int64_t)L_83/(int64_t)(((int64_t)((int64_t)(int64_t)L_85)))));
 		int32_t L_86 = V_8;
 		V_12 = L_86;
 		goto IL_0256;

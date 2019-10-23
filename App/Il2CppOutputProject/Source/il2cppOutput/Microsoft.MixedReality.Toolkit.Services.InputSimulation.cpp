@@ -2210,7 +2210,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -2229,7 +2229,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Int32Enum
@@ -10455,7 +10455,7 @@ IL_0090:
 		MixedRealityInputSimulationProfile_t752581F6963049D1D77F1BB3E533640527CD7977 * L_37 = __this->get_profile_1();
 		NullCheck(L_37);
 		float L_38 = MixedRealityInputSimulationProfile_get_HandHideTimeout_m68A2277521E6F5AB774F6C2B8C33308995704297_inline(L_37, /*hidden argument*/NULL);
-		if ((!(((float)(((float)((float)L_36)))) > ((float)L_38))))
+		if ((!(((float)(((float)((float)(float)L_36)))) > ((float)L_38))))
 		{
 			goto IL_00bb;
 		}

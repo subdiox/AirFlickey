@@ -939,6 +939,7 @@ IL2CPP_EXTERN_C const uint32_t Display_FireDisplaysUpdated_m1655DF7464EA901E47BC
 IL2CPP_EXTERN_C const uint32_t Display_RecreateDisplayList_mA7E2B69AF4BD88A0C45B9A0BB7E1FFDDA5C60FE8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Display_RelativeMouseAt_mABDA4BAC2C1B328A2C6A205D552AA5488BFFAA93_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Display__cctor_mC1A1851D26DD51ECF2C09DBB1147A7CF05EEEC9D_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Display_get_renderingHeight_m1496BF9D66501280B4F75A31A515D8CF416838B0_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Display_get_renderingWidth_mA02F65BF724686D7A0CD0C192954CA22592C3B12_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Display_get_systemHeight_m0D7950CB39015167C175634EF8A5E0C52FBF5EC7_MetadataUsageId;
@@ -2085,7 +2086,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2116,7 +2117,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -7524,7 +7525,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -7543,7 +7544,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.IO.SeekOrigin
@@ -19334,7 +19335,7 @@ IL_0067:
 		float L_9 = V_3;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
 		float L_10 = floorf(L_9);
-		V_4 = (((int32_t)((int32_t)L_10)));
+		V_4 = (((int32_t)((int32_t)(int32_t)L_10)));
 		float L_11 = V_3;
 		int32_t L_12 = V_4;
 		V_5 = ((float)il2cpp_codegen_subtract((float)L_11, (float)(((float)((float)L_12)))));
@@ -19568,7 +19569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F
 		float L_7 = Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B(L_6, /*hidden argument*/NULL);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_8;
 		memset((&L_8), 0, sizeof(L_8));
-		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_8), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)L_1, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)L_3, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)L_5, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)L_7, (float)(255.0f)))))), /*hidden argument*/NULL);
+		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_8), (uint8_t)(((int32_t)((uint8_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_1, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_3, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_5, (float)(255.0f)))))), (uint8_t)(((int32_t)((uint8_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_7, (float)(255.0f)))))), /*hidden argument*/NULL);
 		V_0 = L_8;
 		goto IL_0058;
 	}
@@ -21902,9 +21903,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E
 		V_1 = 0;
 		V_2 = 0;
 		float L_0 = (&___inputMouseCoordinates0)->get_x_2();
-		V_3 = (((int32_t)((int32_t)L_0)));
+		V_3 = (((int32_t)((int32_t)(int32_t)L_0)));
 		float L_1 = (&___inputMouseCoordinates0)->get_y_3();
-		V_4 = (((int32_t)((int32_t)L_1)));
+		V_4 = (((int32_t)((int32_t)(int32_t)L_1)));
 		int32_t L_2 = V_3;
 		int32_t L_3 = V_4;
 		IL2CPP_RUNTIME_CLASS_INIT(Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_il2cpp_TypeInfo_var);
@@ -21923,6 +21924,29 @@ IL_0046:
 	{
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_8 = V_5;
 		return L_8;
+	}
+}
+// UnityEngine.Display UnityEngine.Display::get_main()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_il2cpp_TypeInfo_var);
+		Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * L_0 = ((Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_StaticFields*)il2cpp_codegen_static_fields_for(Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57_il2cpp_TypeInfo_var))->get__mainDisplay_2();
+		V_0 = L_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * L_1 = V_0;
+		return L_1;
 	}
 }
 // System.Void UnityEngine.Display::RecreateDisplayList(System.IntPtr[])
@@ -33148,8 +33172,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Sin_m5275643192EFB3BD27A722901C6A
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = sin((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = sin((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33172,8 +33196,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Cos_mC5ECAE74D1FE9AF6F6EFF50AD3CD
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = cos((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = cos((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33196,8 +33220,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Tan_m436F7A034334BCB42BD46ABC94D1
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = tan((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = tan((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33220,8 +33244,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Asin_mA5A9438C40F307D68427BFBBA40
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = asin((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = asin((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33244,8 +33268,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Acos_mF3B88F0C8A5AE43F4C4A42676C8
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = acos((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = acos((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33268,8 +33292,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Atan_m1FF47E958C869FCB8BADF804011
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = atan((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = atan((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33293,8 +33317,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Atan2_mC5BCC778869EF562CD3A5A9D96
 		float L_0 = ___y0;
 		float L_1 = ___x1;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_2 = atan2((((double)((double)L_0))), (((double)((double)L_1))));
-		V_0 = (((float)((float)L_2)));
+		double L_2 = atan2((((double)((double)(double)L_0))), (((double)((double)(double)L_1))));
+		V_0 = (((float)((float)(float)L_2)));
 		goto IL_0011;
 	}
 
@@ -33317,8 +33341,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Sqrt_mF1FBD3142F5A3BCC5C35DFB922A
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = sqrt((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = sqrt((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33342,7 +33366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Abs_mD852D98E3D4846B45F57D0AD4A8C
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		float L_1 = fabsf(L_0);
-		V_0 = (((float)((float)L_1)));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000e;
 	}
 
@@ -33538,8 +33562,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Pow_mC1BFA8F6235567CBB31F3D9507A6
 		float L_0 = ___f0;
 		float L_1 = ___p1;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_2 = pow((((double)((double)L_0))), (((double)((double)L_1))));
-		V_0 = (((float)((float)L_2)));
+		double L_2 = pow((((double)((double)(double)L_0))), (((double)((double)(double)L_1))));
+		V_0 = (((float)((float)(float)L_2)));
 		goto IL_0011;
 	}
 
@@ -33563,8 +33587,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Log_mD0CFD1242805BD697B5156AA46FB
 		float L_0 = ___f0;
 		float L_1 = ___p1;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_2 = Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF((((double)((double)L_0))), (((double)((double)L_1))), /*hidden argument*/NULL);
-		V_0 = (((float)((float)L_2)));
+		double L_2 = Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF((((double)((double)(double)L_0))), (((double)((double)(double)L_1))), /*hidden argument*/NULL);
+		V_0 = (((float)((float)(float)L_2)));
 		goto IL_0011;
 	}
 
@@ -33587,8 +33611,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Ceil_m4FC7645E3D0F8FEDC33FE507E3D
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = ceil((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = ceil((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33611,8 +33635,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Floor_mD447D35DE1D81DE09C2EFE21A7
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = floor((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = floor((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33635,8 +33659,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Round_mC8FAD403F9E68B0339CF65C8F6
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = bankers_round((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
+		double L_1 = bankers_round((((double)((double)(double)L_0))));
+		V_0 = (((float)((float)(float)L_1)));
 		goto IL_000f;
 	}
 
@@ -33659,8 +33683,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_CeilToInt_m0230CCC7CC9266F18125
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = ceil((((double)((double)L_0))));
-		V_0 = (((int32_t)((int32_t)L_1)));
+		double L_1 = ceil((((double)((double)(double)L_0))));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_1)));
 		goto IL_000f;
 	}
 
@@ -33683,8 +33707,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m0C42B64571CE92A738A
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = floor((((double)((double)L_0))));
-		V_0 = (((int32_t)((int32_t)L_1)));
+		double L_1 = floor((((double)((double)(double)L_0))));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_1)));
 		goto IL_000f;
 	}
 
@@ -33707,8 +33731,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mathf_RoundToInt_m0EAD8BD38FCB72FA1D8
 	{
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = bankers_round((((double)((double)L_0))));
-		V_0 = (((int32_t)((int32_t)L_1)));
+		double L_1 = bankers_round((((double)((double)(double)L_0))));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_1)));
 		goto IL_000f;
 	}
 

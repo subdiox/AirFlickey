@@ -141,16 +141,16 @@ static const Il2CppRGCTXDefinition s_rgctxValues[12] =
 {
 	{ (Il2CppRGCTXDataType)3, 45786 },
 	{ (Il2CppRGCTXDataType)3, 45787 },
-	{ (Il2CppRGCTXDataType)1, 41489 },
+	{ (Il2CppRGCTXDataType)1, 41491 },
 	{ (Il2CppRGCTXDataType)3, 45788 },
-	{ (Il2CppRGCTXDataType)1, 41490 },
+	{ (Il2CppRGCTXDataType)1, 41492 },
 	{ (Il2CppRGCTXDataType)3, 45789 },
-	{ (Il2CppRGCTXDataType)2, 42289 },
-	{ (Il2CppRGCTXDataType)2, 42290 },
 	{ (Il2CppRGCTXDataType)2, 42291 },
 	{ (Il2CppRGCTXDataType)2, 42292 },
-	{ (Il2CppRGCTXDataType)3, 45790 },
 	{ (Il2CppRGCTXDataType)2, 42293 },
+	{ (Il2CppRGCTXDataType)2, 42294 },
+	{ (Il2CppRGCTXDataType)3, 45790 },
+	{ (Il2CppRGCTXDataType)2, 42295 },
 };
 extern const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_SpatialAwarenessSystemCodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_SpatialAwarenessSystemCodeGenModule = 

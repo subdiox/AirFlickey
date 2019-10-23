@@ -5608,7 +5608,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -5627,7 +5627,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.IO.FileAttributes
@@ -12824,7 +12824,7 @@ IL_0014:
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
 		float L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->get_x_1();
-		BoneWeight_set_boneIndex0_m26B96EF1901EAA9E897409EA2E32C8409BA3D9F3((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4))), (((int32_t)((int32_t)L_7))), /*hidden argument*/NULL);
+		BoneWeight_set_boneIndex0_m26B96EF1901EAA9E897409EA2E32C8409BA3D9F3((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4))), (((int32_t)((int32_t)(int32_t)L_7))), /*hidden argument*/NULL);
 		// boneWeights[i].boneIndex1 = (int)joints[i].y;
 		BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D* L_8 = V_0;
 		int32_t L_9 = V_1;
@@ -12833,7 +12833,7 @@ IL_0014:
 		int32_t L_11 = V_1;
 		NullCheck(L_10);
 		float L_12 = ((L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_11)))->get_y_2();
-		BoneWeight_set_boneIndex1_m456D11CD7F44DCA525C30AC2D9044D6BC92F4BCD((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9))), (((int32_t)((int32_t)L_12))), /*hidden argument*/NULL);
+		BoneWeight_set_boneIndex1_m456D11CD7F44DCA525C30AC2D9044D6BC92F4BCD((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9))), (((int32_t)((int32_t)(int32_t)L_12))), /*hidden argument*/NULL);
 		// boneWeights[i].boneIndex2 = (int)joints[i].z;
 		BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D* L_13 = V_0;
 		int32_t L_14 = V_1;
@@ -12842,7 +12842,7 @@ IL_0014:
 		int32_t L_16 = V_1;
 		NullCheck(L_15);
 		float L_17 = ((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)))->get_z_3();
-		BoneWeight_set_boneIndex2_m501286C4020FC821F189D9E33C688DDD786BB528((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_14))), (((int32_t)((int32_t)L_17))), /*hidden argument*/NULL);
+		BoneWeight_set_boneIndex2_m501286C4020FC821F189D9E33C688DDD786BB528((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_14))), (((int32_t)((int32_t)(int32_t)L_17))), /*hidden argument*/NULL);
 		// boneWeights[i].boneIndex3 = (int)joints[i].w;
 		BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D* L_18 = V_0;
 		int32_t L_19 = V_1;
@@ -12851,7 +12851,7 @@ IL_0014:
 		int32_t L_21 = V_1;
 		NullCheck(L_20);
 		float L_22 = ((L_20)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_21)))->get_w_4();
-		BoneWeight_set_boneIndex3_m0B3A2F33900E045030517EBEF9DCB9B7DB7BBF73((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19))), (((int32_t)((int32_t)L_22))), /*hidden argument*/NULL);
+		BoneWeight_set_boneIndex3_m0B3A2F33900E045030517EBEF9DCB9B7DB7BBF73((BoneWeight_t9D77A4964F9376FE7E46CA6997882B91B8AAA9A1 *)((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19))), (((int32_t)((int32_t)(int32_t)L_22))), /*hidden argument*/NULL);
 		// boneWeights[i].weight0 = weights[i].x;
 		BoneWeightU5BU5D_t0CFB75EF43257A99CDCF393A069504F365A13F8D* L_23 = V_0;
 		int32_t L_24 = V_1;
@@ -18264,7 +18264,7 @@ IL_0563:
 			NullCheck(L_171);
 			double L_172 = L_171->get_roughnessFactor_5();
 			IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
-			float L_173 = fabsf(((float)il2cpp_codegen_subtract((float)(((float)((float)L_172))), (float)(1.0f))));
+			float L_173 = fabsf(((float)il2cpp_codegen_subtract((float)(((float)((float)(float)L_172))), (float)(1.0f))));
 			NullCheck(L_168);
 			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_168, L_169, L_173, /*hidden argument*/NULL);
 			// material.SetFloat(MetallicId, (float)gltfMaterial.pbrMetallicRoughness.metallicFactor);
@@ -18276,7 +18276,7 @@ IL_0563:
 			NullCheck(L_177);
 			double L_178 = L_177->get_metallicFactor_4();
 			NullCheck(L_174);
-			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_174, L_175, (((float)((float)L_178))), /*hidden argument*/NULL);
+			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_174, L_175, (((float)((float)(float)L_178))), /*hidden argument*/NULL);
 			// }
 			__this->set_U3CtextureU3E5__3_6((Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C *)NULL);
 		}
@@ -18325,7 +18325,7 @@ IL_05ca:
 			NullCheck(L_195);
 			double L_196 = L_195->get_scale_4();
 			NullCheck(L_192);
-			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_192, L_193, (((float)((float)L_196))), /*hidden argument*/NULL);
+			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_192, L_193, (((float)((float)(float)L_196))), /*hidden argument*/NULL);
 			// material.EnableKeyword("_NORMAL_MAP");
 			Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_197 = __this->get_U3CmaterialU3E5__2_5();
 			NullCheck(L_197);
@@ -19045,7 +19045,7 @@ IL_04ea:
 			NullCheck(L_157);
 			double L_158 = L_157->get_roughnessFactor_5();
 			IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
-			float L_159 = fabsf(((float)il2cpp_codegen_subtract((float)(((float)((float)L_158))), (float)(1.0f))));
+			float L_159 = fabsf(((float)il2cpp_codegen_subtract((float)(((float)((float)(float)L_158))), (float)(1.0f))));
 			NullCheck(L_154);
 			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_154, L_155, L_159, /*hidden argument*/NULL);
 			// material.SetFloat(MetallicId, (float)gltfMaterial.pbrMetallicRoughness.metallicFactor);
@@ -19057,7 +19057,7 @@ IL_04ea:
 			NullCheck(L_163);
 			double L_164 = L_163->get_metallicFactor_4();
 			NullCheck(L_160);
-			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_160, L_161, (((float)((float)L_164))), /*hidden argument*/NULL);
+			Material_SetFloat_mC2FDDF0798373DEE6BBA9B9FFFE03EC3CFB9BF47(L_160, L_161, (((float)((float)(float)L_164))), /*hidden argument*/NULL);
 			// material.EnableKeyword("_MetallicGlossMap");
 			Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_165 = __this->get_U3CmaterialU3E5__2_5();
 			NullCheck(L_165);
@@ -19679,7 +19679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B
 		double L_11 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_12;
 		memset((&L_12), 0, sizeof(L_12));
-		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_12), (((float)((float)L_2))), (((float)((float)L_5))), (((float)((float)L_8))), (((float)((float)L_11))), /*hidden argument*/NULL);
+		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_12), (((float)((float)(float)L_2))), (((float)((float)(float)L_5))), (((float)((float)(float)L_8))), (((float)((float)(float)L_11))), /*hidden argument*/NULL);
 		DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* L_13 = ___matrixArray0;
 		NullCheck(L_13);
 		int32_t L_14 = 4;
@@ -19698,7 +19698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B
 		double L_24 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_25;
 		memset((&L_25), 0, sizeof(L_25));
-		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_25), (((float)((float)L_15))), (((float)((float)L_18))), (((float)((float)L_21))), (((float)((float)L_24))), /*hidden argument*/NULL);
+		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_25), (((float)((float)(float)L_15))), (((float)((float)(float)L_18))), (((float)((float)(float)L_21))), (((float)((float)(float)L_24))), /*hidden argument*/NULL);
 		DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* L_26 = ___matrixArray0;
 		NullCheck(L_26);
 		int32_t L_27 = 8;
@@ -19717,7 +19717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B
 		double L_37 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_38;
 		memset((&L_38), 0, sizeof(L_38));
-		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_38), (((float)((float)L_28))), (((float)((float)L_31))), (((float)((float)L_34))), (((float)((float)L_37))), /*hidden argument*/NULL);
+		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_38), (((float)((float)(float)L_28))), (((float)((float)(float)L_31))), (((float)((float)(float)L_34))), (((float)((float)(float)L_37))), /*hidden argument*/NULL);
 		DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* L_39 = ___matrixArray0;
 		NullCheck(L_39);
 		int32_t L_40 = ((int32_t)12);
@@ -19736,7 +19736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B
 		double L_50 = (L_48)->GetAt(static_cast<il2cpp_array_size_t>(L_49));
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_51;
 		memset((&L_51), 0, sizeof(L_51));
-		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_51), (((float)((float)L_41))), (((float)((float)L_44))), (((float)((float)L_47))), (((float)((float)L_50))), /*hidden argument*/NULL);
+		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((&L_51), (((float)((float)(float)L_41))), (((float)((float)(float)L_44))), (((float)((float)(float)L_47))), (((float)((float)(float)L_50))), /*hidden argument*/NULL);
 		Matrix4x4__ctor_mC7C5A4F0791B2A3ADAFE1E6C491B7705B6492B12((Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA *)(&V_0), L_12, L_25, L_38, L_51, /*hidden argument*/NULL);
 		// Matrix4x4 convert = Matrix4x4.Scale(CoordinateSpaceConversionScale);
 		IL2CPP_RUNTIME_CLASS_INIT(GltfConversions_tCF5FE1D11242B97A336744676C0F394BEEFF226E_il2cpp_TypeInfo_var);
@@ -20118,7 +20118,7 @@ IL_0081:
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
 		float L_37 = floorf(L_36);
 		NullCheck(L_30);
-		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(L_31), (int32_t)(((int32_t)((int32_t)L_37))));
+		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(L_31), (int32_t)(((int32_t)((int32_t)(int32_t)L_37))));
 		// }
 		goto IL_00be;
 	}

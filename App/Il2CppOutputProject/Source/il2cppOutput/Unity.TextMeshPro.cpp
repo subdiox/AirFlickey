@@ -9215,7 +9215,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -9234,7 +9234,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Int32Enum
@@ -10791,6 +10791,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -10874,6 +10876,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -10889,6 +10899,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -10903,6 +10914,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.EventType
@@ -28474,7 +28486,7 @@ IL_0022:
 		int32_t L_12 = ((ShaderUtilities_t94FED29CB763EEA57E3BBCA7B305F9A3CB1180B8_StaticFields*)il2cpp_codegen_static_fields_for(ShaderUtilities_t94FED29CB763EEA57E3BBCA7B305F9A3CB1180B8_il2cpp_TypeInfo_var))->get_ID_Padding_16();
 		NullCheck(L_11);
 		float L_13 = Material_GetFloat_mC1764F8B39FD31C6B7629D417BC8375D6E6AC60C(L_11, L_12, /*hidden argument*/NULL);
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)(((int32_t)((int32_t)L_13)))));
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)(((int32_t)((int32_t)(int32_t)L_13)))));
 	}
 
 IL_004c:
@@ -36193,7 +36205,7 @@ IL_02aa:
 		int32_t L_78 = ((ShaderUtilities_t94FED29CB763EEA57E3BBCA7B305F9A3CB1180B8_StaticFields*)il2cpp_codegen_static_fields_for(ShaderUtilities_t94FED29CB763EEA57E3BBCA7B305F9A3CB1180B8_il2cpp_TypeInfo_var))->get_ID_GradientScale_17();
 		NullCheck(L_77);
 		float L_79 = Material_GetFloat_mC1764F8B39FD31C6B7629D417BC8375D6E6AC60C(L_77, L_78, /*hidden argument*/NULL);
-		__this->set_m_AtlasPadding_25(((int32_t)il2cpp_codegen_subtract((int32_t)(((int32_t)((int32_t)L_79))), (int32_t)1)));
+		__this->set_m_AtlasPadding_25(((int32_t)il2cpp_codegen_subtract((int32_t)(((int32_t)((int32_t)(int32_t)L_79))), (int32_t)1)));
 	}
 
 IL_02dd:
@@ -39819,7 +39831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_FontAsset_UpgradeFontAsset_m5058E47F
 		FaceInfo_Legacy_tA5B0942ED5875808552FE732238217F6CF70027E * L_15 = __this->get_m_fontInfo_21();
 		NullCheck(L_15);
 		float L_16 = L_15->get_PointSize_1();
-		FaceInfo_set_pointSize_m78055606128C35E03B858125ACE7D433EB282949((FaceInfo_t32155CB9E0D125155E829A3D23119FB323F382A8 *)L_14, (((int32_t)((int32_t)L_16))), /*hidden argument*/NULL);
+		FaceInfo_set_pointSize_m78055606128C35E03B858125ACE7D433EB282949((FaceInfo_t32155CB9E0D125155E829A3D23119FB323F382A8 *)L_14, (((int32_t)((int32_t)(int32_t)L_16))), /*hidden argument*/NULL);
 		// m_FaceInfo.scale = m_fontInfo.Scale;
 		FaceInfo_t32155CB9E0D125155E829A3D23119FB323F382A8 * L_17 = __this->get_address_of_m_FaceInfo_11();
 		FaceInfo_Legacy_tA5B0942ED5875808552FE732238217F6CF70027E * L_18 = __this->get_m_fontInfo_21();
@@ -39951,17 +39963,17 @@ IL_0200:
 		FaceInfo_Legacy_tA5B0942ED5875808552FE732238217F6CF70027E * L_70 = __this->get_m_fontInfo_21();
 		NullCheck(L_70);
 		float L_71 = L_70->get_AtlasWidth_19();
-		__this->set_m_AtlasWidth_23((((int32_t)((int32_t)L_71))));
+		__this->set_m_AtlasWidth_23((((int32_t)((int32_t)(int32_t)L_71))));
 		// m_AtlasHeight = (int)m_fontInfo.AtlasHeight;
 		FaceInfo_Legacy_tA5B0942ED5875808552FE732238217F6CF70027E * L_72 = __this->get_m_fontInfo_21();
 		NullCheck(L_72);
 		float L_73 = L_72->get_AtlasHeight_20();
-		__this->set_m_AtlasHeight_24((((int32_t)((int32_t)L_73))));
+		__this->set_m_AtlasHeight_24((((int32_t)((int32_t)(int32_t)L_73))));
 		// m_AtlasPadding = (int)m_fontInfo.Padding;
 		FaceInfo_Legacy_tA5B0942ED5875808552FE732238217F6CF70027E * L_74 = __this->get_m_fontInfo_21();
 		NullCheck(L_74);
 		float L_75 = L_74->get_Padding_18();
-		__this->set_m_AtlasPadding_25((((int32_t)((int32_t)L_75))));
+		__this->set_m_AtlasPadding_25((((int32_t)((int32_t)(int32_t)L_75))));
 		// switch(m_CreationSettings.renderMode)
 		FontAssetCreationSettings_tC32D679F14894DDCE48E4C61ACC1D0FA1443E0A4 * L_76 = __this->get_address_of_m_CreationSettings_32();
 		int32_t L_77 = L_76->get_renderMode_14();
@@ -40249,7 +40261,7 @@ IL_03ce:
 		float L_133 = ((TMP_TextElement_Legacy_t020BAF673D3D29BC2682AEA5717411BFB13C6D05 *)L_132)->get_height_4();
 		GlyphRect_t398045C795E0E1264236DFAA5712796CC23C3E7C  L_134;
 		memset((&L_134), 0, sizeof(L_134));
-		GlyphRect__ctor_mFDDDD22BF8B61E1DE7B24BE8957D918F213AAEC0((&L_134), (((int32_t)((int32_t)L_124))), ((int32_t)il2cpp_codegen_subtract((int32_t)L_125, (int32_t)(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)L_127, (float)L_129)), (float)(0.5f)))))))), (((int32_t)((int32_t)((float)il2cpp_codegen_add((float)L_131, (float)(0.5f)))))), (((int32_t)((int32_t)((float)il2cpp_codegen_add((float)L_133, (float)(0.5f)))))), /*hidden argument*/NULL);
+		GlyphRect__ctor_mFDDDD22BF8B61E1DE7B24BE8957D918F213AAEC0((&L_134), (((int32_t)((int32_t)(int32_t)L_124))), ((int32_t)il2cpp_codegen_subtract((int32_t)L_125, (int32_t)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_add((float)L_127, (float)L_129)), (float)(0.5f)))))))), (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)L_131, (float)(0.5f)))))), (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)L_133, (float)(0.5f)))))), /*hidden argument*/NULL);
 		NullCheck(L_122);
 		Glyph_set_glyphRect_m5D45BF2EF4A7738AF7158D49DEDB5E09E034742C(L_122, L_134, /*hidden argument*/NULL);
 		// glyph.metrics = new GlyphMetrics(oldGlyph.width, oldGlyph.height, oldGlyph.xOffset, oldGlyph.yOffset, oldGlyph.xAdvance);

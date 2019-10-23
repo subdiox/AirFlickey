@@ -2221,7 +2221,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2252,7 +2252,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -7138,7 +7138,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -7157,7 +7157,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.NumberStyles
@@ -8529,8 +8529,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_pinvoke
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -8549,8 +8549,8 @@ struct AssemblyName_t6F3EC58113268060348EE894DCB46F6EF6BBBB82_marshaled_com
 	int32_t ___flags_7;
 	int32_t ___hashalg_8;
 	StrongNameKeyPair_tD9AA282E59F4526338781AFD862680ED461FCCFD * ___keypair_9;
-	Il2CppSafeArray/*I1*/* ___publicKey_10;
-	Il2CppSafeArray/*I1*/* ___keyToken_11;
+	Il2CppSafeArray/*NONE*/* ___publicKey_10;
+	Il2CppSafeArray/*NONE*/* ___keyToken_11;
 	int32_t ___versioncompat_12;
 	Version_tDBE6876C59B6F56D4F8CAA03851177ABC6FE0DFD * ___version_13;
 	int32_t ___processor_architecture_14;
@@ -29566,7 +29566,7 @@ IL_02b4:
 IL_02c1:
 	{
 		RuntimeObject * L_115 = ___value0;
-		float L_116 = (((float)((float)(((double)((uint32_t)((*(uint32_t*)((uint32_t*)UnBox(L_115, UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var))))))))));
+		float L_116 = (((float)((float)(float)(((double)((uint32_t)((*(uint32_t*)((uint32_t*)UnBox(L_115, UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var))))))))));
 		RuntimeObject * L_117 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_116);
 		return L_117;
 	}
@@ -29582,7 +29582,7 @@ IL_02cf:
 IL_02dc:
 	{
 		RuntimeObject * L_121 = ___value0;
-		float L_122 = (((float)((float)(((double)((uint64_t)((*(uint64_t*)((uint64_t*)UnBox(L_121, UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var))))))))));
+		float L_122 = (((float)((float)(float)(((double)((uint64_t)((*(uint64_t*)((uint64_t*)UnBox(L_121, UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var))))))))));
 		RuntimeObject * L_123 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_122);
 		return L_123;
 	}
@@ -29689,7 +29689,7 @@ IL_0360:
 IL_036d:
 	{
 		RuntimeObject * L_143 = ___value0;
-		double L_144 = (((double)((double)(((double)((uint32_t)((*(uint32_t*)((uint32_t*)UnBox(L_143, UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var))))))))));
+		double L_144 = (((double)((double)(double)(((double)((uint32_t)((*(uint32_t*)((uint32_t*)UnBox(L_143, UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var))))))))));
 		RuntimeObject * L_145 = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &L_144);
 		return L_145;
 	}
@@ -29705,7 +29705,7 @@ IL_037b:
 IL_0388:
 	{
 		RuntimeObject * L_149 = ___value0;
-		double L_150 = (((double)((double)(((double)((uint64_t)((*(uint64_t*)((uint64_t*)UnBox(L_149, UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var))))))))));
+		double L_150 = (((double)((double)(double)(((double)((uint64_t)((*(uint64_t*)((uint64_t*)UnBox(L_149, UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var))))))))));
 		RuntimeObject * L_151 = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &L_150);
 		return L_151;
 	}
@@ -29713,7 +29713,7 @@ IL_0388:
 IL_0396:
 	{
 		RuntimeObject * L_152 = ___value0;
-		double L_153 = (((double)((double)((*(float*)((float*)UnBox(L_152, Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var)))))));
+		double L_153 = (((double)((double)(double)((*(float*)((float*)UnBox(L_152, Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var)))))));
 		RuntimeObject * L_154 = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &L_153);
 		return L_154;
 	}

@@ -5237,7 +5237,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -5256,7 +5256,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.IO.StreamWriter
@@ -14107,7 +14107,7 @@ IL_009b:
 				SimpleHapticsControllerFeedback_t62A0460140C95089E80DEFD2E2003676C7FA6188 * L_28 = V_5;
 				float L_29 = __this->get_intensity_2();
 				NullCheck(L_27);
-				SimpleHapticsController_SendHapticFeedback_mB6E974E86EBA43E4133BAFEFAAEF033D3B94193E(L_27, L_28, (((double)((double)L_29))), /*hidden argument*/NULL);
+				SimpleHapticsController_SendHapticFeedback_mB6E974E86EBA43E4133BAFEFAAEF033D3B94193E(L_27, L_28, (((double)((double)(double)L_29))), /*hidden argument*/NULL);
 				// }
 				IL2CPP_LEAVE(0xF7, FINALLY_00d4);
 			}
@@ -14120,9 +14120,9 @@ IL_00ac:
 				float L_32 = __this->get_intensity_2();
 				float L_33 = __this->get_durationInSeconds_1();
 				IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var);
-				TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_34 = TimeSpan_FromSeconds_mB18CB94089B3DA3B1B059BBE90367A9928AEE5CA((((double)((double)L_33))), /*hidden argument*/NULL);
+				TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_34 = TimeSpan_FromSeconds_mB18CB94089B3DA3B1B059BBE90367A9928AEE5CA((((double)((double)(double)L_33))), /*hidden argument*/NULL);
 				NullCheck(L_30);
-				SimpleHapticsController_SendHapticFeedbackForDuration_m5B8A856AB607D5DE85C91CB45805D70B3EC97971(L_30, L_31, (((double)((double)L_32))), L_34, /*hidden argument*/NULL);
+				SimpleHapticsController_SendHapticFeedbackForDuration_m5B8A856AB607D5DE85C91CB45805D70B3EC97971(L_30, L_31, (((double)((double)(double)L_32))), L_34, /*hidden argument*/NULL);
 				// return;
 				IL2CPP_LEAVE(0xF7, FINALLY_00d4);
 			}

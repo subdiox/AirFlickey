@@ -2,11 +2,14 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Assets">
-      <UniqueIdentifier>{28449dcf-38ab-436b-b4de-72515069c672}</UniqueIdentifier>
+      <UniqueIdentifier>{b0804d38-3a49-4c65-ae5a-8418b1ea8fd8}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="App.cpp" />
-    <ClInclude Include="App.h" />
-    <ClCompile Include="Main.cpp" />
+    <ApplicationDefinition Include="App.xaml" />
+    <ClCompile Include="App.xaml.cpp" />
+    <ClInclude Include="App.xaml.h" />
+    <Page Include="MainPage.xaml" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClInclude Include="MainPage.xaml.h" />
     <AppxManifest Include="Package.appxmanifest" />
     <ClCompile Include="pch.cpp" />
     <ClInclude Include="pch.h" />

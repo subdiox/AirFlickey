@@ -560,7 +560,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -591,7 +591,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2077,8 +2077,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MathF_Sqrt_m8AB46E347FBE4E0F0E21C69C620
 	{
 		float L_0 = ___x0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = sqrt((((double)((double)L_0))));
-		return (((float)((float)L_1)));
+		double L_1 = sqrt((((double)((double)(double)L_0))));
+		return (((float)((float)(float)L_1)));
 	}
 }
 #ifdef __clang__
@@ -4191,8 +4191,8 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR float MathF_Sqrt_m8AB46E347FBE4E0F0E2
 	{
 		float L_0 = ___x0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = sqrt((((double)((double)L_0))));
-		return (((float)((float)L_1)));
+		double L_1 = sqrt((((double)((double)(double)L_0))));
+		return (((float)((float)(float)L_1)));
 	}
 }
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR bool Vector3_Equals_m63BC6B7250A9F56E417CD66DB9FA72F61BBB0220_inline (Vector3_tA1B8517EED04F753987922C4361B51A4F3AE8C65 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)

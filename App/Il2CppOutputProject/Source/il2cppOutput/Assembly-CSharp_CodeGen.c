@@ -24,24 +24,24 @@ IL2CPP_EXTERN_C_END
 extern void FlickKeyboard_Start_m854A6FB36857958B53B8410361A6B39C8C8843E5 ();
 // 0x00000002 System.Void FlickKeyboard::SourceDetected(UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs)
 extern void FlickKeyboard_SourceDetected_m807E5C4FD0CB91A49926D68868A497F426E81401 ();
-// 0x00000003 System.Boolean FlickKeyboard::isFlickable(UnityEngine.GameObject)
-extern void FlickKeyboard_isFlickable_mDAB67A70BFE8E9003D8FB726D7AB5D6C6E23A199 ();
-// 0x00000004 System.Void FlickKeyboard::SourceUpdated(UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs)
+// 0x00000003 System.Void FlickKeyboard::SourceUpdated(UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs)
 extern void FlickKeyboard_SourceUpdated_m21A767D8B458A99D9A6EDA43111BA6B67A3DEB46 ();
-// 0x00000005 System.Void FlickKeyboard::SourceLost(UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs)
+// 0x00000004 System.Void FlickKeyboard::SourceLost(UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs)
 extern void FlickKeyboard_SourceLost_mED7ED48C0FE44686D9C7E344E24CA1794E0882ED ();
-// 0x00000006 System.Void FlickKeyboard::SourcePressed(UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs)
+// 0x00000005 System.Void FlickKeyboard::SourcePressed(UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs)
 extern void FlickKeyboard_SourcePressed_m1E26FB50301519BCAD5BD19735874F0D85E65F72 ();
-// 0x00000007 System.Void FlickKeyboard::SourceReleased(UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs)
+// 0x00000006 System.Void FlickKeyboard::SourceReleased(UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs)
 extern void FlickKeyboard_SourceReleased_m801D5E943AE139528803EF4843EA021D32143B4F ();
+// 0x00000007 System.Boolean FlickKeyboard::IsFlickable(UnityEngine.GameObject)
+extern void FlickKeyboard_IsFlickable_mCA96EE8E69F436453C03859C4837A67E9FCD7CCC ();
 // 0x00000008 System.Int32 FlickKeyboard::GetCurrentDirection()
 extern void FlickKeyboard_GetCurrentDirection_m6688767249DA4A113DA7E9B71903BF408CF97CA4 ();
 // 0x00000009 System.String FlickKeyboard::GetNextChar(System.Int32)
 extern void FlickKeyboard_GetNextChar_m1CCB448D9463C3CAB3CD507F626B0B02719138EC ();
 // 0x0000000A System.Void FlickKeyboard::ProcessInput(System.Int32)
 extern void FlickKeyboard_ProcessInput_mC6216DAC3B5A93F9C27B01D98E7D6F18E68C466D ();
-// 0x0000000B System.Void FlickKeyboard::restoreKeys(System.Boolean)
-extern void FlickKeyboard_restoreKeys_m3CDD95F3BC62A1E11A11D07254EF76D995C38B41 ();
+// 0x0000000B System.Void FlickKeyboard::RestoreKeys(System.Boolean)
+extern void FlickKeyboard_RestoreKeys_m0A60B29CDBF99D940A8D5E57170404297436BB9A ();
 // 0x0000000C System.Void FlickKeyboard::.ctor()
 extern void FlickKeyboard__ctor_mFF62D1781245DC888F7CC2A3E6A7C3FA252D5404 ();
 // 0x0000000D System.Action Microsoft.MixedReality.Toolkit.Extensions.SceneTransitions.ISceneTransitionService::get_OnTransitionStarted()
@@ -216,15 +216,15 @@ static Il2CppMethodPointer s_methodPointers[111] =
 {
 	FlickKeyboard_Start_m854A6FB36857958B53B8410361A6B39C8C8843E5,
 	FlickKeyboard_SourceDetected_m807E5C4FD0CB91A49926D68868A497F426E81401,
-	FlickKeyboard_isFlickable_mDAB67A70BFE8E9003D8FB726D7AB5D6C6E23A199,
 	FlickKeyboard_SourceUpdated_m21A767D8B458A99D9A6EDA43111BA6B67A3DEB46,
 	FlickKeyboard_SourceLost_mED7ED48C0FE44686D9C7E344E24CA1794E0882ED,
 	FlickKeyboard_SourcePressed_m1E26FB50301519BCAD5BD19735874F0D85E65F72,
 	FlickKeyboard_SourceReleased_m801D5E943AE139528803EF4843EA021D32143B4F,
+	FlickKeyboard_IsFlickable_mCA96EE8E69F436453C03859C4837A67E9FCD7CCC,
 	FlickKeyboard_GetCurrentDirection_m6688767249DA4A113DA7E9B71903BF408CF97CA4,
 	FlickKeyboard_GetNextChar_m1CCB448D9463C3CAB3CD507F626B0B02719138EC,
 	FlickKeyboard_ProcessInput_mC6216DAC3B5A93F9C27B01D98E7D6F18E68C466D,
-	FlickKeyboard_restoreKeys_m3CDD95F3BC62A1E11A11D07254EF76D995C38B41,
+	FlickKeyboard_RestoreKeys_m0A60B29CDBF99D940A8D5E57170404297436BB9A,
 	FlickKeyboard__ctor_mFF62D1781245DC888F7CC2A3E6A7C3FA252D5404,
 	NULL,
 	NULL,
@@ -329,12 +329,12 @@ static Il2CppMethodPointer s_methodPointers[111] =
 static const int32_t s_InvokerIndices[111] = 
 {
 	23,
-	2418,
-	9,
-	2553,
 	2421,
-	2419,
-	2420,
+	2556,
+	2424,
+	2422,
+	2423,
+	9,
 	10,
 	34,
 	32,
@@ -426,8 +426,8 @@ static const int32_t s_InvokerIndices[111] =
 	23,
 	10,
 	32,
-	2554,
-	1731,
+	2557,
+	1733,
 	23,
 	23,
 	23,
@@ -436,8 +436,8 @@ static const int32_t s_InvokerIndices[111] =
 	23,
 	26,
 	10,
-	2554,
-	1731,
+	2557,
+	1733,
 	23,
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;

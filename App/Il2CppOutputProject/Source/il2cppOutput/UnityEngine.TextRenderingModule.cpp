@@ -2729,8 +2729,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CharacterInfo_get_advance_mCCD27183A0
 	{
 		float L_0 = __this->get_width_3();
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = Math_Round_m7EE608A0B3B8C109464FF045B96657431387DC83((((double)((double)L_0))), 1, /*hidden argument*/NULL);
-		V_0 = (((int32_t)((int32_t)L_1)));
+		double L_1 = Math_Round_m7EE608A0B3B8C109464FF045B96657431387DC83((((double)((double)(double)L_0))), 1, /*hidden argument*/NULL);
+		V_0 = (((int32_t)((int32_t)(int32_t)L_1)));
 		goto IL_0015;
 	}
 

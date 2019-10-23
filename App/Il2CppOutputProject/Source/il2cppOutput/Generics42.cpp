@@ -1930,7 +1930,7 @@ struct Response_tCFDFF51E587CC0A680707D3ADF4A21893D4DB82A_marshaled_pinvoke
 {
 	int32_t ___U3CSuccessfulU3Ek__BackingField_0;
 	char* ___U3CResponseBodyU3Ek__BackingField_1;
-	Il2CppSafeArray/*I1*/* ___U3CResponseDataU3Ek__BackingField_2;
+	Il2CppSafeArray/*NONE*/* ___U3CResponseDataU3Ek__BackingField_2;
 	int64_t ___U3CResponseCodeU3Ek__BackingField_3;
 };
 // Native definition for COM marshalling of Microsoft.MixedReality.Toolkit.Utilities.Response
@@ -1938,7 +1938,7 @@ struct Response_tCFDFF51E587CC0A680707D3ADF4A21893D4DB82A_marshaled_com
 {
 	int32_t ___U3CSuccessfulU3Ek__BackingField_0;
 	Il2CppChar* ___U3CResponseBodyU3Ek__BackingField_1;
-	Il2CppSafeArray/*I1*/* ___U3CResponseDataU3Ek__BackingField_2;
+	Il2CppSafeArray/*NONE*/* ___U3CResponseDataU3Ek__BackingField_2;
 	int64_t ___U3CResponseCodeU3Ek__BackingField_3;
 };
 
@@ -4654,14 +4654,14 @@ public:
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_pinvoke
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.ChannelPacket
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_com
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 
@@ -4696,13 +4696,13 @@ public:
 // Native definition for P/Invoke marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_pinvoke
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_com
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 
@@ -5985,7 +5985,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6004,7 +6004,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Int32Enum
@@ -7281,6 +7281,8 @@ public:
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
+	int32_t ___displayIndex_10;
 
 public:
 	inline static int32_t get_offset_of_m_GameObject_0() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___m_GameObject_0)); }
@@ -7364,6 +7366,14 @@ public:
 	{
 		___screenPosition_9 = value;
 	}
+
+	inline static int32_t get_offset_of_displayIndex_10() { return static_cast<int32_t>(offsetof(RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91, ___displayIndex_10)); }
+	inline int32_t get_displayIndex_10() const { return ___displayIndex_10; }
+	inline int32_t* get_address_of_displayIndex_10() { return &___displayIndex_10; }
+	inline void set_displayIndex_10(int32_t value)
+	{
+		___displayIndex_10 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
@@ -7379,6 +7389,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_pinvoke
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
@@ -7393,6 +7404,7 @@ struct RaycastResult_t991BCED43A91EDD8580F39631DA07B1F88C58B91_marshaled_com
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldPosition_7;
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___worldNormal_8;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___screenPosition_9;
+	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.Networking.ClientScene_PendingOwner
@@ -32217,12 +32229,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConditionalWeakTable_2_Rehash_m2C5F0FFA6
 		((  void (*) (ConditionalWeakTable_2_tAD6736E4C6A9AF930D360966499D999E3CE45BF3 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((ConditionalWeakTable_2_tAD6736E4C6A9AF930D360966499D999E3CE45BF3 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
 		int32_t L_0 = (int32_t)__this->get_size_2();
 		IL2CPP_RUNTIME_CLASS_INIT(HashHelpers_tEB19004A9D7DD7679EA1882AE9B96E117FDF0179_il2cpp_TypeInfo_var);
-		int32_t L_1 = HashHelpers_GetPrime_m743D7006C2BCBADC1DC8CACF7C5B78C9F6B38297((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)((float)((float)(((float)((float)L_0)))/(float)(0.7f))))))<<(int32_t)1))|(int32_t)1)), /*hidden argument*/NULL);
+		int32_t L_1 = HashHelpers_GetPrime_m743D7006C2BCBADC1DC8CACF7C5B78C9F6B38297((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(int32_t)((float)((float)(((float)((float)L_0)))/(float)(0.7f))))))<<(int32_t)1))|(int32_t)1)), /*hidden argument*/NULL);
 		V_0 = (uint32_t)L_1;
 		uint32_t L_2 = V_0;
 		EphemeronU5BU5D_t575534899E3EE9D8B85CAF11342BA22D164C7C10* L_3 = (EphemeronU5BU5D_t575534899E3EE9D8B85CAF11342BA22D164C7C10*)__this->get_data_0();
 		NullCheck(L_3);
-		if ((!(((float)(((float)((float)(((double)((uint32_t)L_2))))))) > ((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_3)->max_length))))))), (float)(0.5f)))))))
+		if ((!(((float)(((float)((float)(float)(((double)((uint32_t)L_2))))))) > ((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_3)->max_length))))))), (float)(0.5f)))))))
 		{
 			goto IL_004d;
 		}
@@ -32231,7 +32243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConditionalWeakTable_2_Rehash_m2C5F0FFA6
 		uint32_t L_4 = V_0;
 		EphemeronU5BU5D_t575534899E3EE9D8B85CAF11342BA22D164C7C10* L_5 = (EphemeronU5BU5D_t575534899E3EE9D8B85CAF11342BA22D164C7C10*)__this->get_data_0();
 		NullCheck(L_5);
-		if ((!(((float)(((float)((float)(((double)((uint32_t)L_4))))))) < ((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_5)->max_length))))))), (float)(1.1f)))))))
+		if ((!(((float)(((float)((float)(float)(((double)((uint32_t)L_4))))))) < ((float)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_5)->max_length))))))), (float)(1.1f)))))))
 		{
 			goto IL_004d;
 		}

@@ -3394,14 +3394,14 @@ public:
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_pinvoke
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.ChannelPacket
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_com
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 
@@ -3436,13 +3436,13 @@ public:
 // Native definition for P/Invoke marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_pinvoke
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_com
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 

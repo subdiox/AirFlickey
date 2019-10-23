@@ -2470,6 +2470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92792cadb54fc6949bebd32eed61fa3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyboard: {fileID: 1755018182}
   textField: {fileID: 345911327}
   keyA: {fileID: 1210820865158366}
   keyKA: {fileID: 1210821676800248}

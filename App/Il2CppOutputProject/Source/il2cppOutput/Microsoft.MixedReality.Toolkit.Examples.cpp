@@ -2807,7 +2807,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -2838,7 +2838,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -6332,7 +6332,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6351,7 +6351,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.TextInfo
@@ -25867,7 +25867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawOnTexture_DrawAt_mAE2D55E51E63C0A277
 		int32_t L_21 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_20);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_22 = ___col1;
 		NullCheck(L_13);
-		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_13, (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_15, (float)(((float)((float)L_17)))))))), (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_19, (float)(((float)((float)L_21)))))))), L_22, /*hidden argument*/NULL);
+		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_13, (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_15, (float)(((float)((float)L_17)))))))), (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_19, (float)(((float)((float)L_21)))))))), L_22, /*hidden argument*/NULL);
 		// MyDrawTexture.Apply();
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_23 = DrawOnTexture_get_MyDrawTexture_mAA6E46F1E132919E0096D7ED6DE98140AD83784B(__this, /*hidden argument*/NULL);
 		NullCheck(L_23);
@@ -26005,7 +26005,7 @@ IL_0072:
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)(&V_0), ((float)il2cpp_codegen_multiply((float)L_16, (float)(((float)((float)L_18))))), ((float)il2cpp_codegen_multiply((float)L_20, (float)(((float)((float)L_22))))), /*hidden argument*/NULL);
 		// for (int ix = -(int)(dynamicRadius / 2); ix < dynamicRadius / 2; ix++)
 		float L_23 = __this->get_dynamicRadius_15();
-		V_3 = ((-(((int32_t)((int32_t)((float)((float)L_23/(float)(2.0f))))))));
+		V_3 = ((-(((int32_t)((int32_t)(int32_t)((float)((float)L_23/(float)(2.0f))))))));
 		goto IL_0246;
 	}
 
@@ -26013,7 +26013,7 @@ IL_00b3:
 	{
 		// for (int iy = -(int)(dynamicRadius / 2); iy < dynamicRadius / 2; iy++)
 		float L_24 = __this->get_dynamicRadius_15();
-		V_4 = ((-(((int32_t)((int32_t)((float)((float)L_24/(float)(2.0f))))))));
+		V_4 = ((-(((int32_t)((int32_t)(int32_t)((float)((float)L_24/(float)(2.0f))))))));
 		goto IL_022e;
 	}
 
@@ -26073,7 +26073,7 @@ IL_00c8:
 		float L_50 = V_5;
 		float L_51 = V_6;
 		NullCheck(L_49);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_52 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_49, (((int32_t)((int32_t)L_50))), (((int32_t)((int32_t)L_51))), /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_52 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_49, (((int32_t)((int32_t)(int32_t)L_50))), (((int32_t)((int32_t)(int32_t)L_51))), /*hidden argument*/NULL);
 		// float delta = intensity * (1 - Mathf.Abs(localNormalizedInterest));
 		float L_53 = ___intensity2;
 		float L_54 = V_11;
@@ -26103,7 +26103,7 @@ IL_00c8:
 		NullCheck(L_63);
 		int32_t L_64 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_63);
 		NullCheck(L_61);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_65 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_61, (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_62, (float)(((float)((float)L_64)))))))), 0, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_65 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_61, (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_62, (float)(((float)((float)L_64)))))))), 0, /*hidden argument*/NULL);
 		V_14 = L_65;
 		// col = new Color(col.r, col.g, col.b, normalizedInterest);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_66 = V_14;
@@ -26139,13 +26139,13 @@ IL_0203:
 		float L_82 = V_6;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_83 = V_14;
 		NullCheck(L_80);
-		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_80, (((int32_t)((int32_t)L_81))), (((int32_t)((int32_t)L_82))), L_83, /*hidden argument*/NULL);
+		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_80, (((int32_t)((int32_t)(int32_t)L_81))), (((int32_t)((int32_t)(int32_t)L_82))), L_83, /*hidden argument*/NULL);
 		// Color baseColor2 = MyDrawTexture.GetPixel((int)tx, (int)ty);
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_84 = DrawOnTexture_get_MyDrawTexture_mAA6E46F1E132919E0096D7ED6DE98140AD83784B(__this, /*hidden argument*/NULL);
 		float L_85 = V_5;
 		float L_86 = V_6;
 		NullCheck(L_84);
-		Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_84, (((int32_t)((int32_t)L_85))), (((int32_t)((int32_t)L_86))), /*hidden argument*/NULL);
+		Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_84, (((int32_t)((int32_t)(int32_t)L_85))), (((int32_t)((int32_t)(int32_t)L_86))), /*hidden argument*/NULL);
 	}
 
 IL_0228:
@@ -26311,7 +26311,7 @@ IL_004f:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_17 = ___currPnt0;
 		float L_18 = L_17.get_y_1();
 		NullCheck(L_14);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_19 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_14, (((int32_t)((int32_t)L_16))), (((int32_t)((int32_t)L_18))), /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_19 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_14, (((int32_t)((int32_t)(int32_t)L_16))), (((int32_t)((int32_t)(int32_t)L_18))), /*hidden argument*/NULL);
 		// float normalizedInterest = Mathf.Clamp(baseColor.a + delta, 0, 1);
 		float L_20 = L_19.get_a_3();
 		float L_21 = V_4;
@@ -26336,7 +26336,7 @@ IL_004f:
 		NullCheck(L_28);
 		int32_t L_29 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_28);
 		NullCheck(L_26);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_30 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_26, (((int32_t)((int32_t)((float)il2cpp_codegen_multiply((float)L_27, (float)(((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_29, (int32_t)1)))))))))), 0, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_30 = Texture2D_GetPixel_m71EA79FE268858ECD782327F8854EF2C2B16B2CD(L_26, (((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_multiply((float)L_27, (float)(((float)((float)((int32_t)il2cpp_codegen_subtract((int32_t)L_29, (int32_t)1)))))))))), 0, /*hidden argument*/NULL);
 		Nullable_1_tAF01623AB359AB6D460A6F432BF98EA08C7F9C60  L_31;
 		memset((&L_31), 0, sizeof(L_31));
 		Nullable_1__ctor_m04D6D6F6B0D572ED38D3E5CB80E2528C5E6360BD((&L_31), L_30, /*hidden argument*/Nullable_1__ctor_m04D6D6F6B0D572ED38D3E5CB80E2528C5E6360BD_RuntimeMethod_var);
@@ -27099,7 +27099,7 @@ IL_00ed:
 		float L_53 = V_9;
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_54 = Nullable_1_get_Value_m0966949AA2C0406D295C45CA755A064B8DC06988((Nullable_1_tAF01623AB359AB6D460A6F432BF98EA08C7F9C60 *)(&V_10), /*hidden argument*/Nullable_1_get_Value_m0966949AA2C0406D295C45CA755A064B8DC06988_RuntimeMethod_var);
 		NullCheck(L_51);
-		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_51, (((int32_t)((int32_t)L_52))), (((int32_t)((int32_t)L_53))), L_54, /*hidden argument*/NULL);
+		Texture2D_SetPixel_m8BE87C152447B812D06CB894B3570269CC2DE7C3(L_51, (((int32_t)((int32_t)(int32_t)L_52))), (((int32_t)((int32_t)(int32_t)L_53))), L_54, /*hidden argument*/NULL);
 	}
 
 IL_0164:
@@ -27706,7 +27706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DwellSelection_OnEyeFocusStay_mD970A1C2A
 		V_0 = L_5;
 		double L_6 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_7 = __this->get_feedbackDelayInSeconds_16();
-		if ((!(((double)L_6) > ((double)(((double)((double)L_7)))))))
+		if ((!(((double)L_6) > ((double)(((double)((double)(double)L_7)))))))
 		{
 			goto IL_0044;
 		}
@@ -27735,7 +27735,7 @@ IL_0044:
 		V_0 = L_11;
 		double L_12 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_13 = __this->get_dwellTimeInSecondsToSelect_17();
-		if ((!(((double)L_12) > ((double)(((double)((double)L_13)))))))
+		if ((!(((double)L_12) > ((double)(((double)((double)(double)L_13)))))))
 		{
 			goto IL_008c;
 		}
@@ -28062,7 +28062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DwellSelection_Update_m702019B7A90027920
 		V_2 = L_7;
 		double L_8 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_2), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_9 = Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E(L_4, (((float)((float)L_8))), /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_9 = Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E(L_4, (((float)((float)(float)L_8))), /*hidden argument*/NULL);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_10 = Vector3_op_Addition_m929F9C17E5D11B94D50B4AFF1D730B70CB59B50E(L_3, L_9, /*hidden argument*/NULL);
 		V_0 = L_10;
 		// feedbackToChangeInSize.transform.localScale = ClampVector3(newScale, startScale, endScale);
@@ -28083,7 +28083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DwellSelection_Update_m702019B7A90027920
 		double L_20 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_2), /*hidden argument*/NULL);
 		float L_21 = __this->get_dwellTimeInSecondsToSelect_17();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
-		float L_22 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507((((float)((float)L_20))), (0.0f), L_21, /*hidden argument*/NULL);
+		float L_22 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507((((float)((float)(float)L_20))), (0.0f), L_21, /*hidden argument*/NULL);
 		float L_23 = __this->get_dwellTimeInSecondsToSelect_17();
 		V_1 = ((float)((float)L_22/(float)L_23));
 		// UpdateTransparency(normalizedProgress);
@@ -33542,7 +33542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputPointerVisualizer_Start_m5A2D1B73E1
 	{
 		// AmountOfSamples = (int)nhist;
 		float L_0 = __this->get_nhist_19();
-		InputPointerVisualizer_set_AmountOfSamples_mE3BBFD3CA86E54817D402007BF02DA36CEFAFBA4(__this, (((int32_t)((int32_t)L_0))), /*hidden argument*/NULL);
+		InputPointerVisualizer_set_AmountOfSamples_mE3BBFD3CA86E54817D402007BF02DA36CEFAFBA4(__this, (((int32_t)((int32_t)(int32_t)L_0))), /*hidden argument*/NULL);
 		// if (textOutput != null)
 		TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * L_1 = __this->get_textOutput_22();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
@@ -37100,7 +37100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserInputPlayback_Update_m2E8589B555D848
 		double L_4 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_5 = __this->get_replaySpeed_23();
 		float L_6 = __this->get_deltaTimeToUpdateInMs_18();
-		if ((!(((double)((double)il2cpp_codegen_multiply((double)L_4, (double)(((double)((double)L_5)))))) > ((double)(((double)((double)L_6)))))))
+		if ((!(((double)((double)il2cpp_codegen_multiply((double)L_4, (double)(((double)((double)(double)L_5)))))) > ((double)(((double)((double)(double)L_6)))))))
 		{
 			goto IL_0037;
 		}
@@ -39674,7 +39674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserInputRecorderFeedback_Update_m151D9F
 		V_0 = L_3;
 		double L_4 = TimeSpan_get_TotalSeconds_m0F8F314166E6D1F9D36F32EB1272451EDE56B4EA((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_0), /*hidden argument*/NULL);
 		float L_5 = __this->get_maxShowDurationInSeconds_5();
-		if ((!(((double)L_4) > ((double)(((double)((double)L_5)))))))
+		if ((!(((double)L_4) > ((double)(((double)((double)(double)L_5)))))))
 		{
 			goto IL_002f;
 		}

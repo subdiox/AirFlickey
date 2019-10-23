@@ -3205,7 +3205,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -3236,7 +3236,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -6759,7 +6759,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6778,7 +6778,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Exception_ExceptionMessageKind
@@ -18325,7 +18325,7 @@ IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR RegisteredWaitHandle_t25AAC0
 	int32_t V_1 = 0;
 	{
 		double L_0 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___timeout3), /*hidden argument*/NULL);
-		V_0 = (((int64_t)((int64_t)L_0)));
+		V_0 = (((int64_t)((int64_t)(int64_t)L_0)));
 		int64_t L_1 = V_0;
 		if ((((int64_t)L_1) >= ((int64_t)(((int64_t)((int64_t)(-1)))))))
 		{
@@ -21099,7 +21099,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_mE731E24B4A4D66AD0A34BF604E9
 		RuntimeObject * L_1 = ___state1;
 		double L_2 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___dueTime2), /*hidden argument*/NULL);
 		double L_3 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___period3), /*hidden argument*/NULL);
-		Timer_Init_mF69134A3E2C8A2B79BA925BCF687B3DCBBF4AB65(__this, L_0, L_1, (((int64_t)((int64_t)L_2))), (((int64_t)((int64_t)L_3))), /*hidden argument*/NULL);
+		Timer_Init_mF69134A3E2C8A2B79BA925BCF687B3DCBBF4AB65(__this, L_0, L_1, (((int64_t)((int64_t)(int64_t)L_2))), (((int64_t)((int64_t)(int64_t)L_3))), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -21143,7 +21143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Timer_Change_mF2EE1A30C21C82757352489E6D
 	{
 		double L_0 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___dueTime0), /*hidden argument*/NULL);
 		double L_1 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___period1), /*hidden argument*/NULL);
-		bool L_2 = Timer_Change_m0D893D7C243B79E85CDD8E06F366F0744F6637D6(__this, (((int64_t)((int64_t)L_0))), (((int64_t)((int64_t)L_1))), (bool)0, /*hidden argument*/NULL);
+		bool L_2 = Timer_Change_m0D893D7C243B79E85CDD8E06F366F0744F6637D6(__this, (((int64_t)((int64_t)(int64_t)L_0))), (((int64_t)((int64_t)(int64_t)L_1))), (bool)0, /*hidden argument*/NULL);
 		return L_2;
 	}
 }
@@ -23104,7 +23104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WaitHandle_WaitOne_m3EF803DD3FF46D9BA6BA
 	int64_t V_0 = 0;
 	{
 		double L_0 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___timeout0), /*hidden argument*/NULL);
-		V_0 = (((int64_t)((int64_t)L_0)));
+		V_0 = (((int64_t)((int64_t)(int64_t)L_0)));
 		int64_t L_1 = V_0;
 		if ((((int64_t)(((int64_t)((int64_t)(-1))))) > ((int64_t)L_1)))
 		{
@@ -23450,7 +23450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WaitHandle_WaitAny_mB3F8C574D50E2EC2D
 	int64_t V_0 = 0;
 	{
 		double L_0 = TimeSpan_get_TotalMilliseconds_m48B00B27D485CC556C10A5119BC11E1A1E0FE363((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&___timeout1), /*hidden argument*/NULL);
-		V_0 = (((int64_t)((int64_t)L_0)));
+		V_0 = (((int64_t)((int64_t)(int64_t)L_0)));
 		int64_t L_1 = V_0;
 		if ((((int64_t)(((int64_t)((int64_t)(-1))))) > ((int64_t)L_1)))
 		{
@@ -25586,7 +25586,7 @@ IL_0066:
 		double L_11 = V_0;
 		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_12;
 		memset((&L_12), 0, sizeof(L_12));
-		TimeSpan__ctor_mEB013EB288370617E8D465D75BE383C4058DB5A5_inline((&L_12), ((int64_t)il2cpp_codegen_multiply((int64_t)(((int64_t)((int64_t)L_11))), (int64_t)(((int64_t)((int64_t)((int32_t)10000)))))), /*hidden argument*/NULL);
+		TimeSpan__ctor_mEB013EB288370617E8D465D75BE383C4058DB5A5_inline((&L_12), ((int64_t)il2cpp_codegen_multiply((int64_t)(((int64_t)((int64_t)(int64_t)L_11))), (int64_t)(((int64_t)((int64_t)((int32_t)10000)))))), /*hidden argument*/NULL);
 		return L_12;
 	}
 }
@@ -26841,6 +26841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TimeZoneInfo_GetDynamicTimeZoneInfor
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F  _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced;
 	memset((&_____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced), 0, sizeof(_____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced));
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_back(*____lpTimeZoneInformation0_marshaled, _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced);
+	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____lpTimeZoneInformation0_marshaled);
 	*___lpTimeZoneInformation0 = _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced;
 	Il2CppCodeGenWriteBarrier((void**)&((&((___lpTimeZoneInformation0)->___TZI_0))->___StandardName_1), (void*)NULL);
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -26849,9 +26850,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TimeZoneInfo_GetDynamicTimeZoneInfor
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 	Il2CppCodeGenWriteBarrier((void**)&((___lpTimeZoneInformation0)->___TimeZoneKeyName_1), (void*)NULL);
 	#endif
-
-	// Marshaling cleanup of parameter '___lpTimeZoneInformation0' native representation
-	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____lpTimeZoneInformation0_marshaled);
 
 	return returnValue;
 }
@@ -26901,6 +26899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeZoneInfo_GetTimeZoneInformationForYe
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F  _____pdtzi1_marshaled_unmarshaled_dereferenced;
 	memset((&_____pdtzi1_marshaled_unmarshaled_dereferenced), 0, sizeof(_____pdtzi1_marshaled_unmarshaled_dereferenced));
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_back(*____pdtzi1_marshaled, _____pdtzi1_marshaled_unmarshaled_dereferenced);
+	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____pdtzi1_marshaled);
 	*___pdtzi1 = _____pdtzi1_marshaled_unmarshaled_dereferenced;
 	Il2CppCodeGenWriteBarrier((void**)&((&((___pdtzi1)->___TZI_0))->___StandardName_1), (void*)NULL);
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -26909,9 +26908,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeZoneInfo_GetTimeZoneInformationForYe
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 	Il2CppCodeGenWriteBarrier((void**)&((___pdtzi1)->___TimeZoneKeyName_1), (void*)NULL);
 	#endif
-
-	// Marshaling cleanup of parameter '___pdtzi1' native representation
-	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____pdtzi1_marshaled);
 
 	// Marshaling of parameter '___ptzi2' back from native representation
 	TIME_ZONE_INFORMATION_tE8C6F24D5D50D01E03E52B00DDF74849F3DE9811  _____ptzi2_marshaled_unmarshaled_dereferenced;
@@ -33597,7 +33593,7 @@ IL_02cd:
 	{
 		double L_133 = TimeSpan_get_TotalMinutes_m41B6248DF2E4E6CAFC4A1B3C7ECCD9A10CC16C22((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)(&V_10), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var);
-		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_134 = TimeSpan_FromMinutes_m3038BAC5BAB62262567D7BB3AE6DD845FC985BC2((((double)((double)(((int64_t)((int64_t)((double)il2cpp_codegen_add((double)L_133, (double)(0.5))))))))), /*hidden argument*/NULL);
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_134 = TimeSpan_FromMinutes_m3038BAC5BAB62262567D7BB3AE6DD845FC985BC2((((double)((double)(((int64_t)((int64_t)(int64_t)((double)il2cpp_codegen_add((double)L_133, (double)(0.5))))))))), /*hidden argument*/NULL);
 		V_10 = L_134;
 	}
 

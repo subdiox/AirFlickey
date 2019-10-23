@@ -5674,14 +5674,14 @@ public:
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_pinvoke
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.ChannelPacket
 struct ChannelPacket_t666A32E3B50CF1DC7E3DAB739AC2D3A90F764C5D_marshaled_com
 {
 	int32_t ___m_Position_0;
-	Il2CppSafeArray/*I1*/* ___m_Buffer_1;
+	Il2CppSafeArray/*NONE*/* ___m_Buffer_1;
 	int32_t ___m_IsReliable_2;
 };
 
@@ -5770,13 +5770,13 @@ public:
 // Native definition for P/Invoke marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_pinvoke
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.LocalClient/InternalMsg
 struct InternalMsg_t35216173725E87B2FEAB326E27B5EDA09996C1B0_marshaled_com
 {
-	Il2CppSafeArray/*I1*/* ___buffer_0;
+	Il2CppSafeArray/*NONE*/* ___buffer_0;
 	int32_t ___channelId_1;
 };
 
@@ -5813,13 +5813,13 @@ public:
 struct NetworkBroadcastResult_t599AC2C31A6DA16DA91A5FF3F6B5E9AC11B39BD6_marshaled_pinvoke
 {
 	char* ___serverAddress_0;
-	Il2CppSafeArray/*I1*/* ___broadcastData_1;
+	Il2CppSafeArray/*NONE*/* ___broadcastData_1;
 };
 // Native definition for COM marshalling of UnityEngine.Networking.NetworkBroadcastResult
 struct NetworkBroadcastResult_t599AC2C31A6DA16DA91A5FF3F6B5E9AC11B39BD6_marshaled_com
 {
 	Il2CppChar* ___serverAddress_0;
-	Il2CppSafeArray/*I1*/* ___broadcastData_1;
+	Il2CppSafeArray/*NONE*/* ___broadcastData_1;
 };
 
 // UnityEngine.Networking.NetworkHash128
@@ -7104,7 +7104,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -7123,7 +7123,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Net.Sockets.AddressFamily
@@ -22795,8 +22795,8 @@ IL_0015:
 		ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_3 = __this->get_m_Buffer_0();
 		NullCheck(L_3);
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_4 = ceil((((double)((double)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_3)->max_length))))))), (float)(1.5f)))))));
-		V_0 = (((int32_t)((int32_t)L_4)));
+		double L_4 = ceil((((double)((double)(double)((float)il2cpp_codegen_multiply((float)(((float)((float)(((int32_t)((int32_t)(((RuntimeArray*)L_3)->max_length))))))), (float)(1.5f)))))));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_4)));
 		goto IL_0060;
 	}
 
@@ -22805,8 +22805,8 @@ IL_002e:
 		// newLen = (int)Math.Ceiling(newLen * k_GrowthFactor);
 		int32_t L_5 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_6 = ceil((((double)((double)((float)il2cpp_codegen_multiply((float)(((float)((float)L_5))), (float)(1.5f)))))));
-		V_0 = (((int32_t)((int32_t)L_6)));
+		double L_6 = ceil((((double)((double)(double)((float)il2cpp_codegen_multiply((float)(((float)((float)L_5))), (float)(1.5f)))))));
+		V_0 = (((int32_t)((int32_t)(int32_t)L_6)));
 		// if (newLen > k_BufferSizeWarning)
 		int32_t L_7 = V_0;
 		if ((((int32_t)L_7) <= ((int32_t)((int32_t)134217728))))
@@ -31341,7 +31341,7 @@ IL_0054:
 		// if ((int)Time.time != m_StatResetTime)
 		float L_4 = Time_get_time_m7863349C8845BBA36629A2B3F8EF1C3BEA350FD8(/*hidden argument*/NULL);
 		int32_t L_5 = __this->get_m_StatResetTime_13();
-		if ((((int32_t)(((int32_t)((int32_t)L_4)))) == ((int32_t)L_5)))
+		if ((((int32_t)(((int32_t)((int32_t)(int32_t)L_4)))) == ((int32_t)L_5)))
 		{
 			goto IL_0081;
 		}
@@ -31353,7 +31353,7 @@ IL_0054:
 		NetworkConnection_ResetStats_m207AC65AB3C37543F138205C89F2B6746CCE0996(L_6, /*hidden argument*/NULL);
 		// m_StatResetTime = (int)Time.time;
 		float L_7 = Time_get_time_m7863349C8845BBA36629A2B3F8EF1C3BEA350FD8(/*hidden argument*/NULL);
-		__this->set_m_StatResetTime_13((((int32_t)((int32_t)L_7))));
+		__this->set_m_StatResetTime_13((((int32_t)((int32_t)(int32_t)L_7))));
 	}
 
 IL_0081:

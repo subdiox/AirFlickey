@@ -928,6 +928,13 @@
         {
             "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SubMesh",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "TMPro.TextMeshPro",
             "moduleName": "",
             "usedInScenes": []
@@ -936,13 +943,6 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "com.unity.multiplayer-hlapi.Runtime.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Networking.NetworkCallbacks",
             "moduleName": "",
             "usedInScenes": []
         },

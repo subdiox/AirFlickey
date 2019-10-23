@@ -6425,7 +6425,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_pinvoke
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 // Native definition for COM marshalling of TMPro.TMP_MeshInfo
 struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
@@ -6438,7 +6438,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 
 // TMPro.TMP_RichTextTagStack`1<System.Int32Enum>
@@ -21709,7 +21709,7 @@ IL_1651:
 		float L_716 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSize_68();
 		float L_717 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSizeMin_78();
 		float L_718 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65(L_716, L_717, /*hidden argument*/NULL);
-		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_718, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
+		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_718, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
 		// if (loopCountA > 20) return; // Added to debug
 		int32_t L_719 = __this->get_loopCountA_257();
 		if ((((int32_t)L_719) <= ((int32_t)((int32_t)20))))
@@ -22372,7 +22372,7 @@ IL_1cb4:
 		float L_917 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSize_68();
 		float L_918 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSizeMin_78();
 		float L_919 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65(L_917, L_918, /*hidden argument*/NULL);
-		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_919, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
+		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_919, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
 		// if (loopCountA > 20) return; // Added to debug
 		int32_t L_920 = __this->get_loopCountA_257();
 		if ((((int32_t)L_920) <= ((int32_t)((int32_t)20))))
@@ -23052,7 +23052,7 @@ IL_2205:
 		float L_1074 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSize_68();
 		float L_1075 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSizeMin_78();
 		float L_1076 = Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65(L_1074, L_1075, /*hidden argument*/NULL);
-		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_1076, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
+		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_1076, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
 		// if (loopCountA > 20) return; // Added to debug
 		int32_t L_1077 = __this->get_loopCountA_257();
 		if ((((int32_t)L_1077) <= ((int32_t)((int32_t)20))))
@@ -24983,7 +24983,7 @@ IL_3255:
 		float L_1598 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSize_68();
 		float L_1599 = ((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->get_m_fontSizeMax_79();
 		float L_1600 = Mathf_Min_mCF9BE0E9CAC9F18D207692BB2DAC7F3E1D4E1CB7(L_1598, L_1599, /*hidden argument*/NULL);
-		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_1600, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
+		((TMP_Text_t7BA5B6522651EBED2D8E2C92CBE3F17C14075CE7 *)__this)->set_m_fontSize_68(((float)((float)(((float)((float)(((int32_t)((int32_t)(int32_t)((float)il2cpp_codegen_add((float)((float)il2cpp_codegen_multiply((float)L_1600, (float)(20.0f))), (float)(0.5f)))))))))/(float)(20.0f))));
 		// if (loopCountA > 20) return; // Added to debug
 		int32_t L_1601 = __this->get_loopCountA_257();
 		if ((((int32_t)L_1601) <= ((int32_t)((int32_t)20))))
@@ -27882,10 +27882,10 @@ IL_4e71:
 		V_138 = L_2681;
 		// float dx = (int)x0;
 		float L_2682 = V_135;
-		V_139 = (((float)((float)(((int32_t)((int32_t)L_2682))))));
+		V_139 = (((float)((float)(((int32_t)((int32_t)(int32_t)L_2682))))));
 		// float dy = (int)y0;
 		float L_2683 = V_136;
-		V_140 = (((float)((float)(((int32_t)((int32_t)L_2683))))));
+		V_140 = (((float)((float)(((int32_t)((int32_t)(int32_t)L_2683))))));
 		// x0 = x0 - dx;
 		float L_2684 = V_135;
 		float L_2685 = V_139;
