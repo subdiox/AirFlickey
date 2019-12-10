@@ -1,5 +1,5 @@
-# FlickInput
-Japanese Flick Input for Hololens
+# Flickey
+Japanese Flick Input Keyboard for Hololens
 
 ## Building
 1. Unzip `Assets/NotoSansCJKjp-Regular SDF.zip` to create `Assets/NotoSansCJKjp-Regular SDF.asset`
