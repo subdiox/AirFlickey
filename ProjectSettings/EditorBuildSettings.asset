@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FlickInputScene.unity
+    guid: d0fcc5482c3375140b646cd6769b9d75
   m_configObjects: {}
