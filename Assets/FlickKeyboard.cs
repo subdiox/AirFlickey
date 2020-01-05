@@ -30,7 +30,6 @@ public class FlickKeyboard : MonoBehaviour {
 
     private AudioSource audioSource;
     private GameObject keyPressed;
-    private int previousDirection;
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
     private GameObject[] flickableKeys;
