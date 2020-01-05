@@ -79,9 +79,9 @@ public class FlickKeyboard : MonoBehaviour {
     private Color unpressedColor = new Color(51.0f / 255.0f, 51.0f / 255.0f, 51.0f / 255.0f, 0.0f);
 
     private float timeStamp;
-	private bool cursor = false;
 	private string cursorChar = "";
     private string text = "";
+    private int currentLength = 0;
 
     // Start is called before the first frame update
     void Start() {
@@ -97,17 +97,15 @@ public class FlickKeyboard : MonoBehaviour {
     void Update() {
         if (Time.time - timeStamp >= 0.5) {
             timeStamp = Time.time;
-            if (cursor == false) {
-                cursor = true;
-                cursorChar += "_";
+            if (cursorChar == "") {
+                cursorChar = "_";
             } else {
-                cursor = false;
-                if (cursorChar.Length != 0) {
-                    cursorChar = cursorChar.Substring(0, cursorChar.Length - 1);
-                }
+                cursorChar = "";
             }
         }
-        textField.text = text + cursorChar;
+        string returned = text.Substring(0, text.Length - currentLength);
+        string currentWord = text.Substring(text.Length - currentLength, currentLength);
+        textField.text = returned + "<u>" + currentWord + "</u>" + cursorChar;
     }
 
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs) {
@@ -190,16 +188,12 @@ public class FlickKeyboard : MonoBehaviour {
             if (relativePosition2.magnitude < 0.02) { // フリックしなかったと判定する基準
                 direction = 0;
             } else if (angle < 45) {
-                Debug.Log("Direction: right");
                 direction = 3;
             } else if (angle > 135) {
-                Debug.Log("Direction: left");
                 direction = 1;
             } else if (relativePosition2.y > 0) {
-                Debug.Log("Direction: up");
                 direction = 2;
             } else {
-                Debug.Log("Direction: down");
                 direction = 4;
             }
         }
@@ -248,13 +242,21 @@ public class FlickKeyboard : MonoBehaviour {
     void ProcessInput(int direction) {
         audioSource.PlayOneShot(buttonUnpress, 1.0f);
         if (keyPressed == keySpace) {
-            text += " ";
+            if (currentLength == 0) {
+                text += " ";
+            } else {
+                // 日本語変換
+            }
         } else if (keyPressed == keyDelete) {
             if (!string.IsNullOrEmpty(text)) {
                 text = text.Substring(0, text.Length - 1);
             }
         } else if (keyPressed == keyReturn) {
-            text += "\n";
+            if (currentLength == 0) {
+                text += "\n";
+            } else {
+                currentLength = 0;
+            }
         } else if (keyPressed == keyFunc) {
             string targetChar = text.Substring(text.Length - 1, 1);
             if (targetChar != null) {
@@ -276,6 +278,7 @@ public class FlickKeyboard : MonoBehaviour {
             string nextChar = GetNextChar(direction);
             if (nextChar != null) {
                 text += nextChar;
+                currentLength += nextChar.Length;
             }
         }
         RestoreKeys();
