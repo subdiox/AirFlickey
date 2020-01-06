@@ -30,6 +30,8 @@ public class FlickKeyboard : MonoBehaviour {
 
     private AudioSource audioSource;
     private GameObject keyPressed;
+    private int keyboardHand = -1;
+    private Vector3 keyboardPosition3;
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
     private GameObject[] flickableKeys;
@@ -105,11 +107,14 @@ public class FlickKeyboard : MonoBehaviour {
         }
         string returned = text.Substring(0, text.Length - currentLength);
         string currentWord = text.Substring(text.Length - currentLength, currentLength);
-        textField.text = returned + "<u>" + currentWord + "</u>" + cursorChar;
+        textField.text = $"{returned}<u>{currentWord}</u>{cursorChar}";
     }
 
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs) {
         Debug.Log("SourceDetected");
+        if (keyboardHand < 0) {
+            keyboardHand = (int)eventArgs.state.source.id;
+        }
     }
 
     bool IsFlickable(GameObject key) {
@@ -123,34 +128,43 @@ public class FlickKeyboard : MonoBehaviour {
 
     void SourceUpdated(InteractionSourceUpdatedEventArgs eventArgs) {
         Debug.Log("SourceUpdated");
-        eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-        int direction = GetCurrentDirection();
-        if (direction == -1) {
-            RestoreKeys();
-        } else if (direction == 0) {
-            RestoreKeys(false);
-            keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-        } else if (IsFlickable(keyPressed)) {
-            keyPressed.GetComponentInChildren<TMP_Text>().text = null;
-            keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-            if (direction == 1) {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
-            } else if (direction == 2) {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
-            } else if (direction == 3) {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
-            } else if (direction == 4) {
-                keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+        if (keyboardHand == eventArgs.state.source.id) {
+            eventArgs.state.sourcePose.TryGetPosition(out keyboardPosition3);
+            this.transform.position = keyboardPosition3 + new Vector3(-0.36f, -1.4f, 1.208f);
+        } else {
+            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+            int direction = GetCurrentDirection();
+            if (direction == -1) {
+                RestoreKeys();
+            } else if (direction == 0) {
+                RestoreKeys(false);
+                keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+            } else if (IsFlickable(keyPressed)) {
+                keyPressed.GetComponentInChildren<TMP_Text>().text = null;
+                keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+                if (direction == 1) {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
+                } else if (direction == 2) {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
+                } else if (direction == 3) {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
+                } else if (direction == 4) {
+                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+                }
+                keyOverlay.SetActive(true);
             }
-            keyOverlay.SetActive(true);
         }
     }
 
     void SourceLost(InteractionSourceLostEventArgs eventArgs) {
         Debug.Log("SourceLost");
-        if (keyPressed != null) {
-            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-            ProcessInput(GetCurrentDirection());
+        if (keyboardHand == eventArgs.state.source.id) {
+            keyboardHand = -1;
+        } else {
+            if (keyPressed != null) {
+                eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+                ProcessInput(GetCurrentDirection());
+            }
         }
     }
 

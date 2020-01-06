@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FlickInputScene.unity
-    guid: d0fcc5482c3375140b646cd6769b9d75
+    path: Assets/Scenes/FlickeyScene.unity
+    guid: 71f2d351a3f51ba43af2efb370feece0
   m_configObjects: {}
