@@ -228,10 +228,10 @@ static const int32_t s_InvokerIndices[55] =
 	32,
 	14,
 	26,
-	1988,
-	2438,
-	1989,
-	1990,
+	1991,
+	2441,
+	1992,
+	1993,
 	14,
 	14,
 	14,
@@ -251,7 +251,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[1] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[1] = 
 {
-	{ (Il2CppRGCTXDataType)3, 45785 },
+	{ (Il2CppRGCTXDataType)3, 45863 },
 };
 extern const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_BoundarySystemCodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_BoundarySystemCodeGenModule = 

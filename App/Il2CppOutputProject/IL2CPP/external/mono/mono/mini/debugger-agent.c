@@ -6296,9 +6296,12 @@ ss_start_il2cpp(SingleStepReq *ss_req, DebuggerTlsData *tls, Il2CppSequencePoint
 
 		if (tls->il2cpp_context->frameCount > 1)
 		{
-		Il2CppSequencePoint* sequencePointForStepOut = tls->il2cpp_context->executionContexts[tls->il2cpp_context->frameCount - 2]->currentSequencePoint;
-		g_assert(sequencePointForStepOut->kind == kSequencePointKind_StepOut);
-			ss_bp_add_one_il2cpp(ss_req, &ss_req_bp_count, &ss_req_bp_cache, sequencePointForStepOut);
+			Il2CppSequencePoint* sequencePointForStepOut = tls->il2cpp_context->executionContexts[tls->il2cpp_context->frameCount - 2]->currentSequencePoint;
+			if (sequencePointForStepOut != NULL)
+			{
+				g_assert(sequencePointForStepOut->kind == kSequencePointKind_StepOut);
+				ss_bp_add_one_il2cpp(ss_req, &ss_req_bp_count, &ss_req_bp_cache, sequencePointForStepOut);
+			}
 		}
 
 		if (ss_req->depth == STEP_DEPTH_INTO)

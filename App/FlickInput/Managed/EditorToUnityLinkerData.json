@@ -6,7 +6,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -15,7 +15,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -33,7 +33,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -42,7 +42,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -65,7 +65,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -111,7 +111,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -218,7 +218,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -227,7 +227,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -236,7 +236,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -245,7 +245,7 @@
             "fullManagedTypeName": "UnityEngine.LineRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -254,7 +254,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -263,7 +263,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -272,7 +272,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -281,7 +281,7 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -290,7 +290,7 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -299,7 +299,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -308,7 +308,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -317,7 +317,7 @@
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -326,7 +326,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -335,7 +335,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -344,7 +344,7 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -353,7 +353,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -362,7 +362,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -371,7 +371,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -380,7 +380,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -389,7 +389,7 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -398,7 +398,7 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -407,7 +407,7 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -416,7 +416,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -425,7 +425,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -434,7 +434,7 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -443,7 +443,7 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -452,7 +452,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -461,7 +461,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -470,7 +470,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -479,7 +479,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -488,7 +488,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -497,7 +497,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -506,7 +506,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -515,7 +515,7 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -524,7 +524,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -533,7 +533,7 @@
             "fullManagedTypeName": "UnityEngine.LightProbes",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -542,7 +542,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
@@ -551,13 +551,20 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/FlickInputScene.unity"
+                "Assets/Scenes/FlickeyScene.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "FlickKeyboard",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Microsoft.MixedReality.Toolkit.Async.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Microsoft.MixedReality.Toolkit.Utilities.AsyncCoroutineRunner",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -928,6 +935,13 @@
         {
             "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SubMesh",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "TMPro.TextMeshPro",
             "moduleName": "",
             "usedInScenes": []
@@ -936,13 +950,6 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "com.unity.multiplayer-hlapi.Runtime.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Networking.NetworkCallbacks",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -970,6 +977,10 @@
         {
             "name": "AssetMetaData",
             "module": "Core"
+        },
+        {
+            "name": "AudioBuildInfo",
+            "module": "BuildReportingEditor"
         },
         {
             "name": "BuiltAssetBundleInfoSet",
@@ -2122,6 +2133,10 @@
         {
             "name": "PlatformModuleSetup",
             "module": "Core"
+        },
+        {
+            "name": "PluginBuildInfo",
+            "module": "BuildReportingEditor"
         },
         {
             "name": "Prefab",

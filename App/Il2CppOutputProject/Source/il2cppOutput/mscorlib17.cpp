@@ -3205,7 +3205,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -3236,7 +3236,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -6759,7 +6759,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -6778,7 +6778,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Exception_ExceptionMessageKind
@@ -26841,6 +26841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TimeZoneInfo_GetDynamicTimeZoneInfor
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F  _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced;
 	memset((&_____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced), 0, sizeof(_____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced));
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_back(*____lpTimeZoneInformation0_marshaled, _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced);
+	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____lpTimeZoneInformation0_marshaled);
 	*___lpTimeZoneInformation0 = _____lpTimeZoneInformation0_marshaled_unmarshaled_dereferenced;
 	Il2CppCodeGenWriteBarrier((void**)&((&((___lpTimeZoneInformation0)->___TZI_0))->___StandardName_1), (void*)NULL);
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -26849,9 +26850,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TimeZoneInfo_GetDynamicTimeZoneInfor
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 	Il2CppCodeGenWriteBarrier((void**)&((___lpTimeZoneInformation0)->___TimeZoneKeyName_1), (void*)NULL);
 	#endif
-
-	// Marshaling cleanup of parameter '___lpTimeZoneInformation0' native representation
-	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____lpTimeZoneInformation0_marshaled);
 
 	return returnValue;
 }
@@ -26901,6 +26899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeZoneInfo_GetTimeZoneInformationForYe
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F  _____pdtzi1_marshaled_unmarshaled_dereferenced;
 	memset((&_____pdtzi1_marshaled_unmarshaled_dereferenced), 0, sizeof(_____pdtzi1_marshaled_unmarshaled_dereferenced));
 	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_back(*____pdtzi1_marshaled, _____pdtzi1_marshaled_unmarshaled_dereferenced);
+	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____pdtzi1_marshaled);
 	*___pdtzi1 = _____pdtzi1_marshaled_unmarshaled_dereferenced;
 	Il2CppCodeGenWriteBarrier((void**)&((&((___pdtzi1)->___TZI_0))->___StandardName_1), (void*)NULL);
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -26909,9 +26908,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeZoneInfo_GetTimeZoneInformationForYe
 	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 	Il2CppCodeGenWriteBarrier((void**)&((___pdtzi1)->___TimeZoneKeyName_1), (void*)NULL);
 	#endif
-
-	// Marshaling cleanup of parameter '___pdtzi1' native representation
-	DYNAMIC_TIME_ZONE_INFORMATION_tE2A7A07ADC8726A5FC7954EA9CDE9168756C9B1F_marshal_pinvoke_cleanup(*____pdtzi1_marshaled);
 
 	// Marshaling of parameter '___ptzi2' back from native representation
 	TIME_ZONE_INFORMATION_tE8C6F24D5D50D01E03E52B00DDF74849F3DE9811  _____ptzi2_marshaled_unmarshaled_dereferenced;
@@ -28395,21 +28391,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CF
 	NO_UNUSED_WARNING (__last_unhandled_exception);
 	Exception_t * __exception_local = 0;
 	NO_UNUSED_WARNING (__exception_local);
-	void* __leave_targets_storage = alloca(sizeof(int32_t) * 7);
+	void* __leave_targets_storage = alloca(sizeof(int32_t) * 9);
 	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
 	NO_UNUSED_WARNING (__leave_targets);
 	{
 		bool L_0 = TimeZoneInfo_get_IsWindows_mD360DB90A5AFD0D6CE4E89EBAB7F40D5CEF25706(/*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_005a;
+			goto IL_006b;
 		}
 	}
 	{
 		RegistryKey_t29D81BFF6D6710C7AF7557F80446D514B0AB7574 * L_1 = TimeZoneInfo_get_LocalZoneKey_mB5065905D83948EB70306D6BCABA0857FE0BF65C(/*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_005a;
+			goto IL_006b;
 		}
 	}
 	{
@@ -28452,231 +28448,249 @@ IL_0050:
 		String_t* L_12 = V_2;
 		if (!L_12)
 		{
-			goto IL_0067;
+			goto IL_0078;
 		}
 	}
-	{
+
+IL_0053:
+	try
+	{ // begin try (depth: 1)
 		String_t* L_13 = V_2;
 		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_14 = TimeZoneInfo_FindSystemTimeZoneById_m1213ADAB49255703C816325E6F215AE0E7E9F8DD(L_13, /*hidden argument*/NULL);
-		return L_14;
+		V_3 = L_14;
+		goto IL_0134;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (TimeZoneNotFoundException_t44EC55B0AAD26AD0E0B659D308CBF90E5C81B388_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_005f;
+		throw e;
 	}
 
-IL_005a:
+CATCH_005f:
+	{ // begin catch(System.TimeZoneNotFoundException)
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_15 = TimeZoneInfo_GetLocalTimeZoneInfoWinRTFallback_mAC4FAB77907E048A003EDB46ACA0A2B3665AAC15(/*hidden argument*/NULL);
+		V_3 = L_15;
+		goto IL_0134;
+	} // end catch (depth: 1)
+
+IL_006b:
 	{
-		bool L_15 = TimeZoneInfo_get_IsWindows_mD360DB90A5AFD0D6CE4E89EBAB7F40D5CEF25706(/*hidden argument*/NULL);
-		if (!L_15)
+		bool L_16 = TimeZoneInfo_get_IsWindows_mD360DB90A5AFD0D6CE4E89EBAB7F40D5CEF25706(/*hidden argument*/NULL);
+		if (!L_16)
 		{
-			goto IL_0067;
+			goto IL_0078;
 		}
 	}
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_16 = TimeZoneInfo_GetLocalTimeZoneInfoWinRTFallback_mAC4FAB77907E048A003EDB46ACA0A2B3665AAC15(/*hidden argument*/NULL);
-		return L_16;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_17 = TimeZoneInfo_GetLocalTimeZoneInfoWinRTFallback_mAC4FAB77907E048A003EDB46ACA0A2B3665AAC15(/*hidden argument*/NULL);
+		return L_17;
 	}
 
-IL_0067:
+IL_0078:
 	{
 		V_0 = (TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 *)NULL;
 	}
 
-IL_0069:
+IL_007a:
 	try
 	{ // begin try (depth: 1)
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_17 = TimeZoneInfo_CreateLocalUnity_mD72D1DBB52C82E4AC72C1B697F1F37C935C755EA(/*hidden argument*/NULL);
-		V_0 = L_17;
-		goto IL_0076;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_18 = TimeZoneInfo_CreateLocalUnity_mD72D1DBB52C82E4AC72C1B697F1F37C935C755EA(/*hidden argument*/NULL);
+		V_0 = L_18;
+		goto IL_0087;
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (RuntimeObject_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
-			goto CATCH_0071;
+			goto CATCH_0082;
 		throw e;
 	}
 
-CATCH_0071:
+CATCH_0082:
 	{ // begin catch(System.Object)
 		V_0 = (TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 *)NULL;
-		goto IL_0076;
+		goto IL_0087;
 	} // end catch (depth: 1)
 
-IL_0076:
+IL_0087:
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_18 = V_0;
-		if (L_18)
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_19 = V_0;
+		if (L_19)
 		{
-			goto IL_007f;
+			goto IL_0090;
 		}
 	}
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_19 = TimeZoneInfo_get_Utc_mE10DC8C042D2CE7D3FA9A46ED7035FF93B6502EE(/*hidden argument*/NULL);
-		V_0 = L_19;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_20 = TimeZoneInfo_get_Utc_mE10DC8C042D2CE7D3FA9A46ED7035FF93B6502EE(/*hidden argument*/NULL);
+		V_0 = L_20;
 	}
 
-IL_007f:
+IL_0090:
 	{
-		String_t* L_20 = Environment_GetEnvironmentVariable_mB94020EE6B0D5BADF024E4BE6FBC54A5954D2185(_stringLiteralED9428DBFB0B1BF45F637DBEABF0DB8879D90E82, /*hidden argument*/NULL);
-		V_1 = L_20;
-		String_t* L_21 = V_1;
-		if (!L_21)
-		{
-			goto IL_00b6;
-		}
-	}
-	{
+		String_t* L_21 = Environment_GetEnvironmentVariable_mB94020EE6B0D5BADF024E4BE6FBC54A5954D2185(_stringLiteralED9428DBFB0B1BF45F637DBEABF0DB8879D90E82, /*hidden argument*/NULL);
+		V_1 = L_21;
 		String_t* L_22 = V_1;
-		String_t* L_23 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		bool L_24 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_22, L_23, /*hidden argument*/NULL);
-		if (!L_24)
+		if (!L_22)
 		{
-			goto IL_009c;
+			goto IL_00c7;
 		}
 	}
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_25 = V_0;
-		return L_25;
+		String_t* L_23 = V_1;
+		String_t* L_24 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		bool L_25 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_23, L_24, /*hidden argument*/NULL);
+		if (!L_25)
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_26 = V_0;
+		return L_26;
 	}
 
-IL_009c:
+IL_00ad:
 	{
 	}
 
-IL_009d:
+IL_00ae:
 	try
 	{ // begin try (depth: 1)
-		String_t* L_26 = V_1;
-		String_t* L_27 = TimeZoneInfo_get_TimeZoneDirectory_m364906451AD0C6AF1BE27A57739BB888AD144414(/*hidden argument*/NULL);
-		String_t* L_28 = V_1;
+		String_t* L_27 = V_1;
+		String_t* L_28 = TimeZoneInfo_get_TimeZoneDirectory_m364906451AD0C6AF1BE27A57739BB888AD144414(/*hidden argument*/NULL);
+		String_t* L_29 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Path_t0B99A4B924A6FDF08814FFA8DD4CD121ED1A0752_il2cpp_TypeInfo_var);
-		String_t* L_29 = Path_Combine_mA495A18104786EB450EC0E44EE0FB7F9040C4311(L_27, L_28, /*hidden argument*/NULL);
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_30 = TimeZoneInfo_FindSystemTimeZoneByFileName_m8AA63273DF4EAB14398DCD1E7B84FCADF6F84E7D(L_26, L_29, /*hidden argument*/NULL);
-		V_3 = L_30;
-		goto IL_0123;
+		String_t* L_30 = Path_Combine_mA495A18104786EB450EC0E44EE0FB7F9040C4311(L_28, L_29, /*hidden argument*/NULL);
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_31 = TimeZoneInfo_FindSystemTimeZoneByFileName_m8AA63273DF4EAB14398DCD1E7B84FCADF6F84E7D(L_27, L_30, /*hidden argument*/NULL);
+		V_3 = L_31;
+		goto IL_0134;
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (RuntimeObject_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
-			goto CATCH_00b1;
+			goto CATCH_00c2;
 		throw e;
 	}
 
-CATCH_00b1:
+CATCH_00c2:
 	{ // begin catch(System.Object)
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_31 = V_0;
-		V_3 = L_31;
-		goto IL_0123;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_32 = V_0;
+		V_3 = L_32;
+		goto IL_0134;
 	} // end catch (depth: 1)
 
-IL_00b6:
+IL_00c7:
 	{
-		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_32 = (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E*)(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E*)SZArrayNew(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E_il2cpp_TypeInfo_var, (uint32_t)2);
-		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_33 = L_32;
-		NullCheck(L_33);
-		ArrayElementTypeCheck (L_33, _stringLiteral25F82570C8A4E0BBF33D841DA7020C5961D4B0F7);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral25F82570C8A4E0BBF33D841DA7020C5961D4B0F7);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_33 = (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E*)(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E*)SZArrayNew(StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E_il2cpp_TypeInfo_var, (uint32_t)2);
 		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_34 = L_33;
-		String_t* L_35 = TimeZoneInfo_get_TimeZoneDirectory_m364906451AD0C6AF1BE27A57739BB888AD144414(/*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t0B99A4B924A6FDF08814FFA8DD4CD121ED1A0752_il2cpp_TypeInfo_var);
-		String_t* L_36 = Path_Combine_mA495A18104786EB450EC0E44EE0FB7F9040C4311(L_35, _stringLiteralF25BCCD744FAB3255BB82BAC88C618963868A33F, /*hidden argument*/NULL);
 		NullCheck(L_34);
-		ArrayElementTypeCheck (L_34, L_36);
-		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_36);
-		V_4 = L_34;
+		ArrayElementTypeCheck (L_34, _stringLiteral25F82570C8A4E0BBF33D841DA7020C5961D4B0F7);
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral25F82570C8A4E0BBF33D841DA7020C5961D4B0F7);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_35 = L_34;
+		String_t* L_36 = TimeZoneInfo_get_TimeZoneDirectory_m364906451AD0C6AF1BE27A57739BB888AD144414(/*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t0B99A4B924A6FDF08814FFA8DD4CD121ED1A0752_il2cpp_TypeInfo_var);
+		String_t* L_37 = Path_Combine_mA495A18104786EB450EC0E44EE0FB7F9040C4311(L_36, _stringLiteralF25BCCD744FAB3255BB82BAC88C618963868A33F, /*hidden argument*/NULL);
+		NullCheck(L_35);
+		ArrayElementTypeCheck (L_35, L_37);
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_37);
+		V_4 = L_35;
 		V_5 = 0;
-		goto IL_0119;
+		goto IL_012a;
 	}
 
-IL_00dd:
+IL_00ee:
 	{
-		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_37 = V_4;
-		int32_t L_38 = V_5;
-		NullCheck(L_37);
-		int32_t L_39 = L_38;
-		String_t* L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
-		V_6 = L_40;
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_38 = V_4;
+		int32_t L_39 = V_5;
+		NullCheck(L_38);
+		int32_t L_40 = L_39;
+		String_t* L_41 = (L_38)->GetAt(static_cast<il2cpp_array_size_t>(L_40));
+		V_6 = L_41;
 	}
 
-IL_00e4:
+IL_00f5:
 	try
 	{ // begin try (depth: 1)
 		{
 			V_7 = (String_t*)NULL;
-			String_t* L_41 = V_6;
-			bool L_42 = TimeZoneInfo_TryGetNameFromPath_m030B7AF03FD88B0FCAF5374F33D9E2B22ECCFD42(L_41, (String_t**)(&V_7), /*hidden argument*/NULL);
-			if (L_42)
+			String_t* L_42 = V_6;
+			bool L_43 = TimeZoneInfo_TryGetNameFromPath_m030B7AF03FD88B0FCAF5374F33D9E2B22ECCFD42(L_42, (String_t**)(&V_7), /*hidden argument*/NULL);
+			if (L_43)
 			{
-				goto IL_00f9;
+				goto IL_010a;
 			}
 		}
 
-IL_00f2:
+IL_0103:
 		{
 			V_7 = _stringLiteralDC99D54D9990E3C134420BE3918E88F28531E630;
 		}
 
-IL_00f9:
+IL_010a:
 		{
-			String_t* L_43 = V_6;
-			bool L_44 = File_Exists_m6B9BDD8EEB33D744EB0590DD27BC0152FAFBD1FB(L_43, /*hidden argument*/NULL);
-			if (!L_44)
+			String_t* L_44 = V_6;
+			bool L_45 = File_Exists_m6B9BDD8EEB33D744EB0590DD27BC0152FAFBD1FB(L_44, /*hidden argument*/NULL);
+			if (!L_45)
 			{
-				goto IL_010e;
+				goto IL_011f;
 			}
 		}
 
-IL_0102:
+IL_0113:
 		{
-			String_t* L_45 = V_7;
-			String_t* L_46 = V_6;
-			TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_47 = TimeZoneInfo_FindSystemTimeZoneByFileName_m8AA63273DF4EAB14398DCD1E7B84FCADF6F84E7D(L_45, L_46, /*hidden argument*/NULL);
-			V_3 = L_47;
-			goto IL_0123;
+			String_t* L_46 = V_7;
+			String_t* L_47 = V_6;
+			TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_48 = TimeZoneInfo_FindSystemTimeZoneByFileName_m8AA63273DF4EAB14398DCD1E7B84FCADF6F84E7D(L_46, L_47, /*hidden argument*/NULL);
+			V_3 = L_48;
+			goto IL_0134;
 		}
 
-IL_010e:
+IL_011f:
 		{
-			goto IL_0113;
+			goto IL_0124;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (TimeZoneNotFoundException_t44EC55B0AAD26AD0E0B659D308CBF90E5C81B388_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
-			goto CATCH_0110;
+			goto CATCH_0121;
 		throw e;
 	}
 
-CATCH_0110:
+CATCH_0121:
 	{ // begin catch(System.TimeZoneNotFoundException)
-		goto IL_0113;
+		goto IL_0124;
 	} // end catch (depth: 1)
 
-IL_0113:
-	{
-		int32_t L_48 = V_5;
-		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_48, (int32_t)1));
-	}
-
-IL_0119:
+IL_0124:
 	{
 		int32_t L_49 = V_5;
-		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_50 = V_4;
-		NullCheck(L_50);
-		if ((((int32_t)L_49) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_50)->max_length)))))))
+		V_5 = ((int32_t)il2cpp_codegen_add((int32_t)L_49, (int32_t)1));
+	}
+
+IL_012a:
+	{
+		int32_t L_50 = V_5;
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_51 = V_4;
+		NullCheck(L_51);
+		if ((((int32_t)L_50) < ((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_51)->max_length)))))))
 		{
-			goto IL_00dd;
+			goto IL_00ee;
 		}
 	}
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_51 = V_0;
-		return L_51;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_52 = V_0;
+		return L_52;
 	}
 
-IL_0123:
+IL_0134:
 	{
-		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_52 = V_3;
-		return L_52;
+		TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777 * L_53 = V_3;
+		return L_53;
 	}
 }
 // System.TimeZoneInfo System.TimeZoneInfo::FindSystemTimeZoneByIdCore(System.String)

@@ -3375,7 +3375,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_pinvoke* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -3406,7 +3406,7 @@ struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com
 	Calendar_tF55A785ACD277504CF0D2F2C6AD56F76C6E91BD5 * ___calendar_24;
 	CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com* ___parent_culture_25;
 	int32_t ___constructed_26;
-	Il2CppSafeArray/*I1*/* ___cached_serialized_form_27;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
 	CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com* ___m_cultureData_28;
 	int32_t ___m_isInherited_29;
 };
@@ -9352,13 +9352,13 @@ public:
 // Native definition for P/Invoke marshalling of System.Runtime.Remoting.Channels.CrossAppDomainSink/ProcessMessageRes
 struct ProcessMessageRes_t17F028A89C1685A6BE96D7B59DD490E4CB859957_marshaled_pinvoke
 {
-	Il2CppSafeArray/*I1*/* ___arrResponse_0;
+	Il2CppSafeArray/*NONE*/* ___arrResponse_0;
 	CADMethodReturnMessage_tC46DD1930F6C9F9EF55AAEBD5F3C638BD9FE823C * ___cadMrm_1;
 };
 // Native definition for COM marshalling of System.Runtime.Remoting.Channels.CrossAppDomainSink/ProcessMessageRes
 struct ProcessMessageRes_t17F028A89C1685A6BE96D7B59DD490E4CB859957_marshaled_com
 {
-	Il2CppSafeArray/*I1*/* ___arrResponse_0;
+	Il2CppSafeArray/*NONE*/* ___arrResponse_0;
 	CADMethodReturnMessage_tC46DD1930F6C9F9EF55AAEBD5F3C638BD9FE823C * ___cadMrm_1;
 };
 
@@ -11868,7 +11868,7 @@ struct Exception_t_marshaled_pinvoke
 	char* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 // Native definition for COM marshalling of System.Exception
 struct Exception_t_marshaled_com
@@ -11887,7 +11887,7 @@ struct Exception_t_marshaled_com
 	Il2CppChar* ____source_12;
 	SafeSerializationManager_t4A754D86B0F784B18CBC36C073BA564BED109770 * ____safeSerializationManager_13;
 	StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196* ___captured_traces_14;
-	Il2CppSafeArray/*INT*/* ___native_trace_ips_15;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
 // System.Globalization.CompareOptions
@@ -15816,7 +15816,7 @@ struct MonoMethodMessage_t0846334ADE91F66FECE638BEF57256CFF6EEA234_marshaled_pin
 	MonoMethod_t * ___method_0;
 	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args_1;
 	char** ___names_2;
-	Il2CppSafeArray/*I1*/* ___arg_types_3;
+	Il2CppSafeArray/*NONE*/* ___arg_types_3;
 	LogicalCallContext_t3A9A7C02A28577F0879F6E950E46EEC595731D7E * ___ctx_4;
 	Il2CppIUnknown* ___rval_5;
 	Exception_t_marshaled_pinvoke* ___exc_6;
@@ -15833,7 +15833,7 @@ struct MonoMethodMessage_t0846334ADE91F66FECE638BEF57256CFF6EEA234_marshaled_com
 	MonoMethod_t * ___method_0;
 	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args_1;
 	Il2CppChar** ___names_2;
-	Il2CppSafeArray/*I1*/* ___arg_types_3;
+	Il2CppSafeArray/*NONE*/* ___arg_types_3;
 	LogicalCallContext_t3A9A7C02A28577F0879F6E950E46EEC595731D7E * ___ctx_4;
 	Il2CppIUnknown* ___rval_5;
 	Exception_t_marshaled_com* ___exc_6;

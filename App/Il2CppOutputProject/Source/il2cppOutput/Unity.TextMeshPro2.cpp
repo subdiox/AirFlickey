@@ -7928,7 +7928,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_pinvoke
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 // Native definition for COM marshalling of TMPro.TMP_MeshInfo
 struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
@@ -7941,7 +7941,7 @@ struct TMP_MeshInfo_t0140B4A33090360DC5CFB47CD8419369BBE3AD2E_marshaled_com
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs0_9;
 	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * ___uvs2_10;
 	Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23 * ___colors32_11;
-	Il2CppSafeArray/*I4*/* ___triangles_12;
+	Il2CppSafeArray/*NONE*/* ___triangles_12;
 };
 
 // TMPro.TMP_RichTextTagStack`1<System.Int32Enum>
@@ -22632,26 +22632,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F
 		uint8_t L_5 = L_4.get_g_2();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_6 = ___c21;
 		uint8_t L_7 = L_6.get_g_2();
-		V_0 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_5)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_7)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_0 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_5)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_7)))/(float)(255.0f))))), (float)(255.0f)))));
 		// byte b = (byte)((c1.b / 255f) * (c2.b / 255f) * 255);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_8 = ___c10;
 		uint8_t L_9 = L_8.get_b_3();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_10 = ___c21;
 		uint8_t L_11 = L_10.get_b_3();
-		V_1 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_9)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_11)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_1 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_9)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_11)))/(float)(255.0f))))), (float)(255.0f)))));
 		// byte a = (byte)((c1.a / 255f) * (c2.a / 255f) * 255);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_12 = ___c10;
 		uint8_t L_13 = L_12.get_a_4();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_14 = ___c21;
 		uint8_t L_15 = L_14.get_a_4();
-		V_2 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_13)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_15)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_2 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_13)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_15)))/(float)(255.0f))))), (float)(255.0f)))));
 		// return new Color32(r, g, b, a);
 		uint8_t L_16 = V_0;
 		uint8_t L_17 = V_1;
 		uint8_t L_18 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_19;
 		memset((&L_19), 0, sizeof(L_19));
-		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_1)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_3)))/(float)(255.0f))))), (float)(255.0f)))))), L_16, L_17, L_18, /*hidden argument*/NULL);
+		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_1)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_3)))/(float)(255.0f))))), (float)(255.0f))))), L_16, L_17, L_18, /*hidden argument*/NULL);
 		return L_19;
 	}
 }
@@ -22672,26 +22672,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F
 		uint8_t L_5 = L_4.get_g_2();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_6 = ___c21;
 		uint8_t L_7 = L_6.get_g_2();
-		V_0 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_5)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_7)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_0 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_5)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_7)))/(float)(255.0f))))), (float)(255.0f)))));
 		// byte b = (byte)((c1.b / 255f) * (c2.b / 255f) * 255);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_8 = ___c10;
 		uint8_t L_9 = L_8.get_b_3();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_10 = ___c21;
 		uint8_t L_11 = L_10.get_b_3();
-		V_1 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_9)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_11)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_1 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_9)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_11)))/(float)(255.0f))))), (float)(255.0f)))));
 		// byte a = (byte)((c1.a / 255f) * (c2.a / 255f) * 255);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_12 = ___c10;
 		uint8_t L_13 = L_12.get_a_4();
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_14 = ___c21;
 		uint8_t L_15 = L_14.get_a_4();
-		V_2 = (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_13)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_15)))/(float)(255.0f))))), (float)(255.0f))))));
+		V_2 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_13)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_15)))/(float)(255.0f))))), (float)(255.0f)))));
 		// return new Color32(r, g, b, a);
 		uint8_t L_16 = V_0;
 		uint8_t L_17 = V_1;
 		uint8_t L_18 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_19;
 		memset((&L_19), 0, sizeof(L_19));
-		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(((int32_t)((uint8_t)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_1)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_3)))/(float)(255.0f))))), (float)(255.0f)))))), L_16, L_17, L_18, /*hidden argument*/NULL);
+		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_1)))/(float)(255.0f))), (float)((float)((float)(((float)((float)L_3)))/(float)(255.0f))))), (float)(255.0f))))), L_16, L_17, L_18, /*hidden argument*/NULL);
 		return L_19;
 	}
 }
@@ -22719,26 +22719,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F
 		uint8_t L_5 = L_4.get_g_2();
 		float L_6 = ___tint1;
 		float L_7 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_5)))/(float)(255.0f))), (float)L_6)), (float)(255.0f))), (0.0f), (255.0f), /*hidden argument*/NULL);
-		V_0 = (uint8_t)(((int32_t)((uint8_t)L_7)));
+		V_0 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(L_7));
 		// byte b = (byte)(Mathf.Clamp(c1.b / 255f * tint * 255, 0, 255));
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_8 = ___c10;
 		uint8_t L_9 = L_8.get_b_3();
 		float L_10 = ___tint1;
 		float L_11 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_9)))/(float)(255.0f))), (float)L_10)), (float)(255.0f))), (0.0f), (255.0f), /*hidden argument*/NULL);
-		V_1 = (uint8_t)(((int32_t)((uint8_t)L_11)));
+		V_1 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(L_11));
 		// byte a = (byte)(Mathf.Clamp(c1.a / 255f * tint * 255, 0, 255));
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_12 = ___c10;
 		uint8_t L_13 = L_12.get_a_4();
 		float L_14 = ___tint1;
 		float L_15 = Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507(((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)((float)(((float)((float)L_13)))/(float)(255.0f))), (float)L_14)), (float)(255.0f))), (0.0f), (255.0f), /*hidden argument*/NULL);
-		V_2 = (uint8_t)(((int32_t)((uint8_t)L_15)));
+		V_2 = (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(L_15));
 		// return new Color32(r, g, b, a);
 		uint8_t L_16 = V_0;
 		uint8_t L_17 = V_1;
 		uint8_t L_18 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_19;
 		memset((&L_19), 0, sizeof(L_19));
-		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(((int32_t)((uint8_t)L_3))), L_16, L_17, L_18, /*hidden argument*/NULL);
+		Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2((&L_19), (uint8_t)(il2cpp_codegen_cast_floating_point<uint8_t, int32_t, float>(L_3)), L_16, L_17, L_18, /*hidden argument*/NULL);
 		return L_19;
 	}
 }

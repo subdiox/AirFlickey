@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.WSA.Input;
+using UnityEngine.Networking;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit;
 using TMPro;
@@ -31,10 +33,12 @@ public class FlickKeyboard : MonoBehaviour {
     private AudioSource audioSource;
     private GameObject keyPressed;
     private int keyboardHand = -1;
+    private bool keyboardFixed = true;
     private Vector3 keyboardPosition3;
     private Vector3 pressedPosition3;
     private Vector3 releasedPosition3;
     private GameObject[] flickableKeys;
+    private GameObject[] keys;
     private string[] charListA = new string[] { "あ", "あ", "い", "う", "え", "お" };
     private string[] charListKA = new string[] { "か", "か", "き", "く", "け", "こ" };
     private string[] charListSA = new string[] { "さ", "さ", "し", "す", "せ", "そ" };
@@ -89,6 +93,7 @@ public class FlickKeyboard : MonoBehaviour {
     void Start() {
         audioSource = GetComponent<AudioSource>();
         flickableKeys = new GameObject[] { keyA, keyKA, keySA, keyTA, keyNA, keyHA, keyMA, keyYA, keyRA, keyWA, keyMark };
+        keys = new GameObject[] { keyA, keyKA, keySA, keyTA, keyNA, keyHA, keyMA, keyYA, keyRA, keyWA, keyMark, keyFunc, keyDelete, keySpace, keyReturn };
         InteractionManager.InteractionSourceDetected += SourceDetected;
         InteractionManager.InteractionSourceUpdated += SourceUpdated;
         InteractionManager.InteractionSourceLost += SourceLost;
@@ -112,7 +117,7 @@ public class FlickKeyboard : MonoBehaviour {
 
     void SourceDetected(InteractionSourceDetectedEventArgs eventArgs) {
         Debug.Log("SourceDetected");
-        if (keyboardHand < 0) {
+        if (!keyboardFixed && keyboardHand < 0) {
             keyboardHand = (int)eventArgs.state.source.id;
         }
     }
@@ -128,9 +133,9 @@ public class FlickKeyboard : MonoBehaviour {
 
     void SourceUpdated(InteractionSourceUpdatedEventArgs eventArgs) {
         Debug.Log("SourceUpdated");
-        if (keyboardHand == eventArgs.state.source.id) {
+        if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
             eventArgs.state.sourcePose.TryGetPosition(out keyboardPosition3);
-            this.transform.position = keyboardPosition3 + new Vector3(-0.36f, -1.4f, 1.208f);
+            this.transform.position = keyboardPosition3 * 0.5f + new Vector3(-0.07f, -1.25f, 0.961f);
         } else {
             eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
             int direction = GetCurrentDirection();
@@ -158,7 +163,7 @@ public class FlickKeyboard : MonoBehaviour {
 
     void SourceLost(InteractionSourceLostEventArgs eventArgs) {
         Debug.Log("SourceLost");
-        if (keyboardHand == eventArgs.state.source.id) {
+        if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
             keyboardHand = -1;
         } else {
             if (keyPressed != null) {
@@ -172,7 +177,7 @@ public class FlickKeyboard : MonoBehaviour {
         Debug.Log($"SourcePressed {CoreServices.InputSystem.GazeProvider.GazeTarget}");
         eventArgs.state.sourcePose.TryGetPosition(out pressedPosition3);
         keyPressed = CoreServices.InputSystem.GazeProvider.GazeTarget;
-        if (keyPressed != null) {
+        if (keyPressed != null && keys.Contains(keyPressed)) {
             audioSource.PlayOneShot(buttonPress, 1.0f);
             keyPressed.GetComponentInChildren<MeshRenderer>().material.color = pressedColor;
         }
@@ -253,17 +258,34 @@ public class FlickKeyboard : MonoBehaviour {
         return keyPressed.GetComponentInChildren<TMP_Text>().text;
     }
 
+    IEnumerator TransliterateWord(string word) {
+        string requestUrl = $"https://www.google.com/transliterate?langpair=ja-Hira|ja&text={word}";
+        UnityWebRequest request = UnityWebRequest.Get(requestUrl);
+        yield return request.SendWebRequest();
+        if (request.isHttpError || request.isNetworkError) {
+            Debug.Log(request.error);
+        } else {
+            string json = request.downloadHandler.text;
+            Debug.Log(json);
+        }
+    }
+
     void ProcessInput(int direction) {
         audioSource.PlayOneShot(buttonUnpress, 1.0f);
         if (keyPressed == keySpace) {
             if (currentLength == 0) {
                 text += " ";
             } else {
+                string currentWord = text.Substring(text.Length - currentLength, currentLength);
                 // 日本語変換
+                StartCoroutine(TransliterateWord(currentWord));
             }
         } else if (keyPressed == keyDelete) {
             if (!string.IsNullOrEmpty(text)) {
                 text = text.Substring(0, text.Length - 1);
+            }
+            if (currentLength > 0) {
+                currentLength -= 1;
             }
         } else if (keyPressed == keyReturn) {
             if (currentLength == 0) {
@@ -309,6 +331,13 @@ public class FlickKeyboard : MonoBehaviour {
                 keyPressed = null;
             } else {
                 keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(0);
+            }
+        }
+        if (keySpace != null) {
+            if (currentLength == 0) {
+                keySpace.GetComponentInChildren<TMP_Text>().text = "空白";
+            } else {
+                keySpace.GetComponentInChildren<TMP_Text>().text = "変換";
             }
         }
     }
