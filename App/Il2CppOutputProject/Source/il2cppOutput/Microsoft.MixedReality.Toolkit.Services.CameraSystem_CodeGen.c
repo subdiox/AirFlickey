@@ -59,7 +59,7 @@ static Il2CppMethodPointer s_methodPointers[11] =
 static const int32_t s_InvokerIndices[11] = 
 {
 	27,
-	95,
+	89,
 	10,
 	14,
 	14,
@@ -67,8 +67,8 @@ static const int32_t s_InvokerIndices[11] =
 	23,
 	23,
 	23,
-	122,
-	123,
+	90,
+	121,
 };
 extern const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_CameraSystemCodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_CameraSystemCodeGenModule = 

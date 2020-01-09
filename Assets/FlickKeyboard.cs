@@ -1,16 +1,19 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.XR.WSA.Input;
 using UnityEngine.Networking;
-using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit;
 using TMPro;
+using Newtonsoft.Json.Linq;
+using System.Text;
 
 public class FlickKeyboard : MonoBehaviour {
     public TMP_Text textField;
+    public TMP_Text candidatesField;
+    public TMP_Text debugField; // removed in production
     public GameObject keyA;
     public GameObject keyKA;
     public GameObject keySA;
@@ -39,6 +42,11 @@ public class FlickKeyboard : MonoBehaviour {
     private Vector3 releasedPosition3;
     private GameObject[] flickableKeys;
     private GameObject[] keys;
+    private List<string> candidates;
+    private int currentCandidate;
+    private bool isDialing = false;
+    private float keySpacePressedTime;
+    private int lastIndex;
     private string[] charListA = new string[] { "あ", "あ", "い", "う", "え", "お" };
     private string[] charListKA = new string[] { "か", "か", "き", "く", "け", "こ" };
     private string[] charListSA = new string[] { "さ", "さ", "し", "す", "せ", "そ" };
@@ -92,6 +100,7 @@ public class FlickKeyboard : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         audioSource = GetComponent<AudioSource>();
+        candidates = new List<string>();
         flickableKeys = new GameObject[] { keyA, keyKA, keySA, keyTA, keyNA, keyHA, keyMA, keyYA, keyRA, keyWA, keyMark };
         keys = new GameObject[] { keyA, keyKA, keySA, keyTA, keyNA, keyHA, keyMA, keyYA, keyRA, keyWA, keyMark, keyFunc, keyDelete, keySpace, keyReturn };
         InteractionManager.InteractionSourceDetected += SourceDetected;
@@ -133,60 +142,95 @@ public class FlickKeyboard : MonoBehaviour {
 
     void SourceUpdated(InteractionSourceUpdatedEventArgs eventArgs) {
         Debug.Log("SourceUpdated");
-        if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
-            eventArgs.state.sourcePose.TryGetPosition(out keyboardPosition3);
-            this.transform.position = keyboardPosition3 * 0.5f + new Vector3(-0.07f, -1.25f, 0.961f);
+        if (isDialing) {
+            Vector3 position;
+            eventArgs.state.sourcePose.TryGetPosition(out position);
+            GetCurrentDialingAngle(position);
         } else {
-            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-            int direction = GetCurrentDirection();
-            if (direction == -1) {
-                RestoreKeys();
-            } else if (direction == 0) {
-                RestoreKeys(false);
-                keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-            } else if (IsFlickable(keyPressed)) {
-                keyPressed.GetComponentInChildren<TMP_Text>().text = null;
-                keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
-                if (direction == 1) {
-                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
-                } else if (direction == 2) {
-                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
-                } else if (direction == 3) {
-                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
-                } else if (direction == 4) {
-                    keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+            if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
+                eventArgs.state.sourcePose.TryGetPosition(out keyboardPosition3);
+                this.transform.position = keyboardPosition3 * 0.5f + new Vector3(-0.07f, -1.25f, 0.961f);
+            } else {
+                eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+                int direction = GetCurrentDirection();
+                if (direction == -1) {
+                    RestoreKeys();
+                } else if (direction == 0) {
+                    RestoreKeys(false);
+                    keyPressed.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+                } else if (IsFlickable(keyPressed)) {
+                    keyPressed.GetComponentInChildren<TMP_Text>().text = null;
+                    keyOverlay.GetComponentInChildren<TMP_Text>().text = GetNextChar(direction);
+                    if (direction == 1) {
+                        keyOverlay.transform.position = keyPressed.transform.position + new Vector3(-0.08f, 0.0f, -0.01f);
+                    } else if (direction == 2) {
+                        keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, 0.08f, -0.01f);
+                    } else if (direction == 3) {
+                        keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.08f, 0.0f, -0.01f);
+                    } else if (direction == 4) {
+                        keyOverlay.transform.position = keyPressed.transform.position + new Vector3(0.0f, -0.08f, -0.01f);
+                    }
+                    keyOverlay.SetActive(true);
                 }
-                keyOverlay.SetActive(true);
             }
         }
     }
 
     void SourceLost(InteractionSourceLostEventArgs eventArgs) {
         Debug.Log("SourceLost");
-        if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
-            keyboardHand = -1;
+        if (isDialing) {
+            if (Time.time - keySpacePressedTime < 0.5) {
+                UpdateCandidatesField(currentCandidate + 1, true);
+                isDialing = false;
+                RestoreKeys();
+            } else {
+                ReturnCurrentCandidate();
+            }
         } else {
-            if (keyPressed != null) {
-                eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-                ProcessInput(GetCurrentDirection());
+            if (!keyboardFixed && keyboardHand == eventArgs.state.source.id) {
+                keyboardHand = -1;
+            } else {
+                if (keyPressed != null) {
+                    eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+                    ProcessInput(GetCurrentDirection());
+                }
             }
         }
     }
 
     void SourcePressed(InteractionSourcePressedEventArgs eventArgs) {
         Debug.Log($"SourcePressed {CoreServices.InputSystem.GazeProvider.GazeTarget}");
-        eventArgs.state.sourcePose.TryGetPosition(out pressedPosition3);
-        keyPressed = CoreServices.InputSystem.GazeProvider.GazeTarget;
-        if (keyPressed != null && keys.Contains(keyPressed)) {
-            audioSource.PlayOneShot(buttonPress, 1.0f);
-            keyPressed.GetComponentInChildren<MeshRenderer>().material.color = pressedColor;
+        if (isDialing) {
+            ReturnCurrentCandidate();
+        } else {
+            eventArgs.state.sourcePose.TryGetPosition(out pressedPosition3);
+            keyPressed = CoreServices.InputSystem.GazeProvider.GazeTarget;
+            if (keyPressed != null && keys.Contains(keyPressed)) {
+                audioSource.PlayOneShot(buttonPress, 1.0f);
+                keyPressed.GetComponentInChildren<MeshRenderer>().material.color = pressedColor;
+                if (keyPressed == keySpace && currentLength > 0) {
+                    isDialing = true;
+                    keySpacePressedTime = Time.time;
+                    CalculateCircle.Initialize();
+                }
+            }
         }
     }
 
     void SourceReleased(InteractionSourceReleasedEventArgs eventArgs) {
         Debug.Log($"SourceReleased {keyPressed.name}");
-        eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
-        ProcessInput(GetCurrentDirection());
+        if (isDialing) {
+            if (Time.time - keySpacePressedTime < 0.5) {
+                UpdateCandidatesField(currentCandidate + 1, true);
+                isDialing = false;
+                RestoreKeys();
+            } else {
+                ReturnCurrentCandidate();
+            }
+        } else {
+            eventArgs.state.sourcePose.TryGetPosition(out releasedPosition3);
+            ProcessInput(GetCurrentDirection());
+        }
     }
 
     /*
@@ -259,14 +303,104 @@ public class FlickKeyboard : MonoBehaviour {
     }
 
     IEnumerator TransliterateWord(string word) {
-        string requestUrl = $"https://www.google.com/transliterate?langpair=ja-Hira|ja&text={word}";
+        string requestUrl = $"http://www.google.com/transliterate?langpair=ja-Hira|ja&text={word},";
         UnityWebRequest request = UnityWebRequest.Get(requestUrl);
         yield return request.SendWebRequest();
         if (request.isHttpError || request.isNetworkError) {
             Debug.Log(request.error);
         } else {
-            string json = request.downloadHandler.text;
-            Debug.Log(json);
+            string response = request.downloadHandler.text;
+            candidates = ParseGoogleApiResponse(response);
+            UpdateCandidatesField(-1, true);
+        }
+    }
+
+    List<string> ParseGoogleApiResponse(string response) {
+        StringBuilder kanji = new StringBuilder();
+        JArray jarray = JArray.Parse(response);
+        JToken jtoken = jarray[0];
+        List<string> localCandidates = new List<string>();
+        foreach (JToken candidate in jtoken[1].ToArray()) {
+            localCandidates.Add(candidate.ToString());
+        }
+        return localCandidates;
+    }
+
+    void UpdateCandidatesField(int index, bool isInitial = false) {
+        if (!isInitial && Time.time - keySpacePressedTime < 0.5) {
+            return;
+        }
+        if (!isInitial && index < 0) {
+            index += candidates.Count;
+        }
+        index %= candidates.Count;
+        string color = "#ffff00aa";
+        for (int i = 0; i < candidates.Count; i ++) {
+            if (i == 0 && i == index) {
+                candidatesField.text = $"<mark={color}>{candidates[0]}</mark>";
+            } else if (i == 0) {
+                candidatesField.text = $"{candidates[0]}";
+            } else if (i == index) {
+                candidatesField.text += $" <mark={color}>{candidates[i]}</mark>";
+            } else {
+                candidatesField.text += $" {candidates[i]}";
+            }
+        }
+        currentCandidate = index;
+    }
+
+    void ResetCandidatesField() {
+        candidates = new List<string>();
+        currentCandidate = 0;
+        candidatesField.text = "";
+    }
+
+    void GetCurrentDialingAngle(Vector3 position) {
+        if (isDialing) {
+            // CalculateCircleData data = CalculateCircle.GetCalculateCirclebyFixedCenter(position.x, position.y);
+            CalculateCircleData data = CalculateCircle.GetCalculateCircleDataPerTrace(position.x, position.y);
+            if (data.isCalculated) {
+                int index = GetIndexOf8(data.angle);
+                if (lastIndex == index + 1) {
+                    UpdateCandidatesField(currentCandidate - 1);
+                } else if (lastIndex == index - 1) {
+                    UpdateCandidatesField(currentCandidate + 1);
+                } else if (lastIndex > index) {
+                    UpdateCandidatesField(currentCandidate + 1);
+                } else if (lastIndex < index) {
+                    UpdateCandidatesField(currentCandidate - 1);
+                }
+                lastIndex = index;
+            }
+        }
+    }
+
+    void ReturnCurrentCandidate() {
+        isDialing = false;
+        text = text.Substring(0, text.Length - currentLength);
+        text += candidates[currentCandidate];
+        currentLength = 0;
+        ResetCandidatesField();
+        RestoreKeys();
+    }
+
+    int GetIndexOf8(double angle) {
+        if (angle < 45) {
+            return 0;
+        } else if (angle < 90) {
+            return 1;
+        } else if (angle < 135) {
+            return 2;
+        } else if (angle < 180) {
+            return 3;
+        } else if (angle < 225) {
+            return 4;
+        } else if (angle < 270) {
+            return 5;
+        } else if (angle < 315) {
+            return 6;
+        } else {
+            return 7;
         }
     }
 
@@ -275,10 +409,6 @@ public class FlickKeyboard : MonoBehaviour {
         if (keyPressed == keySpace) {
             if (currentLength == 0) {
                 text += " ";
-            } else {
-                string currentWord = text.Substring(text.Length - currentLength, currentLength);
-                // 日本語変換
-                StartCoroutine(TransliterateWord(currentWord));
             }
         } else if (keyPressed == keyDelete) {
             if (!string.IsNullOrEmpty(text)) {
@@ -291,7 +421,11 @@ public class FlickKeyboard : MonoBehaviour {
             if (currentLength == 0) {
                 text += "\n";
             } else {
-                currentLength = 0;
+                if (currentCandidate == -1) {
+                    currentLength = 0;
+                } else {
+                    ReturnCurrentCandidate();
+                }
             }
         } else if (keyPressed == keyFunc) {
             string targetChar = text.Substring(text.Length - 1, 1);
@@ -317,6 +451,12 @@ public class FlickKeyboard : MonoBehaviour {
                 currentLength += nextChar.Length;
             }
         }
+        if (currentLength > 0) {
+            string currentWord = text.Substring(text.Length - currentLength, currentLength);
+            StartCoroutine(TransliterateWord(currentWord));
+        } else {
+            ResetCandidatesField();
+        }
         RestoreKeys();
     }
 
@@ -338,6 +478,13 @@ public class FlickKeyboard : MonoBehaviour {
                 keySpace.GetComponentInChildren<TMP_Text>().text = "空白";
             } else {
                 keySpace.GetComponentInChildren<TMP_Text>().text = "変換";
+            }
+        }
+        if (keyReturn != null) {
+            if (currentLength == 0) {
+                keyReturn.GetComponentInChildren<TMP_Text>().text = "改行";
+            } else {
+                keyReturn.GetComponentInChildren<TMP_Text>().text = "確定";
             }
         }
     }

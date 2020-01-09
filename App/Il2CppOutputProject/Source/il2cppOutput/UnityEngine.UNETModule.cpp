@@ -14897,7 +14897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NetworkTransport_DoesEndPointUsePlatform
 		NullCheck(L_0);
 		Type_t * L_1 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_1);
+		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_1);
 		bool L_3 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_2, _stringLiteral63BFFDD58B92EC20F67F5EA9A1F16A5BDC755B40, /*hidden argument*/NULL);
 		if (!L_3)
 		{
@@ -14998,7 +14998,7 @@ IL_0027:
 		NullCheck(L_6);
 		Type_t * L_7 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
-		String_t* L_8 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_7);
+		String_t* L_8 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_7);
 		bool L_9 = String_op_Inequality_m0BD184A74F453A72376E81CC6CAEE2556B80493E(L_8, _stringLiteralB65AEC2C1F1D067988CC1CB4A9BA0A7FDCBCBD27, /*hidden argument*/NULL);
 		if (!L_9)
 		{
@@ -15010,7 +15010,7 @@ IL_0027:
 		NullCheck(L_10);
 		Type_t * L_11 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_10, /*hidden argument*/NULL);
 		NullCheck(L_11);
-		String_t* L_12 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_11);
+		String_t* L_12 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_11);
 		bool L_13 = String_op_Inequality_m0BD184A74F453A72376E81CC6CAEE2556B80493E(L_12, _stringLiteral63BFFDD58B92EC20F67F5EA9A1F16A5BDC755B40, /*hidden argument*/NULL);
 		if (!L_13)
 		{
@@ -15022,7 +15022,7 @@ IL_0027:
 		NullCheck(L_14);
 		Type_t * L_15 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_14, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_15);
+		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_15);
 		bool L_17 = String_op_Inequality_m0BD184A74F453A72376E81CC6CAEE2556B80493E(L_16, _stringLiteral8924D5874831BC50AFA3A33061A7A9E30FD6B20B, /*hidden argument*/NULL);
 		if (!L_17)
 		{
@@ -15041,7 +15041,7 @@ IL_0080:
 		NullCheck(L_19);
 		Type_t * L_20 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_19, /*hidden argument*/NULL);
 		NullCheck(L_20);
-		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_20);
+		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_20);
 		bool L_22 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_21, _stringLiteralB65AEC2C1F1D067988CC1CB4A9BA0A7FDCBCBD27, /*hidden argument*/NULL);
 		if (!L_22)
 		{
@@ -15740,7 +15740,7 @@ IL_0029:
 				V_3 = L_7;
 				RuntimeObject* L_8 = V_3;
 				NullCheck(L_8);
-				WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_9 = InterfaceFuncInvoker0< WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * >::Invoke(0 /* System.Threading.WaitHandle System.IAsyncResult::get_AsyncWaitHandle() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_8);
+				WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_9 = InterfaceFuncInvoker0< WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * >::Invoke(1 /* System.Threading.WaitHandle System.IAsyncResult::get_AsyncWaitHandle() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_8);
 				TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_10 = V_0;
 				NullCheck(L_9);
 				bool L_11 = VirtFuncInvoker1< bool, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  >::Invoke(12 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.TimeSpan) */, L_9, L_10);

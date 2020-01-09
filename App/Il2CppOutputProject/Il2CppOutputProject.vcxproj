@@ -139,9 +139,13 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Configuration_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Core_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Numerics.Vectors_CodeGen.c">
     </ClCompile>
@@ -246,6 +250,10 @@
     <ClCompile Include="Source\il2cppOutput\GenericMethods10.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods12.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods13.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods2.cpp">
     </ClCompile>
@@ -395,9 +403,35 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics68.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics69.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics7.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics70.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics71.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics72.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics73.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics74.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics75.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics76.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics77.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics78.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics79.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics80.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics81.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics9.cpp">
     </ClCompile>
@@ -473,7 +507,25 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers32.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers33.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers34.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers35.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers36.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers37.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers38.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers39.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers40.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers41.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers5.cpp">
     </ClCompile>
@@ -490,6 +542,8 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues1.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues3.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValuesTable.cpp">
     </ClCompile>
@@ -512,6 +566,8 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods4.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppProjectedComCallableWrapperMethods6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppReversePInvokeWrapperTable.cpp">
     </ClCompile>
@@ -575,6 +631,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Mono.Security1.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib1.cpp">
@@ -597,7 +655,15 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib18.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib19.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib20.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib21.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib22.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib3.cpp">
     </ClCompile>
@@ -613,11 +679,37 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib9.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Newtonsoft.Json4.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Configuration.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Core.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Data7.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Numerics.cpp">
     </ClCompile>
@@ -636,9 +728,45 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Xml.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml10.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml12.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml13.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml7.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml9.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System1.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System7.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro.cpp">
     </ClCompile>

@@ -22145,7 +22145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemTypeAttribute__ctor_m238BF92407221
 	{
 		Type_t * L_6 = ___type0;
 		NullCheck(L_6);
-		bool L_7 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_6);
+		bool L_7 = VirtFuncInvoker0< bool >::Invoke(76 /* System.Boolean System.Type::get_IsEnum() */, L_6);
 		G_B6_0 = ((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
 		goto IL_002d;
 	}
@@ -31408,7 +31408,7 @@ IL_0030:
 		// name = serviceType.Name;
 		Type_t * L_6 = __this->get_serviceType_7();
 		NullCheck(L_6);
-		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_6);
+		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_6);
 		Object_set_name_m538711B144CDE30F929376BCF72D0DC8F85D0826(__this, L_7, /*hidden argument*/NULL);
 		// gameObject.SetActive(true);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(__this, /*hidden argument*/NULL);

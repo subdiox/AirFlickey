@@ -20897,7 +20897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DotNetCompatibility_GetMethodName_m
 		NullCheck(L_0);
 		MethodInfo_t * L_1 = Delegate_get_Method_m0AC85D2B0C4CA63C471BC37FFDC3A5EA1E8ED048(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_1);
+		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_1);
 		return L_2;
 	}
 }
@@ -20908,7 +20908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * DotNetCompatibility_GetBaseType_m0A1
 		// return type.BaseType;
 		Type_t * L_0 = ___type0;
 		NullCheck(L_0);
-		Type_t * L_1 = VirtFuncInvoker0< Type_t * >::Invoke(29 /* System.Type System.Type::get_BaseType() */, L_0);
+		Type_t * L_1 = VirtFuncInvoker0< Type_t * >::Invoke(30 /* System.Type System.Type::get_BaseType() */, L_0);
 		return L_1;
 	}
 }
@@ -26429,7 +26429,7 @@ IL_0025:
 		NullCheck(L_13);
 		Type_t * L_14 = L_13->get_invokeClass_1();
 		NullCheck(L_12);
-		bool L_15 = VirtFuncInvoker1< bool, Type_t * >::Invoke(107 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_12, L_14);
+		bool L_15 = VirtFuncInvoker1< bool, Type_t * >::Invoke(113 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_12, L_14);
 		if (L_15)
 		{
 			goto IL_004d;
@@ -26524,7 +26524,7 @@ IL_0026:
 		NullCheck(L_13);
 		Type_t * L_14 = L_13->get_invokeClass_1();
 		NullCheck(L_12);
-		bool L_15 = VirtFuncInvoker1< bool, Type_t * >::Invoke(107 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_12, L_14);
+		bool L_15 = VirtFuncInvoker1< bool, Type_t * >::Invoke(113 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_12, L_14);
 		if (L_15)
 		{
 			goto IL_004e;
@@ -27023,7 +27023,7 @@ IL_0075:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_26 = L_25;
 		Type_t * L_27 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(__this, /*hidden argument*/NULL);
 		NullCheck(L_27);
-		String_t* L_28 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_27);
+		String_t* L_28 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_27);
 		NullCheck(L_26);
 		ArrayElementTypeCheck (L_26, L_28);
 		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_28);
@@ -27797,7 +27797,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCRC_ReinitializeScriptCRCs_m4C803
 		// var types = callingAssembly.GetTypes();
 		Assembly_t * L_2 = ___callingAssembly0;
 		NullCheck(L_2);
-		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_3 = VirtFuncInvoker0< TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* >::Invoke(16 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_2);
+		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_3 = VirtFuncInvoker0< TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* >::Invoke(18 /* System.Type[] System.Reflection.Assembly::GetTypes() */, L_2);
 		V_0 = L_3;
 		// for (int i = 0; i < types.Length; i++)
 		V_1 = 0;
@@ -29213,7 +29213,7 @@ IL_00cf:
 		NullCheck(L_18);
 		Type_t * L_19 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_18, /*hidden argument*/NULL);
 		NullCheck(L_19);
-		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_19);
+		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_19);
 		V_0 = L_20;
 		// if (endPointType == "System.Net.IPEndPoint")
 		String_t* L_21 = V_0;
@@ -29840,7 +29840,7 @@ IL_006c:
 		NullCheck(L_12);
 		Type_t * L_13 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_12, /*hidden argument*/NULL);
 		NullCheck(L_13);
-		String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_13);
+		String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_13);
 		V_1 = L_14;
 		// if (endPointType == "System.Net.IPEndPoint")
 		String_t* L_15 = V_1;
@@ -30230,7 +30230,7 @@ IL_0000:
 			// NetworkClient client = (NetworkClient)ar.AsyncState;
 			RuntimeObject* L_2 = ___ar0;
 			NullCheck(L_2);
-			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.IAsyncResult::get_AsyncState() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_2);
+			RuntimeObject * L_3 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(2 /* System.Object System.IAsyncResult::get_AsyncState() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_2);
 			V_1 = ((NetworkClient_t33B95FF43955FEC9083CA7222A143777B8B79F0F *)CastclassClass((RuntimeObject*)L_3, NetworkClient_t33B95FF43955FEC9083CA7222A143777B8B79F0F_il2cpp_TypeInfo_var));
 			// if (ip.Length == 0)
 			IPAddressU5BU5D_t7F25C4C038C43BFDA8EA84969112E82BADC38BC3* L_4 = V_0;
@@ -30362,7 +30362,7 @@ CATCH_00a0:
 			// NetworkClient client = (NetworkClient)ar.AsyncState;
 			RuntimeObject* L_31 = ___ar0;
 			NullCheck(L_31);
-			RuntimeObject * L_32 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.IAsyncResult::get_AsyncState() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_31);
+			RuntimeObject * L_32 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(2 /* System.Object System.IAsyncResult::get_AsyncState() */, IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598_il2cpp_TypeInfo_var, L_31);
 			// if (LogFilter.logError) { Debug.LogError("DNS resolution failed: " + e.GetErrorCode()); }
 			IL2CPP_RUNTIME_CLASS_INIT(LogFilter_t5202A297E770086F7954B8D6703BAC03C22654ED_il2cpp_TypeInfo_var);
 			bool L_33 = LogFilter_get_logError_mD404500EEB2968A3CF190DB1EB6CA9A26135A21F(/*hidden argument*/NULL);

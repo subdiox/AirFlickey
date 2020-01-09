@@ -94,8 +94,8 @@ static const int32_t s_InvokerIndices[21] =
 	-1,
 	26,
 	26,
-	689,
-	298,
+	761,
+	354,
 	27,
 	27,
 	27,
@@ -115,7 +115,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[1] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[1] = 
 {
-	{ (Il2CppRGCTXDataType)3, 45869 },
+	{ (Il2CppRGCTXDataType)3, 55117 },
 };
 extern const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_TeleportSystemCodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Services_TeleportSystemCodeGenModule = 
