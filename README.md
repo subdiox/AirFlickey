@@ -1,4 +1,4 @@
-# Flickey
+# AirFlickey
 Japanese Flick Input Keyboard for Hololens
 
 ## Building
